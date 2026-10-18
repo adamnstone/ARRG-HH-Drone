@@ -1,0 +1,4051 @@
+{
+ "flat_min": 0.3,
+ "flat_max": 1.0,
+ "flat_key": "f:flat_local",
+ "invariant": true,
+ "keep": {
+  "phone": 1.0,
+  "mix": 0.95,
+  "dads": 0.95
+ },
+ "rows": [
+  {
+   "name": "rules only",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 303,
+     "clip_rate": 0.2630208333333333,
+     "frame_rate": 0.1046398128278493,
+     "median_first_s": 2.7093333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 69,
+     "clip_rate": 0.23958333333333334,
+     "frame_rate": 0.09056092036242251,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 18,
+     "clip_rate": 0.18,
+     "frame_rate": 0.06675398793095383,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.4085396056172104,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 178,
+     "clip_rate": 0.11125,
+     "frame_rate": 0.04458422746781116,
+     "median_first_s": 2.7413333333333334
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 42,
+     "clip_rate": 0.105,
+     "frame_rate": 0.036373390557939915,
+     "median_first_s": 2.9546666666666663
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 167,
+     "clip_rate": 0.8308457711442786,
+     "frame_rate": 0.45502807959351443,
+     "median_first_s": 3.9466666666666668
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.47014395455425734,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5716501717860623,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 429,
+     "clip_rate": 0.40168539325842695,
+     "frame_rate": 0.1634437639645722,
+     "median_first_s": 2.688
+    }
+   }
+  },
+  {
+   "name": "rules + classifier (shipped fused)",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 43,
+     "clip_rate": 0.03732638888888889,
+     "frame_rate": 0.01575912017167382,
+     "median_first_s": 2.453333333333333
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 12,
+     "clip_rate": 0.041666666666666664,
+     "frame_rate": 0.01843407248450167,
+     "median_first_s": 2.688
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5782652401809435,
+     "median_first_s": 2.2826666666666666
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 1,
+     "clip_rate": 0.01,
+     "frame_rate": 0.0012162604668569024,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 93,
+     "clip_rate": 0.465,
+     "frame_rate": 0.2559538949651267,
+     "median_first_s": 2.3466666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 10,
+     "clip_rate": 0.00625,
+     "frame_rate": 0.0018186695278969956,
+     "median_first_s": 3.4346666666666668
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 3,
+     "clip_rate": 0.0075,
+     "frame_rate": 0.003111587982832618,
+     "median_first_s": 2.432
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.627818709533378,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 148,
+     "clip_rate": 0.736318407960199,
+     "frame_rate": 0.3766132147420342,
+     "median_first_s": 3.925333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 22,
+     "clip_rate": 0.6666666666666666,
+     "frame_rate": 0.3765412174811181,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 140,
+     "clip_rate": 0.7142857142857143,
+     "frame_rate": 0.4460540485103328,
+     "median_first_s": 2.2613333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 23,
+     "clip_rate": 0.02153558052434457,
+     "frame_rate": 0.00853144942212792,
+     "median_first_s": 2.944
+    }
+   }
+  },
+  {
+   "name": "lf_peak_db >= 16.4",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 221,
+     "clip_rate": 0.1918402777777778,
+     "frame_rate": 0.07304706127801622,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 45,
+     "clip_rate": 0.15625,
+     "frame_rate": 0.059296018121125414,
+     "median_first_s": 2.752
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06352621976891051,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39208690879395974,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 130,
+     "clip_rate": 0.08125,
+     "frame_rate": 0.03228004291845494,
+     "median_first_s": 2.6239999999999997
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 28,
+     "clip_rate": 0.07,
+     "frame_rate": 0.02563304721030043,
+     "median_first_s": 2.9546666666666663
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4310489981478363,
+     "median_first_s": 3.8186666666666667
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4598153766703247,
+     "median_first_s": 3.4133333333333336
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5716501717860623,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 319,
+     "clip_rate": 0.29868913857677903,
+     "frame_rate": 0.11755557698799247,
+     "median_first_s": 2.7733333333333334
+    }
+   }
+  },
+  {
+   "name": "fund_half_db >= -26.2",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.25516370524037163,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 262,
+     "clip_rate": 0.22743055555555555,
+     "frame_rate": 0.08924207200762994,
+     "median_first_s": 2.7199999999999998
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 60,
+     "clip_rate": 0.20833333333333334,
+     "frame_rate": 0.07446649976156414,
+     "median_first_s": 3.0613333333333332
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 126,
+     "clip_rate": 0.84,
+     "frame_rate": 0.5353270625403892,
+     "median_first_s": 2.3253333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 18,
+     "clip_rate": 0.18,
+     "frame_rate": 0.06675398793095383,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.39378706542256253,
+     "median_first_s": 2.474666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 149,
+     "clip_rate": 0.093125,
+     "frame_rate": 0.03529774678111588,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 27,
+     "clip_rate": 0.0675,
+     "frame_rate": 0.023100858369098712,
+     "median_first_s": 3.3066666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 167,
+     "clip_rate": 0.8308457711442786,
+     "frame_rate": 0.45502807959351443,
+     "median_first_s": 3.9466666666666668
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4647214511651927,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 163,
+     "clip_rate": 0.8316326530612245,
+     "frame_rate": 0.5582662427567817,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 349,
+     "clip_rate": 0.3267790262172285,
+     "frame_rate": 0.12486537750558582,
+     "median_first_s": 2.944
+    }
+   }
+  },
+  {
+   "name": "level_std <= 1.77",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.14007396049427256,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 194,
+     "clip_rate": 0.1684027777777778,
+     "frame_rate": 0.058483845970433955,
+     "median_first_s": 3.072
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 44,
+     "clip_rate": 0.1527777777777778,
+     "frame_rate": 0.05524260848831664,
+     "median_first_s": 3.1146666666666665
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5740288647950025,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 12,
+     "clip_rate": 0.12,
+     "frame_rate": 0.03817186695981663,
+     "median_first_s": 3.0293333333333337
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3811496807186174,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 100,
+     "clip_rate": 0.0625,
+     "frame_rate": 0.022674356223175967,
+     "median_first_s": 3.1253333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.019045064377682403,
+     "median_first_s": 3.2213333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4292562621950616,
+     "median_first_s": 4.032
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.42715124911238783,
+     "median_first_s": 3.925333333333333
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 166,
+     "clip_rate": 0.8469387755102041,
+     "frame_rate": 0.5607532947028357,
+     "median_first_s": 2.1866666666666665
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 212,
+     "clip_rate": 0.19850187265917604,
+     "frame_rate": 0.07274035138480334,
+     "median_first_s": 3.104
+    }
+   }
+  },
+  {
+   "name": "dlogf0 <= 0.107",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17561107603499593,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 232,
+     "clip_rate": 0.2013888888888889,
+     "frame_rate": 0.07583750596089651,
+     "median_first_s": 2.9333333333333336
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 55,
+     "clip_rate": 0.1909722222222222,
+     "frame_rate": 0.06931032427277062,
+     "median_first_s": 3.029333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5673332375960365,
+     "median_first_s": 2.3466666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.058684567525845534,
+     "median_first_s": 2.7946666666666666
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39386069425293513,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 133,
+     "clip_rate": 0.083125,
+     "frame_rate": 0.03234442060085837,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 31,
+     "clip_rate": 0.0775,
+     "frame_rate": 0.02682403433476395,
+     "median_first_s": 3.2213333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6139763340031257,
+     "median_first_s": 3.1573333333333333
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4241256697998277,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.45303724743399393,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5656504794625916,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 372,
+     "clip_rate": 0.34831460674157305,
+     "frame_rate": 0.13623394576521836,
+     "median_first_s": 2.88
+    }
+   }
+  },
+  {
+   "name": "fund_db >= 14.1",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 218,
+     "clip_rate": 0.1892361111111111,
+     "frame_rate": 0.07163134835479255,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 42,
+     "clip_rate": 0.14583333333333334,
+     "frame_rate": 0.0558237958989032,
+     "median_first_s": 2.9333333333333336
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.05714085231791177,
+     "median_first_s": 4.5120000000000005
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3359348853398305,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 118,
+     "clip_rate": 0.07375,
+     "frame_rate": 0.028082081545064377,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.022103004291845495,
+     "median_first_s": 2.432
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4286124619910264,
+     "median_first_s": 3.8186666666666667
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.46162287780001293,
+     "median_first_s": 3.925333333333333
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5655607404748474,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 295,
+     "clip_rate": 0.2762172284644195,
+     "frame_rate": 0.10659288550256385,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "name": "flux_db <= 5.84",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.20799134121042662,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 231,
+     "clip_rate": 0.20052083333333334,
+     "frame_rate": 0.07475709346685741,
+     "median_first_s": 2.965333333333333
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 55,
+     "clip_rate": 0.1909722222222222,
+     "frame_rate": 0.07261862184072485,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 10,
+     "clip_rate": 0.1,
+     "frame_rate": 0.019109323104270947,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40783009143362026,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 135,
+     "clip_rate": 0.084375,
+     "frame_rate": 0.0316925965665236,
+     "median_first_s": 3.050666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02698497854077253,
+     "median_first_s": 3.317333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5949988836793927,
+     "median_first_s": 3.776
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.3777819597278211,
+     "median_first_s": 4.288
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.40249176941449877,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5592918311881442,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 330,
+     "clip_rate": 0.3089887640449438,
+     "frame_rate": 0.11505200045008118,
+     "median_first_s": 3.1466666666666665
+    }
+   }
+  },
+  {
+   "name": "f0_jump_frac <= 0.277",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.18345810408586632,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 261,
+     "clip_rate": 0.2265625,
+     "frame_rate": 0.09006914639961851,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 62,
+     "clip_rate": 0.2152777777777778,
+     "frame_rate": 0.07893717215069146,
+     "median_first_s": 3.029333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5756444316794715,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06469570098704215,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39898793825887896,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 154,
+     "clip_rate": 0.09625,
+     "frame_rate": 0.037966738197424896,
+     "median_first_s": 2.9013333333333335
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 36,
+     "clip_rate": 0.09,
+     "frame_rate": 0.03051502145922747,
+     "median_first_s": 3.2533333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5809332440276848,
+     "median_first_s": 3.2426666666666666
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.41007101611481434,
+     "median_first_s": 4.074666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.44141759731456975,
+     "median_first_s": 3.52
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5680477924209015,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 396,
+     "clip_rate": 0.3707865168539326,
+     "frame_rate": 0.1454967770972979,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "name": "mid_mean_db <= 3.84",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 242,
+     "clip_rate": 0.21006944444444445,
+     "frame_rate": 0.08356059251311397,
+     "median_first_s": 2.7626666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 56,
+     "clip_rate": 0.19444444444444445,
+     "frame_rate": 0.06673223652837387,
+     "median_first_s": 3.104
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5677281539455733,
+     "median_first_s": 2.3146666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.049796510268045095,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.38382039920213123,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 119,
+     "clip_rate": 0.074375,
+     "frame_rate": 0.027709227467811157,
+     "median_first_s": 3.029333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 23,
+     "clip_rate": 0.0575,
+     "frame_rate": 0.017532188841201717,
+     "median_first_s": 3.52
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6264791248046438,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 160,
+     "clip_rate": 0.7960199004975125,
+     "frame_rate": 0.44351891286907086,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.45820153637596023,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 166,
+     "clip_rate": 0.8469387755102041,
+     "frame_rate": 0.5572278344700272,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 284,
+     "clip_rate": 0.26591760299625467,
+     "frame_rate": 0.10409332754657537,
+     "median_first_s": 2.8586666666666667
+    }
+   }
+  },
+  {
+   "name": "contrast_db >= 3.19",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17642283755749977,
+     "median_first_s": 71.82933333333334
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 230,
+     "clip_rate": 0.1996527777777778,
+     "frame_rate": 0.08171644015259895,
+     "median_first_s": 2.6133333333333333
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 57,
+     "clip_rate": 0.19791666666666666,
+     "frame_rate": 0.06995112064854554,
+     "median_first_s": 3.136
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5792166295684641,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06499976610375638,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3833250779796249,
+     "median_first_s": 2.3893333333333335
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 119,
+     "clip_rate": 0.074375,
+     "frame_rate": 0.02968079399141631,
+     "median_first_s": 2.7946666666666666
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.01863733905579399,
+     "median_first_s": 2.7306666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5985711096226837,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4042471004229272,
+     "median_first_s": 4.117333333333334
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4226970498999419,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5672401415312035,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 324,
+     "clip_rate": 0.30337078651685395,
+     "frame_rate": 0.11962112809631738,
+     "median_first_s": 2.8586666666666667
+    }
+   }
+  },
+  {
+   "name": "extent_frac >= 0.523",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17146207269775413,
+     "median_first_s": 71.91466666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 221,
+     "clip_rate": 0.1918402777777778,
+     "frame_rate": 0.07647830233667144,
+     "median_first_s": 2.7306666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 54,
+     "clip_rate": 0.1875,
+     "frame_rate": 0.06641928946113496,
+     "median_first_s": 3.104
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5514109284124363,
+     "median_first_s": 2.3893333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 16,
+     "clip_rate": 0.16,
+     "frame_rate": 0.060228282733779295,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.39259561707653384,
+     "median_first_s": 2.453333333333333
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 127,
+     "clip_rate": 0.079375,
+     "frame_rate": 0.030547210300429183,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 27,
+     "clip_rate": 0.0675,
+     "frame_rate": 0.025965665236051504,
+     "median_first_s": 2.7306666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.41759852619276366,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.449809566845265,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 167,
+     "clip_rate": 0.8520408163265306,
+     "frame_rate": 0.5284600789703092,
+     "median_first_s": 2.4106666666666667
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 358,
+     "clip_rate": 0.3352059925093633,
+     "frame_rate": 0.12973589879603287,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "name": "f0_steady >= 0.544",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17479931451249212,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 275,
+     "clip_rate": 0.2387152777777778,
+     "frame_rate": 0.0946404089175012,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 58,
+     "clip_rate": 0.2013888888888889,
+     "frame_rate": 0.07460061993323795,
+     "median_first_s": 2.997333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 129,
+     "clip_rate": 0.86,
+     "frame_rate": 0.5624506354563079,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 15,
+     "clip_rate": 0.15,
+     "frame_rate": 0.04860363942555083,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.404516794066855,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 146,
+     "clip_rate": 0.09125,
+     "frame_rate": 0.03664699570815451,
+     "median_first_s": 2.784
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02778969957081545,
+     "median_first_s": 2.912
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5811565081491404,
+     "median_first_s": 3.776
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.407644384576528,
+     "median_first_s": 4.074666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4290233038538506,
+     "median_first_s": 4.842666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5647915491513256,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 395,
+     "clip_rate": 0.3698501872659176,
+     "frame_rate": 0.14616788027840735,
+     "median_first_s": 2.7946666666666666
+    }
+   }
+  },
+  {
+   "name": "decay_db <= -0.318",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2000541174348336,
+     "median_first_s": 72.14933333333333
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 247,
+     "clip_rate": 0.2144097222222222,
+     "frame_rate": 0.0840225619933238,
+     "median_first_s": 2.7306666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 60,
+     "clip_rate": 0.20833333333333334,
+     "frame_rate": 0.0803975917978064,
+     "median_first_s": 2.912
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.575913692826883,
+     "median_first_s": 2.2826666666666666
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 11,
+     "clip_rate": 0.11,
+     "frame_rate": 0.04785517144594658,
+     "median_first_s": 5.525333333333333
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 94,
+     "clip_rate": 0.47,
+     "frame_rate": 0.32090121688376017,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 150,
+     "clip_rate": 0.09375,
+     "frame_rate": 0.0359200643776824,
+     "median_first_s": 2.9013333333333335
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 30,
+     "clip_rate": 0.075,
+     "frame_rate": 0.026523605150214593,
+     "median_first_s": 3.168
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6246930118329984,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4307518595921278,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.46388225421212315,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5656761191733757,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 356,
+     "clip_rate": 0.3333333333333333,
+     "frame_rate": 0.1338509266849914,
+     "median_first_s": 2.7413333333333334
+    }
+   }
+  },
+  {
+   "name": "n_harm >= 3.77",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.20799134121042662,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 263,
+     "clip_rate": 0.2282986111111111,
+     "frame_rate": 0.08945815450643776,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 61,
+     "clip_rate": 0.21180555555555555,
+     "frame_rate": 0.07893717215069146,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5790012206505349,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06553772746409693,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40468413231770173,
+     "median_first_s": 2.3893333333333335
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 158,
+     "clip_rate": 0.09875,
+     "frame_rate": 0.039890021459227466,
+     "median_first_s": 2.7733333333333334
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 33,
+     "clip_rate": 0.0825,
+     "frame_rate": 0.030128755364806865,
+     "median_first_s": 2.7733333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5338245144005358,
+     "median_first_s": 4.053333333333334
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.40789200003961845,
+     "median_first_s": 4.032
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4214059776644503,
+     "median_first_s": 4.224
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5643556740679965,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 398,
+     "clip_rate": 0.37265917602996257,
+     "frame_rate": 0.1503552426419765,
+     "median_first_s": 2.7306666666666666
+    }
+   }
+  },
+  {
+   "name": "inharm_peaks <= 10.1",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 248,
+     "clip_rate": 0.2152777777777778,
+     "frame_rate": 0.07951835956127802,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 53,
+     "clip_rate": 0.1840277777777778,
+     "frame_rate": 0.07109859322842156,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5691103611689524,
+     "median_first_s": 2.3253333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 4,
+     "clip_rate": 0.04,
+     "frame_rate": 0.010642279084997895,
+     "median_first_s": 6.261333333333333
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40334542631092785,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 139,
+     "clip_rate": 0.086875,
+     "frame_rate": 0.0320225321888412,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02679184549356223,
+     "median_first_s": 3.168
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6141995981245814,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.43303982647108347,
+     "median_first_s": 4.1386666666666665
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.466206184236008,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 167,
+     "clip_rate": 0.8520408163265306,
+     "frame_rate": 0.5538049330803548,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 294,
+     "clip_rate": 0.2752808988764045,
+     "frame_rate": 0.10814807670669174,
+     "median_first_s": 2.7733333333333334
+    }
+   }
+  },
+  {
+   "name": "linear C=0.01 (5 features)",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.08307026246955894,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 134,
+     "clip_rate": 0.11631944444444445,
+     "frame_rate": 0.047489717453505005,
+     "median_first_s": 2.7946666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 24,
+     "clip_rate": 0.08333333333333333,
+     "frame_rate": 0.030966857415355268,
+     "median_first_s": 3.1466666666666665
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 129,
+     "clip_rate": 0.86,
+     "frame_rate": 0.5354347669993538,
+     "median_first_s": 2.3466666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 15,
+     "clip_rate": 0.15,
+     "frame_rate": 0.05475511063292324,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.3781308986733424,
+     "median_first_s": 2.432
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 73,
+     "clip_rate": 0.045625,
+     "frame_rate": 0.018347639484978542,
+     "median_first_s": 2.7093333333333334
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 13,
+     "clip_rate": 0.0325,
+     "frame_rate": 0.012253218884120171,
+     "median_first_s": 2.6026666666666665
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 165,
+     "clip_rate": 0.8208955223880597,
+     "frame_rate": 0.44390519299149195,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4345749144664644,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 165,
+     "clip_rate": 0.8418367346938775,
+     "frame_rate": 0.5574201323009077,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 217,
+     "clip_rate": 0.20318352059925093,
+     "frame_rate": 0.07846281204288631,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "name": "linear C=0.03 (6 features)",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 68,
+     "clip_rate": 0.059027777777777776,
+     "frame_rate": 0.022908470433953266,
+     "median_first_s": 2.8906666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 16,
+     "clip_rate": 0.05555555555555555,
+     "frame_rate": 0.02215963280877444,
+     "median_first_s": 2.8373333333333335
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5781754864651396,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 3,
+     "clip_rate": 0.03,
+     "frame_rate": 0.0032745474107685833,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.38969731857186846,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 40,
+     "clip_rate": 0.025,
+     "frame_rate": 0.00943401287553648,
+     "median_first_s": 3.0186666666666664
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 6,
+     "clip_rate": 0.015,
+     "frame_rate": 0.007414163090128756,
+     "median_first_s": 2.357333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 162,
+     "clip_rate": 0.8059701492537313,
+     "frame_rate": 0.42276873706209206,
+     "median_first_s": 4.0
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.41985669098186046,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5709194400287165,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 106,
+     "clip_rate": 0.09925093632958802,
+     "frame_rate": 0.0364927424410474,
+     "median_first_s": 3.168
+    }
+   }
+  },
+  {
+   "name": "linear C=0.1 (11 features)",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 52,
+     "clip_rate": 0.04513888888888889,
+     "frame_rate": 0.017733667143538388,
+     "median_first_s": 2.8906666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 14,
+     "clip_rate": 0.04861111111111111,
+     "frame_rate": 0.019730567477348592,
+     "median_first_s": 2.784
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5715875637251382,
+     "median_first_s": 2.293333333333333
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 1,
+     "clip_rate": 0.01,
+     "frame_rate": 0.0017542218271974553,
+     "median_first_s": 2.368
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.3633582778885929,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 33,
+     "clip_rate": 0.020625,
+     "frame_rate": 0.0075965665236051505,
+     "median_first_s": 3.1573333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 3,
+     "clip_rate": 0.0075,
+     "frame_rate": 0.003572961373390558,
+     "median_first_s": 2.432
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 162,
+     "clip_rate": 0.8059701492537313,
+     "frame_rate": 0.4156374117250874,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.40339551997934286,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5642787549356443,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 82,
+     "clip_rate": 0.07677902621722846,
+     "frame_rate": 0.027732233849319252,
+     "median_first_s": 3.168
+    }
+   }
+  },
+  {
+   "name": "linear C=0.3 (16 features)",
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 48,
+     "clip_rate": 0.041666666666666664,
+     "frame_rate": 0.01579637577491655,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 12,
+     "clip_rate": 0.041666666666666664,
+     "frame_rate": 0.016750119217930376,
+     "median_first_s": 2.784
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5712824010914052,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 1,
+     "clip_rate": 0.01,
+     "frame_rate": 0.0017542218271974553,
+     "median_first_s": 2.368
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.34444236201287837,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 29,
+     "clip_rate": 0.018125,
+     "frame_rate": 0.0069179184549356225,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 5,
+     "clip_rate": 0.0125,
+     "frame_rate": 0.005321888412017167,
+     "median_first_s": 2.6453333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 164,
+     "clip_rate": 0.8159203980099502,
+     "frame_rate": 0.42580945494884265,
+     "median_first_s": 4.0
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.422374281841069,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5623557766268397,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 76,
+     "clip_rate": 0.07116104868913857,
+     "frame_rate": 0.024947356576811176,
+     "median_first_s": 3.2746666666666666
+    }
+   }
+  }
+ ],
+ "ranking": [
+  {
+   "feature": "w_lf_peak_db",
+   "direction": ">=",
+   "auc": 0.8240596543179569,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_fund_half_db",
+   "direction": ">=",
+   "auc": 0.8224179331190401,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_level_std",
+   "direction": "<=",
+   "auc": 0.8161425689100966,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_dlogf0",
+   "direction": "<=",
+   "auc": 0.8071514602879917,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_fund_db",
+   "direction": ">=",
+   "auc": 0.7930203834262874,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_flux_db",
+   "direction": "<=",
+   "auc": 0.7895451511687674,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_f0_jump_frac",
+   "direction": "<=",
+   "auc": 0.7829705947787129,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_mid_mean_db",
+   "direction": "<=",
+   "auc": 0.7769637363733305,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_contrast_db",
+   "direction": ">=",
+   "auc": 0.7666147555446449,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_extent_frac",
+   "direction": ">=",
+   "auc": 0.7583754631725111,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_f0_steady",
+   "direction": ">=",
+   "auc": 0.7546355609086236,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_decay_db",
+   "direction": "<=",
+   "auc": 0.7508649722671863,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_n_harm",
+   "direction": ">=",
+   "auc": 0.7460970763553789,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_inharm_peaks",
+   "direction": "<=",
+   "auc": 0.7283526785371803,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_harm_mean_db",
+   "direction": ">=",
+   "auc": 0.7169795398577686,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_score",
+   "direction": ">=",
+   "auc": 0.7112181724727851,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_fund_f0_db",
+   "direction": ">=",
+   "auc": 0.6972635422819925,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_low_comb_db",
+   "direction": ">=",
+   "auc": 0.6915021748970088,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_flat_local_avg",
+   "direction": "<=",
+   "auc": 0.6686715099999233,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_harm_frac_peaks",
+   "direction": ">=",
+   "auc": 0.6656105438393262,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_flat_local",
+   "direction": "<=",
+   "auc": 0.6482190393629508,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_top_harm_hz",
+   "direction": "<=",
+   "auc": 0.6033708985738506,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_harm_peaks",
+   "direction": "<=",
+   "auc": 0.5924964135296239,
+   "n_pos": 271,
+   "n_neg": 481
+  },
+  {
+   "feature": "w_f0",
+   "direction": ">=",
+   "auc": 0.5337204931300872,
+   "n_pos": 271,
+   "n_neg": 481
+  }
+ ],
+ "gates": [
+  {
+   "kind": "single",
+   "feature": "w_lf_peak_db",
+   "direction": ">=",
+   "threshold": 16.442787170410156,
+   "dev_neg_removed": 0.2702702702702703,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": 16.442787170410156,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 221,
+     "clip_rate": 0.1918402777777778,
+     "frame_rate": 0.07304706127801622,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 45,
+     "clip_rate": 0.15625,
+     "frame_rate": 0.059296018121125414,
+     "median_first_s": 2.752
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06352621976891051,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39208690879395974,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 130,
+     "clip_rate": 0.08125,
+     "frame_rate": 0.03228004291845494,
+     "median_first_s": 2.6239999999999997
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 28,
+     "clip_rate": 0.07,
+     "frame_rate": 0.02563304721030043,
+     "median_first_s": 2.9546666666666663
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4310489981478363,
+     "median_first_s": 3.8186666666666667
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4598153766703247,
+     "median_first_s": 3.4133333333333336
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5716501717860623,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 319,
+     "clip_rate": 0.29868913857677903,
+     "frame_rate": 0.11755557698799247,
+     "median_first_s": 2.7733333333333334
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_fund_half_db",
+   "direction": ">=",
+   "threshold": -26.176116943359375,
+   "dev_neg_removed": 0.14553014553014554,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 1.0,
+    "dads": 0.9578947368421052
+   },
+   "t": -26.176116943359375,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.25516370524037163,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 262,
+     "clip_rate": 0.22743055555555555,
+     "frame_rate": 0.08924207200762994,
+     "median_first_s": 2.7199999999999998
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 60,
+     "clip_rate": 0.20833333333333334,
+     "frame_rate": 0.07446649976156414,
+     "median_first_s": 3.0613333333333332
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 126,
+     "clip_rate": 0.84,
+     "frame_rate": 0.5353270625403892,
+     "median_first_s": 2.3253333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 18,
+     "clip_rate": 0.18,
+     "frame_rate": 0.06675398793095383,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.39378706542256253,
+     "median_first_s": 2.474666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 149,
+     "clip_rate": 0.093125,
+     "frame_rate": 0.03529774678111588,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 27,
+     "clip_rate": 0.0675,
+     "frame_rate": 0.023100858369098712,
+     "median_first_s": 3.3066666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 167,
+     "clip_rate": 0.8308457711442786,
+     "frame_rate": 0.45502807959351443,
+     "median_first_s": 3.9466666666666668
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4647214511651927,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 163,
+     "clip_rate": 0.8316326530612245,
+     "frame_rate": 0.5582662427567817,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 349,
+     "clip_rate": 0.3267790262172285,
+     "frame_rate": 0.12486537750558582,
+     "median_first_s": 2.944
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_level_std",
+   "direction": "<=",
+   "threshold": 1.7739229202270508,
+   "dev_neg_removed": 0.3887733887733888,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": -1.7739229202270508,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.14007396049427256,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 194,
+     "clip_rate": 0.1684027777777778,
+     "frame_rate": 0.058483845970433955,
+     "median_first_s": 3.072
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 44,
+     "clip_rate": 0.1527777777777778,
+     "frame_rate": 0.05524260848831664,
+     "median_first_s": 3.1146666666666665
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5740288647950025,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 12,
+     "clip_rate": 0.12,
+     "frame_rate": 0.03817186695981663,
+     "median_first_s": 3.0293333333333337
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3811496807186174,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 100,
+     "clip_rate": 0.0625,
+     "frame_rate": 0.022674356223175967,
+     "median_first_s": 3.1253333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.019045064377682403,
+     "median_first_s": 3.2213333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4292562621950616,
+     "median_first_s": 4.032
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.42715124911238783,
+     "median_first_s": 3.925333333333333
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 166,
+     "clip_rate": 0.8469387755102041,
+     "frame_rate": 0.5607532947028357,
+     "median_first_s": 2.1866666666666665
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 212,
+     "clip_rate": 0.19850187265917604,
+     "frame_rate": 0.07274035138480334,
+     "median_first_s": 3.104
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_dlogf0",
+   "direction": "<=",
+   "threshold": 0.10728684067726135,
+   "dev_neg_removed": 0.24116424116424118,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": -0.10728684067726135,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17561107603499593,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 232,
+     "clip_rate": 0.2013888888888889,
+     "frame_rate": 0.07583750596089651,
+     "median_first_s": 2.9333333333333336
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 55,
+     "clip_rate": 0.1909722222222222,
+     "frame_rate": 0.06931032427277062,
+     "median_first_s": 3.029333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5673332375960365,
+     "median_first_s": 2.3466666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.058684567525845534,
+     "median_first_s": 2.7946666666666666
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39386069425293513,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 133,
+     "clip_rate": 0.083125,
+     "frame_rate": 0.03234442060085837,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 31,
+     "clip_rate": 0.0775,
+     "frame_rate": 0.02682403433476395,
+     "median_first_s": 3.2213333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6139763340031257,
+     "median_first_s": 3.1573333333333333
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4241256697998277,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.45303724743399393,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5656504794625916,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 372,
+     "clip_rate": 0.34831460674157305,
+     "frame_rate": 0.13623394576521836,
+     "median_first_s": 2.88
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_fund_db",
+   "direction": ">=",
+   "threshold": 14.089221000671387,
+   "dev_neg_removed": 0.30145530145530147,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": 14.089221000671387,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 218,
+     "clip_rate": 0.1892361111111111,
+     "frame_rate": 0.07163134835479255,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 42,
+     "clip_rate": 0.14583333333333334,
+     "frame_rate": 0.0558237958989032,
+     "median_first_s": 2.9333333333333336
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.05714085231791177,
+     "median_first_s": 4.5120000000000005
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3359348853398305,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 118,
+     "clip_rate": 0.07375,
+     "frame_rate": 0.028082081545064377,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.022103004291845495,
+     "median_first_s": 2.432
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4286124619910264,
+     "median_first_s": 3.8186666666666667
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.46162287780001293,
+     "median_first_s": 3.925333333333333
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5655607404748474,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 295,
+     "clip_rate": 0.2762172284644195,
+     "frame_rate": 0.10659288550256385,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_flux_db",
+   "direction": "<=",
+   "threshold": 5.838914394378662,
+   "dev_neg_removed": 0.2390852390852391,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": -5.838914394378662,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.20799134121042662,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 231,
+     "clip_rate": 0.20052083333333334,
+     "frame_rate": 0.07475709346685741,
+     "median_first_s": 2.965333333333333
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 55,
+     "clip_rate": 0.1909722222222222,
+     "frame_rate": 0.07261862184072485,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5795038414590364,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 10,
+     "clip_rate": 0.1,
+     "frame_rate": 0.019109323104270947,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40783009143362026,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 135,
+     "clip_rate": 0.084375,
+     "frame_rate": 0.0316925965665236,
+     "median_first_s": 3.050666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02698497854077253,
+     "median_first_s": 3.317333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5949988836793927,
+     "median_first_s": 3.776
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.3777819597278211,
+     "median_first_s": 4.288
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.40249176941449877,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5592918311881442,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 330,
+     "clip_rate": 0.3089887640449438,
+     "frame_rate": 0.11505200045008118,
+     "median_first_s": 3.1466666666666665
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_f0_jump_frac",
+   "direction": "<=",
+   "threshold": 0.27659574151039124,
+   "dev_neg_removed": 0.13721413721413722,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": -0.27659574151039124,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.18345810408586632,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 261,
+     "clip_rate": 0.2265625,
+     "frame_rate": 0.09006914639961851,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 62,
+     "clip_rate": 0.2152777777777778,
+     "frame_rate": 0.07893717215069146,
+     "median_first_s": 3.029333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5756444316794715,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06469570098704215,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.39898793825887896,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 154,
+     "clip_rate": 0.09625,
+     "frame_rate": 0.037966738197424896,
+     "median_first_s": 2.9013333333333335
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 36,
+     "clip_rate": 0.09,
+     "frame_rate": 0.03051502145922747,
+     "median_first_s": 3.2533333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5809332440276848,
+     "median_first_s": 3.2426666666666666
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.41007101611481434,
+     "median_first_s": 4.074666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.44141759731456975,
+     "median_first_s": 3.52
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5680477924209015,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 396,
+     "clip_rate": 0.3707865168539326,
+     "frame_rate": 0.1454967770972979,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_mid_mean_db",
+   "direction": "<=",
+   "threshold": 3.839759349822998,
+   "dev_neg_removed": 0.2494802494802495,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9580838323353293,
+    "dads": 1.0
+   },
+   "t": -3.839759349822998,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 242,
+     "clip_rate": 0.21006944444444445,
+     "frame_rate": 0.08356059251311397,
+     "median_first_s": 2.7626666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 56,
+     "clip_rate": 0.19444444444444445,
+     "frame_rate": 0.06673223652837387,
+     "median_first_s": 3.104
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5677281539455733,
+     "median_first_s": 2.3146666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 14,
+     "clip_rate": 0.14,
+     "frame_rate": 0.049796510268045095,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.38382039920213123,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 119,
+     "clip_rate": 0.074375,
+     "frame_rate": 0.027709227467811157,
+     "median_first_s": 3.029333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 23,
+     "clip_rate": 0.0575,
+     "frame_rate": 0.017532188841201717,
+     "median_first_s": 3.52
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6264791248046438,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 160,
+     "clip_rate": 0.7960199004975125,
+     "frame_rate": 0.44351891286907086,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.45820153637596023,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 166,
+     "clip_rate": 0.8469387755102041,
+     "frame_rate": 0.5572278344700272,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 284,
+     "clip_rate": 0.26591760299625467,
+     "frame_rate": 0.10409332754657537,
+     "median_first_s": 2.8586666666666667
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_contrast_db",
+   "direction": ">=",
+   "threshold": 3.1927895545959473,
+   "dev_neg_removed": 0.27442827442827444,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": 3.1927895545959473,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17642283755749977,
+     "median_first_s": 71.82933333333334
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 230,
+     "clip_rate": 0.1996527777777778,
+     "frame_rate": 0.08171644015259895,
+     "median_first_s": 2.6133333333333333
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 57,
+     "clip_rate": 0.19791666666666666,
+     "frame_rate": 0.06995112064854554,
+     "median_first_s": 3.136
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5792166295684641,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06499976610375638,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.3833250779796249,
+     "median_first_s": 2.3893333333333335
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 119,
+     "clip_rate": 0.074375,
+     "frame_rate": 0.02968079399141631,
+     "median_first_s": 2.7946666666666666
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 21,
+     "clip_rate": 0.0525,
+     "frame_rate": 0.01863733905579399,
+     "median_first_s": 2.7306666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5985711096226837,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4042471004229272,
+     "median_first_s": 4.117333333333334
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4226970498999419,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5672401415312035,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 324,
+     "clip_rate": 0.30337078651685395,
+     "frame_rate": 0.11962112809631738,
+     "median_first_s": 2.8586666666666667
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_extent_frac",
+   "direction": ">=",
+   "threshold": 0.5228493809700012,
+   "dev_neg_removed": 0.2765072765072765,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 0.9578947368421052
+   },
+   "t": 0.5228493809700012,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17146207269775413,
+     "median_first_s": 71.91466666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 221,
+     "clip_rate": 0.1918402777777778,
+     "frame_rate": 0.07647830233667144,
+     "median_first_s": 2.7306666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 54,
+     "clip_rate": 0.1875,
+     "frame_rate": 0.06641928946113496,
+     "median_first_s": 3.104
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5514109284124363,
+     "median_first_s": 2.3893333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 16,
+     "clip_rate": 0.16,
+     "frame_rate": 0.060228282733779295,
+     "median_first_s": 3.0613333333333332
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.39259561707653384,
+     "median_first_s": 2.453333333333333
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 127,
+     "clip_rate": 0.079375,
+     "frame_rate": 0.030547210300429183,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 27,
+     "clip_rate": 0.0675,
+     "frame_rate": 0.025965665236051504,
+     "median_first_s": 2.7306666666666666
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.41759852619276366,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.449809566845265,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 167,
+     "clip_rate": 0.8520408163265306,
+     "frame_rate": 0.5284600789703092,
+     "median_first_s": 2.4106666666666667
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 358,
+     "clip_rate": 0.3352059925093633,
+     "frame_rate": 0.12973589879603287,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_f0_steady",
+   "direction": ">=",
+   "threshold": 0.5441375970840454,
+   "dev_neg_removed": 0.12474012474012475,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": 0.5441375970840454,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.17479931451249212,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 275,
+     "clip_rate": 0.2387152777777778,
+     "frame_rate": 0.0946404089175012,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 58,
+     "clip_rate": 0.2013888888888889,
+     "frame_rate": 0.07460061993323795,
+     "median_first_s": 2.997333333333333
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 129,
+     "clip_rate": 0.86,
+     "frame_rate": 0.5624506354563079,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 15,
+     "clip_rate": 0.15,
+     "frame_rate": 0.04860363942555083,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.404516794066855,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 146,
+     "clip_rate": 0.09125,
+     "frame_rate": 0.03664699570815451,
+     "median_first_s": 2.784
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02778969957081545,
+     "median_first_s": 2.912
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5811565081491404,
+     "median_first_s": 3.776
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.407644384576528,
+     "median_first_s": 4.074666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.4290233038538506,
+     "median_first_s": 4.842666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5647915491513256,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 395,
+     "clip_rate": 0.3698501872659176,
+     "frame_rate": 0.14616788027840735,
+     "median_first_s": 2.7946666666666666
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_decay_db",
+   "direction": "<=",
+   "threshold": -0.3183397054672241,
+   "dev_neg_removed": 0.17463617463617465,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 0.9894736842105263
+   },
+   "t": 0.3183397054672241,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2000541174348336,
+     "median_first_s": 72.14933333333333
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 247,
+     "clip_rate": 0.2144097222222222,
+     "frame_rate": 0.0840225619933238,
+     "median_first_s": 2.7306666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 60,
+     "clip_rate": 0.20833333333333334,
+     "frame_rate": 0.0803975917978064,
+     "median_first_s": 2.912
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.575913692826883,
+     "median_first_s": 2.2826666666666666
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 11,
+     "clip_rate": 0.11,
+     "frame_rate": 0.04785517144594658,
+     "median_first_s": 5.525333333333333
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 94,
+     "clip_rate": 0.47,
+     "frame_rate": 0.32090121688376017,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 150,
+     "clip_rate": 0.09375,
+     "frame_rate": 0.0359200643776824,
+     "median_first_s": 2.9013333333333335
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 30,
+     "clip_rate": 0.075,
+     "frame_rate": 0.026523605150214593,
+     "median_first_s": 3.168
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6246930118329984,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.4307518595921278,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.46388225421212315,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5656761191733757,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 356,
+     "clip_rate": 0.3333333333333333,
+     "frame_rate": 0.1338509266849914,
+     "median_first_s": 2.7413333333333334
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_n_harm",
+   "direction": ">=",
+   "threshold": 3.7659573554992676,
+   "dev_neg_removed": 0.12474012474012475,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": 3.7659573554992676,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.20799134121042662,
+     "median_first_s": 70.336
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 263,
+     "clip_rate": 0.2282986111111111,
+     "frame_rate": 0.08945815450643776,
+     "median_first_s": 2.7733333333333334
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 61,
+     "clip_rate": 0.21180555555555555,
+     "frame_rate": 0.07893717215069146,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5790012206505349,
+     "median_first_s": 2.2613333333333334
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 17,
+     "clip_rate": 0.17,
+     "frame_rate": 0.06553772746409693,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40468413231770173,
+     "median_first_s": 2.3893333333333335
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 158,
+     "clip_rate": 0.09875,
+     "frame_rate": 0.039890021459227466,
+     "median_first_s": 2.7733333333333334
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 33,
+     "clip_rate": 0.0825,
+     "frame_rate": 0.030128755364806865,
+     "median_first_s": 2.7733333333333334
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.5338245144005358,
+     "median_first_s": 4.053333333333334
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.40789200003961845,
+     "median_first_s": 4.032
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4214059776644503,
+     "median_first_s": 4.224
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5643556740679965,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 398,
+     "clip_rate": 0.37265917602996257,
+     "frame_rate": 0.1503552426419765,
+     "median_first_s": 2.7306666666666666
+    }
+   }
+  },
+  {
+   "kind": "single",
+   "feature": "w_inharm_peaks",
+   "direction": "<=",
+   "threshold": 10.06382942199707,
+   "dev_neg_removed": 0.19542619542619544,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9520958083832335,
+    "dads": 1.0
+   },
+   "t": -10.06382942199707,
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.2617479931451249,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 248,
+     "clip_rate": 0.2152777777777778,
+     "frame_rate": 0.07951835956127802,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 53,
+     "clip_rate": 0.1840277777777778,
+     "frame_rate": 0.07109859322842156,
+     "median_first_s": 2.9226666666666667
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5691103611689524,
+     "median_first_s": 2.3253333333333335
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 4,
+     "clip_rate": 0.04,
+     "frame_rate": 0.010642279084997895,
+     "median_first_s": 6.261333333333333
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 95,
+     "clip_rate": 0.475,
+     "frame_rate": 0.40334542631092785,
+     "median_first_s": 2.368
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 139,
+     "clip_rate": 0.086875,
+     "frame_rate": 0.0320225321888412,
+     "median_first_s": 2.986666666666667
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 32,
+     "clip_rate": 0.08,
+     "frame_rate": 0.02679184549356223,
+     "median_first_s": 3.168
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6141995981245814,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 159,
+     "clip_rate": 0.7910447761194029,
+     "frame_rate": 0.43303982647108347,
+     "median_first_s": 4.1386666666666665
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 27,
+     "clip_rate": 0.8181818181818182,
+     "frame_rate": 0.466206184236008,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 167,
+     "clip_rate": 0.8520408163265306,
+     "frame_rate": 0.5538049330803548,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 294,
+     "clip_rate": 0.2752808988764045,
+     "frame_rate": 0.10814807670669174,
+     "median_first_s": 2.7733333333333334
+    }
+   }
+  },
+  {
+   "kind": "linear",
+   "C": 0.01,
+   "weights": {
+    "w_dlogf0": -1.7372425290876994,
+    "w_fund_half_db": 0.017508222798330666,
+    "w_inharm_peaks": -0.015832912782990007,
+    "w_level_std": -0.01104361973249375,
+    "w_lf_peak_db": 0.05463121587141064
+   },
+   "threshold": 0.6681538910010797,
+   "dev_neg_removed": 0.5696465696465697,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9880239520958084,
+    "dads": 0.9578947368421052
+   },
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 1,
+     "clip_rate": 1.0,
+     "frame_rate": 0.08307026246955894,
+     "median_first_s": 45.034666666666666
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 134,
+     "clip_rate": 0.11631944444444445,
+     "frame_rate": 0.047489717453505005,
+     "median_first_s": 2.7946666666666666
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 24,
+     "clip_rate": 0.08333333333333333,
+     "frame_rate": 0.030966857415355268,
+     "median_first_s": 3.1466666666666665
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 129,
+     "clip_rate": 0.86,
+     "frame_rate": 0.5354347669993538,
+     "median_first_s": 2.3466666666666667
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 15,
+     "clip_rate": 0.15,
+     "frame_rate": 0.05475511063292324,
+     "median_first_s": 2.8586666666666667
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.3781308986733424,
+     "median_first_s": 2.432
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 73,
+     "clip_rate": 0.045625,
+     "frame_rate": 0.018347639484978542,
+     "median_first_s": 2.7093333333333334
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 13,
+     "clip_rate": 0.0325,
+     "frame_rate": 0.012253218884120171,
+     "median_first_s": 2.6026666666666665
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 165,
+     "clip_rate": 0.8208955223880597,
+     "frame_rate": 0.44390519299149195,
+     "median_first_s": 3.989333333333333
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 26,
+     "clip_rate": 0.7878787878787878,
+     "frame_rate": 0.4345749144664644,
+     "median_first_s": 3.2533333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 165,
+     "clip_rate": 0.8418367346938775,
+     "frame_rate": 0.5574201323009077,
+     "median_first_s": 2.2186666666666666
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 217,
+     "clip_rate": 0.20318352059925093,
+     "frame_rate": 0.07846281204288631,
+     "median_first_s": 2.8373333333333335
+    }
+   }
+  },
+  {
+   "kind": "linear",
+   "C": 0.03,
+   "weights": {
+    "w_dlogf0": -1.1422819973833758,
+    "w_flux_db": -0.806491110564291,
+    "w_fund_half_db": 0.048938506385496204,
+    "w_inharm_peaks": -0.3676354767516828,
+    "w_level_std": -0.24653550961466092,
+    "w_lf_peak_db": 0.0920121029756167
+   },
+   "threshold": -6.445296551446445,
+   "dev_neg_removed": 0.7754677754677755,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9700598802395209,
+    "dads": 0.9578947368421052
+   },
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 68,
+     "clip_rate": 0.059027777777777776,
+     "frame_rate": 0.022908470433953266,
+     "median_first_s": 2.8906666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 16,
+     "clip_rate": 0.05555555555555555,
+     "frame_rate": 0.02215963280877444,
+     "median_first_s": 2.8373333333333335
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 133,
+     "clip_rate": 0.8866666666666667,
+     "frame_rate": 0.5781754864651396,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 3,
+     "clip_rate": 0.03,
+     "frame_rate": 0.0032745474107685833,
+     "median_first_s": 3.264
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.38969731857186846,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 40,
+     "clip_rate": 0.025,
+     "frame_rate": 0.00943401287553648,
+     "median_first_s": 3.0186666666666664
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 6,
+     "clip_rate": 0.015,
+     "frame_rate": 0.007414163090128756,
+     "median_first_s": 2.357333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 162,
+     "clip_rate": 0.8059701492537313,
+     "frame_rate": 0.42276873706209206,
+     "median_first_s": 4.0
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.41985669098186046,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 169,
+     "clip_rate": 0.8622448979591837,
+     "frame_rate": 0.5709194400287165,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 106,
+     "clip_rate": 0.09925093632958802,
+     "frame_rate": 0.0364927424410474,
+     "median_first_s": 3.168
+    }
+   }
+  },
+  {
+   "kind": "linear",
+   "C": 0.1,
+   "weights": {
+    "w_decay_db": -0.23717687294890666,
+    "w_dlogf0": -3.313329879850767,
+    "w_f0": -0.006775337735238969,
+    "w_flux_db": -1.9799469564145595,
+    "w_fund_f0_db": 0.006217482853401869,
+    "w_fund_half_db": 0.08394051374633008,
+    "w_harm_mean_db": -0.40331002511309955,
+    "w_inharm_peaks": -0.5175038488851349,
+    "w_level_std": -0.5604850469074936,
+    "w_lf_peak_db": 0.10518078898585012,
+    "w_mid_mean_db": -0.12899446366170003
+   },
+   "threshold": -19.56037738119282,
+   "dev_neg_removed": 0.8232848232848233,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9700598802395209,
+    "dads": 0.9578947368421052
+   },
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 52,
+     "clip_rate": 0.04513888888888889,
+     "frame_rate": 0.017733667143538388,
+     "median_first_s": 2.8906666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 14,
+     "clip_rate": 0.04861111111111111,
+     "frame_rate": 0.019730567477348592,
+     "median_first_s": 2.784
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5715875637251382,
+     "median_first_s": 2.293333333333333
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 1,
+     "clip_rate": 0.01,
+     "frame_rate": 0.0017542218271974553,
+     "median_first_s": 2.368
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.3633582778885929,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 33,
+     "clip_rate": 0.020625,
+     "frame_rate": 0.0075965665236051505,
+     "median_first_s": 3.1573333333333333
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 3,
+     "clip_rate": 0.0075,
+     "frame_rate": 0.003572961373390558,
+     "median_first_s": 2.432
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 162,
+     "clip_rate": 0.8059701492537313,
+     "frame_rate": 0.4156374117250874,
+     "median_first_s": 4.010666666666666
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.40339551997934286,
+     "median_first_s": 3.7546666666666666
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5642787549356443,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 82,
+     "clip_rate": 0.07677902621722846,
+     "frame_rate": 0.027732233849319252,
+     "median_first_s": 3.168
+    }
+   }
+  },
+  {
+   "kind": "linear",
+   "C": 0.3,
+   "weights": {
+    "w_decay_db": -0.9734598449938079,
+    "w_dlogf0": -4.12904048456169,
+    "w_extent_frac": 7.839327586980921,
+    "w_f0": -0.013992241694542261,
+    "w_flat_local_avg": -2.285545271005417,
+    "w_flux_db": -2.512396616304795,
+    "w_fund_db": -0.1274574359804931,
+    "w_fund_f0_db": 0.1152729257636954,
+    "w_fund_half_db": 0.11601407326269084,
+    "w_harm_mean_db": -1.5377906358191222,
+    "w_harm_peaks": -0.13498961685763786,
+    "w_inharm_peaks": -0.5814038425605991,
+    "w_level_std": -0.7321998153542049,
+    "w_lf_peak_db": 0.14887207542993827,
+    "w_mid_mean_db": -0.1895425116125822,
+    "w_n_harm": 0.4113440548095301
+   },
+   "threshold": -29.78538736681544,
+   "dev_neg_removed": 0.83991683991684,
+   "dev_kept": {
+    "phone": 1.0,
+    "mix": 0.9820359281437125,
+    "dads": 0.9578947368421052
+   },
+   "result": {
+    "ambient:test": {
+     "clips": 1,
+     "clips_detected": 0,
+     "clip_rate": 0.0,
+     "frame_rate": 0.0,
+     "median_first_s": null
+    },
+    "confmix:dev": {
+     "clips": 1152,
+     "clips_detected": 48,
+     "clip_rate": 0.041666666666666664,
+     "frame_rate": 0.01579637577491655,
+     "median_first_s": 2.9226666666666667
+    },
+    "confmix:test": {
+     "clips": 288,
+     "clips_detected": 12,
+     "clip_rate": 0.041666666666666664,
+     "frame_rate": 0.016750119217930376,
+     "median_first_s": 2.784
+    },
+    "dads:test": {
+     "clips": 150,
+     "clips_detected": 132,
+     "clip_rate": 0.88,
+     "frame_rate": 0.5712824010914052,
+     "median_first_s": 2.304
+    },
+    "dadsbg:test": {
+     "clips": 100,
+     "clips_detected": 1,
+     "clip_rate": 0.01,
+     "frame_rate": 0.0017542218271974553,
+     "median_first_s": 2.368
+    },
+    "dadsdev:dev": {
+     "clips": 200,
+     "clips_detected": 91,
+     "clip_rate": 0.455,
+     "frame_rate": 0.34444236201287837,
+     "median_first_s": 2.4106666666666667
+    },
+    "esc50:dev": {
+     "clips": 1600,
+     "clips_detected": 29,
+     "clip_rate": 0.018125,
+     "frame_rate": 0.0069179184549356225,
+     "median_first_s": 2.944
+    },
+    "esc50:test": {
+     "clips": 400,
+     "clips_detected": 5,
+     "clip_rate": 0.0125,
+     "frame_rate": 0.005321888412017167,
+     "median_first_s": 2.6453333333333333
+    },
+    "phone:dev": {
+     "clips": 9,
+     "clips_detected": 9,
+     "clip_rate": 1.0,
+     "frame_rate": 0.6293815583835678,
+     "median_first_s": 2.944
+    },
+    "phonemix:dev": {
+     "clips": 201,
+     "clips_detected": 164,
+     "clip_rate": 0.8159203980099502,
+     "frame_rate": 0.42580945494884265,
+     "median_first_s": 4.0
+    },
+    "phonemix:test": {
+     "clips": 33,
+     "clips_detected": 25,
+     "clip_rate": 0.7575757575757576,
+     "frame_rate": 0.422374281841069,
+     "median_first_s": 3.2853333333333334
+    },
+    "tilt+:robust": {
+     "clips": 196,
+     "clips_detected": 168,
+     "clip_rate": 0.8571428571428571,
+     "frame_rate": 0.5623557766268397,
+     "median_first_s": 2.1973333333333334
+    },
+    "tilt-:robust": {
+     "clips": 1068,
+     "clips_detected": 76,
+     "clip_rate": 0.07116104868913857,
+     "frame_rate": 0.024947356576811176,
+     "median_first_s": 3.2746666666666666
+    }
+   }
+  }
+ ]
+}

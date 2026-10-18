@@ -1,0 +1,47 @@
+{
+ "version": 1,
+ "updated": "2026-10-17T23:39:03",
+ "mic_words": {
+  "back": 0,
+  "left": 3,
+  "right": 2,
+  "top": 1
+ },
+ "mic_source": "manual",
+ "slot_order": "right_first",
+ "motors": {
+  "M1": {
+   "hole": "H1",
+   "theta_deg": 0.0
+  },
+  "M2": {
+   "hole": "H2",
+   "theta_deg": 36.7
+  },
+  "M3": {
+   "hole": "H3",
+   "theta_deg": 82.9
+  },
+  "M4": {
+   "hole": "H4",
+   "theta_deg": 144.0
+  },
+  "M5": {
+   "hole": "H5",
+   "theta_deg": 180.0
+  },
+  "M6": {
+   "hole": "H6",
+   "theta_deg": -143.4
+  },
+  "M7": {
+   "hole": "H7",
+   "theta_deg": -82.9
+  },
+  "M8": {
+   "hole": "H8",
+   "theta_deg": -36.7
+  }
+ },
+ "motor_source": "default"
+}

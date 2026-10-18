@@ -1,0 +1,635 @@
+{
+ "candidates": {
+  "board today (rules only)": {
+   "flat_key": "flat",
+   "flat_min": 0.17,
+   "flat_max": 0.45,
+   "gate": null
+  },
+  "shipped fused (rules + classifier)": {
+   "flat_key": "flat",
+   "flat_min": 0.17,
+   "flat_max": 0.45,
+   "gate": "ml"
+  },
+  "new rules (local flatness >= 0.3)": {
+   "flat_key": "f:flat_local",
+   "flat_min": 0.3,
+   "flat_max": 1.0,
+   "gate": null
+  },
+  "new rules + classifier": {
+   "flat_key": "f:flat_local",
+   "flat_min": 0.3,
+   "flat_max": 1.0,
+   "gate": "ml"
+  },
+  "new rules + DSP gate (6 features)": {
+   "flat_key": "f:flat_local",
+   "flat_min": 0.3,
+   "flat_max": 1.0,
+   "gate": {
+    "weights": {
+     "w_dlogf0": -1.1422819973833758,
+     "w_flux_db": -0.806491110564291,
+     "w_fund_half_db": 0.048938506385496204,
+     "w_inharm_peaks": -0.3676354767516828,
+     "w_level_std": -0.24653550961466092,
+     "w_lf_peak_db": 0.0920121029756167
+    },
+    "threshold": -6.445296551446445,
+    "flat_key": "f:flat_local",
+    "flat_min": 0.3,
+    "flat_max": 1.0
+   }
+  },
+  "new rules 0.25 + DSP gate (7 features)": {
+   "flat_key": "f:flat_local",
+   "flat_min": 0.25,
+   "flat_max": 1.0,
+   "gate": {
+    "weights": {
+     "w_dlogf0": -1.067033670135417,
+     "w_flat_local": 0.5141766814954416,
+     "w_flux_db": -1.2424906815403414,
+     "w_fund_half_db": 0.05083702109828861,
+     "w_inharm_peaks": -0.3456319667267769,
+     "w_level_std": -0.2638666344300571,
+     "w_lf_peak_db": 0.0908109728880707
+    },
+    "threshold": -8.368872863519423,
+    "flat_key": "f:flat_local",
+    "flat_min": 0.25,
+    "flat_max": 1.0
+   }
+  },
+  "shipped config (real detector)": {
+   "flat_key": "flat_local",
+   "flat_min": 0.3,
+   "flat_max": 1.0,
+   "gate": "detector"
+  }
+ },
+ "results": {
+  "board today (rules only)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 93,
+    "frame_rate": 0.02324302575107296,
+    "median_first_s": 2.6666666666666665
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 19,
+    "frame_rate": 0.018723175965665237,
+    "median_first_s": 2.7093333333333334
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.5389595891940165,
+    "median_first_s": 3.925333333333333
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 141,
+    "frame_rate": 0.33975812921565324,
+    "median_first_s": 4.266666666666667
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 22,
+    "frame_rate": 0.3499451294299916,
+    "median_first_s": 3.541333333333333
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 5,
+    "frame_rate": 0.023820636174337616,
+    "median_first_s": 4.373333333333333
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 17,
+    "frame_rate": 0.05999438649015297,
+    "median_first_s": 2.368
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 155,
+    "frame_rate": 0.05296629113018598,
+    "median_first_s": 2.7306666666666666
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 40,
+    "frame_rate": 0.05513829279923701,
+    "median_first_s": 2.9226666666666667
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 88,
+    "frame_rate": 0.2805368955438183,
+    "median_first_s": 2.2506666666666666
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 296,
+    "frame_rate": 0.11384642587323786,
+    "median_first_s": 2.6453333333333333
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 10,
+    "frame_rate": 0.1140845258972677,
+    "median_first_s": 8.202666666666667
+   }
+  },
+  "shipped fused (rules + classifier)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 10,
+    "frame_rate": 0.002207618025751073,
+    "median_first_s": 3.1893333333333334
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 1,
+    "frame_rate": 0.0009871244635193132,
+    "median_first_s": 3.008
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.5380665327081938,
+    "median_first_s": 3.925333333333333
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 122,
+    "frame_rate": 0.27275338490338047,
+    "median_first_s": 4.224
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 19,
+    "frame_rate": 0.2651216835581951,
+    "median_first_s": 3.925333333333333
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 4,
+    "frame_rate": 0.01175773677030229,
+    "median_first_s": 5.610666666666667
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 1,
+    "frame_rate": 0.001847780324647986,
+    "median_first_s": 2.2826666666666666
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 27,
+    "frame_rate": 0.009302724129709108,
+    "median_first_s": 2.944
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 7,
+    "frame_rate": 0.0085240820219361,
+    "median_first_s": 3.050666666666667
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 82,
+    "frame_rate": 0.25088457002205017,
+    "median_first_s": 2.2506666666666666
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 14,
+    "frame_rate": 0.0042436225104884985,
+    "median_first_s": 3.4346666666666668
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 7,
+    "frame_rate": 0.09472014350928393,
+    "median_first_s": 10.794666666666666
+   }
+  },
+  "new rules (local flatness >= 0.3)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 178,
+    "frame_rate": 0.04458422746781116,
+    "median_first_s": 2.7413333333333334
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 42,
+    "frame_rate": 0.036373390557939915,
+    "median_first_s": 2.9546666666666663
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 1,
+    "frame_rate": 0.2617479931451249,
+    "median_first_s": 45.034666666666666
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.6293815583835678,
+    "median_first_s": 2.944
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 167,
+    "frame_rate": 0.45502807959351443,
+    "median_first_s": 3.9466666666666668
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 27,
+    "frame_rate": 0.47014395455425734,
+    "median_first_s": 3.2853333333333334
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 133,
+    "frame_rate": 0.5795038414590364,
+    "median_first_s": 2.2613333333333334
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 18,
+    "frame_rate": 0.06675398793095383,
+    "median_first_s": 3.0613333333333332
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 303,
+    "frame_rate": 0.1046398128278493,
+    "median_first_s": 2.7093333333333334
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 69,
+    "frame_rate": 0.09056092036242251,
+    "median_first_s": 2.9226666666666667
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 169,
+    "frame_rate": 0.5716501717860623,
+    "median_first_s": 2.1973333333333334
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 429,
+    "frame_rate": 0.1634437639645722,
+    "median_first_s": 2.688
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 95,
+    "frame_rate": 0.4085396056172104,
+    "median_first_s": 2.368
+   }
+  },
+  "new rules + classifier": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 10,
+    "frame_rate": 0.0018186695278969956,
+    "median_first_s": 3.4346666666666668
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 3,
+    "frame_rate": 0.003111587982832618,
+    "median_first_s": 2.432
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.627818709533378,
+    "median_first_s": 2.944
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 148,
+    "frame_rate": 0.3766132147420342,
+    "median_first_s": 3.925333333333333
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 22,
+    "frame_rate": 0.3765412174811181,
+    "median_first_s": 3.2533333333333334
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 133,
+    "frame_rate": 0.5782652401809435,
+    "median_first_s": 2.2826666666666666
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 1,
+    "frame_rate": 0.0012162604668569024,
+    "median_first_s": 2.8586666666666667
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 43,
+    "frame_rate": 0.01575912017167382,
+    "median_first_s": 2.453333333333333
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 12,
+    "frame_rate": 0.01843407248450167,
+    "median_first_s": 2.688
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 140,
+    "frame_rate": 0.4460540485103328,
+    "median_first_s": 2.2613333333333334
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 23,
+    "frame_rate": 0.00853144942212792,
+    "median_first_s": 2.944
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 93,
+    "frame_rate": 0.2559538949651267,
+    "median_first_s": 2.3466666666666667
+   }
+  },
+  "new rules + DSP gate (6 features)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 40,
+    "frame_rate": 0.00943401287553648,
+    "median_first_s": 3.0186666666666664
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 6,
+    "frame_rate": 0.007414163090128756,
+    "median_first_s": 2.357333333333333
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.6293815583835678,
+    "median_first_s": 2.944
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 162,
+    "frame_rate": 0.42276873706209206,
+    "median_first_s": 4.0
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 25,
+    "frame_rate": 0.41985669098186046,
+    "median_first_s": 3.2853333333333334
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 133,
+    "frame_rate": 0.5781754864651396,
+    "median_first_s": 2.304
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 3,
+    "frame_rate": 0.0032745474107685833,
+    "median_first_s": 3.264
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 68,
+    "frame_rate": 0.022908470433953266,
+    "median_first_s": 2.8906666666666667
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 16,
+    "frame_rate": 0.02215963280877444,
+    "median_first_s": 2.8373333333333335
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 169,
+    "frame_rate": 0.5709194400287165,
+    "median_first_s": 2.1973333333333334
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 106,
+    "frame_rate": 0.0364927424410474,
+    "median_first_s": 3.168
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 91,
+    "frame_rate": 0.38969731857186846,
+    "median_first_s": 2.4106666666666667
+   }
+  },
+  "new rules 0.25 + DSP gate (7 features)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 44,
+    "frame_rate": 0.010504291845493563,
+    "median_first_s": 2.9546666666666663
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 8,
+    "frame_rate": 0.009753218884120172,
+    "median_first_s": 2.474666666666667
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.6347398972985041,
+    "median_first_s": 2.944
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 162,
+    "frame_rate": 0.4225805493101433,
+    "median_first_s": 3.936
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 25,
+    "frame_rate": 0.41682267122845523,
+    "median_first_s": 3.8186666666666667
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 139,
+    "frame_rate": 0.6255295469232426,
+    "median_first_s": 2.0906666666666665
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 5,
+    "frame_rate": 0.005870795715020817,
+    "median_first_s": 2.986666666666667
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 71,
+    "frame_rate": 0.02377280042918455,
+    "median_first_s": 2.816
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 15,
+    "frame_rate": 0.02245767763471626,
+    "median_first_s": 2.965333333333333
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 182,
+    "frame_rate": 0.6310573816727347,
+    "median_first_s": 2.0906666666666665
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 123,
+    "frame_rate": 0.04530951117969491,
+    "median_first_s": 2.88
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 107,
+    "frame_rate": 0.4195103013427221,
+    "median_first_s": 2.1546666666666665
+   }
+  },
+  "shipped config (real detector)": {
+   "esc50:dev": {
+    "clips": 1600,
+    "detected": 27,
+    "frame_rate": 0.006550429184549356,
+    "median_first_s": 3.0933333333333333
+   },
+   "esc50:test": {
+    "clips": 400,
+    "detected": 4,
+    "frame_rate": 0.004592274678111588,
+    "median_first_s": 2.5813333333333333
+   },
+   "ambient:test": {
+    "clips": 1,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "phone:dev": {
+    "clips": 9,
+    "detected": 9,
+    "frame_rate": 0.6293815583835678,
+    "median_first_s": 2.944
+   },
+   "phonemix:dev": {
+    "clips": 201,
+    "detected": 150,
+    "frame_rate": 0.38616126699880154,
+    "median_first_s": 4.010666666666666
+   },
+   "phonemix:test": {
+    "clips": 33,
+    "detected": 23,
+    "frame_rate": 0.3722161254922213,
+    "median_first_s": 4.8
+   },
+   "dads:test": {
+    "clips": 150,
+    "detected": 131,
+    "frame_rate": 0.5494901988942342,
+    "median_first_s": 2.3466666666666667
+   },
+   "dadsbg:test": {
+    "clips": 100,
+    "detected": 0,
+    "frame_rate": 0.0,
+    "median_first_s": null
+   },
+   "confmix:dev": {
+    "clips": 1152,
+    "detected": 38,
+    "frame_rate": 0.012972401049117788,
+    "median_first_s": 2.9226666666666667
+   },
+   "confmix:test": {
+    "clips": 288,
+    "detected": 11,
+    "frame_rate": 0.012443371483071054,
+    "median_first_s": 3.4133333333333336
+   },
+   "tilt+:robust": {
+    "clips": 196,
+    "detected": 168,
+    "frame_rate": 0.5499589764627455,
+    "median_first_s": 2.2186666666666666
+   },
+   "tilt-:robust": {
+    "clips": 1068,
+    "detected": 72,
+    "frame_rate": 0.025694812814454036,
+    "median_first_s": 3.1573333333333333
+   },
+   "dadsdev:dev": {
+    "clips": 200,
+    "detected": 83,
+    "frame_rate": 0.3154192157860212,
+    "median_first_s": 2.453333333333333
+   }
+  }
+ }
+}

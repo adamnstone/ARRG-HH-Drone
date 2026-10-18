@@ -1,0 +1,4976 @@
+{
+ "drone:Assorted motion": {
+  "orig": {
+   "cls": {
+    "median_p": 0.8828125,
+    "frac_gt_07": 0.7058823529411765,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.5719467956469165,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.876953125,
+    "frac_gt_07": 0.6470588235294118,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.596130592503023,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.20588235294117646,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.058823529411764705,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.6142684401451027,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.94921875,
+    "frac_gt_07": 0.9117647058823529,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.45102781136638453,
+    "detected": false,
+    "max_hits": 64
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.053204353083434096,
+    "detected": false,
+    "max_hits": 19
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.27734375,
+    "frac_gt_07": 0.11764705882352941,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.1185006045949214,
+    "detected": false,
+    "max_hits": 29
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.3216444981862152,
+    "detected": false,
+    "max_hits": 66
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.05078125,
+    "frac_gt_07": 0.058823529411764705,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.4244256348246675,
+    "detected": true,
+    "max_hits": 84
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.96484375,
+    "frac_gt_07": 0.9411764705882353,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.5719467956469165,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.64453125,
+    "frac_gt_07": 0.47058823529411764,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.5719467956469165,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.328125,
+    "frac_gt_07": 0.38235294117647056,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.19951632406287786,
+    "detected": false,
+    "max_hits": 57
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.943359375,
+    "frac_gt_07": 0.8823529411764706,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.5308343409915357,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.015625,
+    "frac_gt_07": 0.058823529411764705,
+    "n": 34
+   },
+   "rules": {
+    "frame_ok_frac": 0.33978234582829503,
+    "detected": true,
+    "max_hits": 84
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.779296875,
+    "frac_gt_07": 0.5882352941176471,
+    "n": 34
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.982421875,
+    "frac_gt_07": 0.7941176470588235,
+    "n": 34
+   },
+   "rules": null
+  }
+ },
+ "drone:Descending": {
+  "orig": {
+   "cls": {
+    "median_p": 0.806640625,
+    "frac_gt_07": 0.6818181818181818,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.4280373831775701,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.81640625,
+    "frac_gt_07": 0.5909090909090909,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.41682242990654206,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.3828125,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.193359375,
+    "frac_gt_07": 0.045454545454545456,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.6953271028037383,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.943359375,
+    "frac_gt_07": 0.9545454545454546,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.6074766355140186,
+    "detected": true,
+    "max_hits": 83
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.029296875,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.13271028037383178,
+    "detected": false,
+    "max_hits": 29
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.328125,
+    "frac_gt_07": 0.18181818181818182,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.19065420560747665,
+    "detected": false,
+    "max_hits": 39
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.36822429906542054,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.166015625,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.405607476635514,
+    "detected": false,
+    "max_hits": 59
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.9375,
+    "frac_gt_07": 1.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.4280373831775701,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.484375,
+    "frac_gt_07": 0.36363636363636365,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.4280373831775701,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.001953125,
+    "frac_gt_07": 0.0,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.630859375,
+    "frac_gt_07": 0.2727272727272727,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.059813084112149535,
+    "detected": false,
+    "max_hits": 23
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.90625,
+    "frac_gt_07": 0.7272727272727273,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.36822429906542054,
+    "detected": true,
+    "max_hits": 76
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.18181818181818182,
+    "n": 22
+   },
+   "rules": {
+    "frame_ok_frac": 0.2953271028037383,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.84765625,
+    "frac_gt_07": 0.7272727272727273,
+    "n": 22
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.939453125,
+    "frac_gt_07": 0.8636363636363636,
+    "n": 22
+   },
+   "rules": null
+  }
+ },
+ "drone:Fly by 1": {
+  "orig": {
+   "cls": {
+    "median_p": 0.9375,
+    "frac_gt_07": 0.9166666666666666,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.6138613861386139,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.984375,
+    "frac_gt_07": 0.9166666666666666,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.6270627062706271,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.185546875,
+    "frac_gt_07": 0.25,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.349609375,
+    "frac_gt_07": 0.16666666666666666,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.66996699669967,
+    "detected": true,
+    "max_hits": 92
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.96875,
+    "frac_gt_07": 0.8333333333333334,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.5016501650165016,
+    "detected": false,
+    "max_hits": 60
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.029296875,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0462046204620462,
+    "detected": false,
+    "max_hits": 10
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.529296875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.1617161716171617,
+    "detected": false,
+    "max_hits": 35
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.39603960396039606,
+    "detected": false,
+    "max_hits": 61
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.25,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.5181518151815182,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.986328125,
+    "frac_gt_07": 1.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.6138613861386139,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.859375,
+    "frac_gt_07": 0.5833333333333334,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.6138613861386139,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.001953125,
+    "frac_gt_07": 0.0,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.791015625,
+    "frac_gt_07": 0.5,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.22772277227722773,
+    "detected": false,
+    "max_hits": 32
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.96875,
+    "frac_gt_07": 0.9166666666666666,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.5511551155115512,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.52734375,
+    "frac_gt_07": 0.4166666666666667,
+    "n": 12
+   },
+   "rules": {
+    "frame_ok_frac": 0.22112211221122113,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.91015625,
+    "frac_gt_07": 0.8333333333333334,
+    "n": 12
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.9609375,
+    "frac_gt_07": 1.0,
+    "n": 12
+   },
+   "rules": null
+  }
+ },
+ "drone:Fly by 2": {
+  "orig": {
+   "cls": {
+    "median_p": 0.94140625,
+    "frac_gt_07": 0.7333333333333333,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.3554987212276215,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.9609375,
+    "frac_gt_07": 0.9333333333333333,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.3657289002557545,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.04296875,
+    "frac_gt_07": 0.06666666666666667,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.06666666666666667,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.5370843989769821,
+    "detected": true,
+    "max_hits": 90
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 0.8666666666666667,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.953125,
+    "frac_gt_07": 0.5333333333333333,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.3171355498721228,
+    "detected": false,
+    "max_hits": 69
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.07421875,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.09974424552429667,
+    "detected": false,
+    "max_hits": 20
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.58984375,
+    "frac_gt_07": 0.4666666666666667,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.1585677749360614,
+    "detected": false,
+    "max_hits": 39
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.2864450127877238,
+    "detected": false,
+    "max_hits": 55
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.41015625,
+    "frac_gt_07": 0.4,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.1278772378516624,
+    "detected": false,
+    "max_hits": 42
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.98828125,
+    "frac_gt_07": 1.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.3554987212276215,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.7333333333333333,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.3554987212276215,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.95703125,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.19948849104859334,
+    "detected": false,
+    "max_hits": 35
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.98046875,
+    "frac_gt_07": 0.7333333333333333,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.2864450127877238,
+    "detected": true,
+    "max_hits": 71
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 15
+   },
+   "rules": {
+    "frame_ok_frac": 0.4833759590792839,
+    "detected": false,
+    "max_hits": 67
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.96484375,
+    "frac_gt_07": 0.7333333333333333,
+    "n": 15
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 15
+   },
+   "rules": null
+  }
+ },
+ "drone:Fly by 50m height 1": {
+  "orig": {
+   "cls": {
+    "median_p": 0.57421875,
+    "frac_gt_07": 0.34375,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6815203145478375,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.671875,
+    "frac_gt_07": 0.46875,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6592398427260813,
+    "detected": true,
+    "max_hits": 84
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.42578125,
+    "frac_gt_07": 0.375,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.3040629095674967,
+    "detected": false,
+    "max_hits": 54
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.98046875,
+    "frac_gt_07": 1.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.76953125,
+    "frac_gt_07": 0.65625,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6238532110091743,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.047182175622542594,
+    "detected": false,
+    "max_hits": 18
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.130859375,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.1349934469200524,
+    "detected": false,
+    "max_hits": 39
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.14154652686762778,
+    "detected": false,
+    "max_hits": 29
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.18359375,
+    "frac_gt_07": 0.0625,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.46264744429882043,
+    "detected": false,
+    "max_hits": 66
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.7578125,
+    "frac_gt_07": 0.5625,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6828309305373526,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.52734375,
+    "frac_gt_07": 0.40625,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6815203145478375,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.470703125,
+    "frac_gt_07": 0.46875,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.21756225425950196,
+    "detected": false,
+    "max_hits": 40
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.685546875,
+    "frac_gt_07": 0.46875,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.6762778505897772,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.515625,
+    "frac_gt_07": 0.3125,
+    "n": 32
+   },
+   "rules": {
+    "frame_ok_frac": 0.14416775884665792,
+    "detected": false,
+    "max_hits": 33
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.55859375,
+    "frac_gt_07": 0.40625,
+    "n": 32
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.40625,
+    "n": 32
+   },
+   "rules": null
+  }
+ },
+ "drone:Fly by 50m height 2": {
+  "orig": {
+   "cls": {
+    "median_p": 0.939453125,
+    "frac_gt_07": 0.9666666666666667,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.6909090909090909,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.89453125,
+    "frac_gt_07": 0.8333333333333334,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.6741258741258741,
+    "detected": true,
+    "max_hits": 90
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.630859375,
+    "frac_gt_07": 0.36666666666666664,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.2890625,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.34685314685314683,
+    "detected": false,
+    "max_hits": 60
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.90625,
+    "frac_gt_07": 0.8666666666666667,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.6727272727272727,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.021484375,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.006993006993006993,
+    "detected": false,
+    "max_hits": 2
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.2890625,
+    "frac_gt_07": 0.03333333333333333,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.2013986013986014,
+    "detected": false,
+    "max_hits": 65
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.07832167832167833,
+    "detected": false,
+    "max_hits": 24
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.03515625,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.41818181818181815,
+    "detected": false,
+    "max_hits": 54
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.9921875,
+    "frac_gt_07": 1.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.6909090909090909,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.8515625,
+    "frac_gt_07": 0.7333333333333333,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.6909090909090909,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.005859375,
+    "frac_gt_07": 0.0,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.9296875,
+    "frac_gt_07": 0.9333333333333333,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.2573426573426573,
+    "detected": true,
+    "max_hits": 73
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.64453125,
+    "frac_gt_07": 0.4,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.7062937062937062,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.81640625,
+    "frac_gt_07": 0.6333333333333333,
+    "n": 30
+   },
+   "rules": {
+    "frame_ok_frac": 0.1076923076923077,
+    "detected": false,
+    "max_hits": 40
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.94140625,
+    "frac_gt_07": 1.0,
+    "n": 30
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.98828125,
+    "frac_gt_07": 1.0,
+    "n": 30
+   },
+   "rules": null
+  }
+ },
+ "drone:Hovering 10m away": {
+  "orig": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5384615384615384,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.676737160120846,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.7069486404833837,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.7692307692307693,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.6797583081570997,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.9921875,
+    "frac_gt_07": 1.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.84375,
+    "frac_gt_07": 0.6923076923076923,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.6253776435045317,
+    "detected": true,
+    "max_hits": 76
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.015625,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.006042296072507553,
+    "detected": false,
+    "max_hits": 2
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.07692307692307693,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.07854984894259819,
+    "detected": false,
+    "max_hits": 20
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.18126888217522658,
+    "detected": false,
+    "max_hits": 26
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.37462235649546827,
+    "detected": false,
+    "max_hits": 54
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.6797583081570997,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.53125,
+    "frac_gt_07": 0.3076923076923077,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.676737160120846,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.671875,
+    "frac_gt_07": 0.46153846153846156,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.1691842900302115,
+    "detected": false,
+    "max_hits": 33
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.328125,
+    "frac_gt_07": 0.07692307692307693,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.743202416918429,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.46153846153846156,
+    "n": 13
+   },
+   "rules": {
+    "frame_ok_frac": 0.16314199395770393,
+    "detected": false,
+    "max_hits": 22
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5384615384615384,
+    "n": 13
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.89453125,
+    "frac_gt_07": 1.0,
+    "n": 13
+   },
+   "rules": null
+  }
+ },
+ "drone:Hovering 5m ahead": {
+  "orig": {
+   "cls": {
+    "median_p": 0.98046875,
+    "frac_gt_07": 0.9285714285714286,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.6512261580381471,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.98046875,
+    "frac_gt_07": 0.9285714285714286,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.6267029972752044,
+    "detected": true,
+    "max_hits": 73
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.6015625,
+    "frac_gt_07": 0.42857142857142855,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.64453125,
+    "frac_gt_07": 0.42857142857142855,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.6239782016348774,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.5504087193460491,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.052734375,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.06267029972752043,
+    "detected": false,
+    "max_hits": 9
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.07142857142857142,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.11989100817438691,
+    "detected": false,
+    "max_hits": 24
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.015625,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.1880108991825613,
+    "detected": false,
+    "max_hits": 23
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.439453125,
+    "frac_gt_07": 0.21428571428571427,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.13896457765667575,
+    "detected": false,
+    "max_hits": 21
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0027247956403269754,
+    "detected": false,
+    "max_hits": 1
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.994140625,
+    "frac_gt_07": 1.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.6512261580381471,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.798828125,
+    "frac_gt_07": 0.7857142857142857,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.6512261580381471,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.841796875,
+    "frac_gt_07": 0.7142857142857143,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.4332425068119891,
+    "detected": false,
+    "max_hits": 55
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.994140625,
+    "frac_gt_07": 0.9285714285714286,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.4986376021798365,
+    "detected": false,
+    "max_hits": 64
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.931640625,
+    "frac_gt_07": 0.7857142857142857,
+    "n": 14
+   },
+   "rules": {
+    "frame_ok_frac": 0.22888283378746593,
+    "detected": false,
+    "max_hits": 34
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.990234375,
+    "frac_gt_07": 0.9285714285714286,
+    "n": 14
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.98828125,
+    "frac_gt_07": 0.8571428571428571,
+    "n": 14
+   },
+   "rules": null
+  }
+ },
+ "drone:Immediate vicinity": {
+  "orig": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7125506072874493,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "no_peaks": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_100-200": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7125506072874493,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_100-200": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_200-400": {
+   "cls": {
+    "median_p": 0.0546875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8582995951417004,
+    "detected": true,
+    "max_hits": 93
+   }
+  },
+  "only_peaks_200-400": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_400-800": {
+   "cls": {
+    "median_p": 0.92578125,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5303643724696356,
+    "detected": true,
+    "max_hits": 76
+   }
+  },
+  "only_peaks_400-800": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.32388663967611336,
+    "detected": false,
+    "max_hits": 43
+   }
+  },
+  "no_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.44140625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5020242914979757,
+    "detected": false,
+    "max_hits": 57
+   }
+  },
+  "only_peaks_800-1600": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5303643724696356,
+    "detected": true,
+    "max_hits": 83
+   }
+  },
+  "no_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6396761133603239,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "only_peaks_1600-3200": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.72265625,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7125506072874493,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_3200-6400": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7125506072874493,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "only_peaks_6400-8000": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "no_harm_peaks": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6234817813765182,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "no_other_peaks": {
+   "cls": {
+    "median_p": 0.72265625,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6923076923076923,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "flat_shape": {
+   "cls": {
+    "median_p": 0.35546875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.27530364372469635,
+    "detected": false,
+    "max_hits": 51
+   }
+  },
+  "shuffle": {
+   "cls": {
+    "median_p": 0.55859375,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": null
+  },
+  "time_avg": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": null
+  }
+ },
+ "confuser:chainsaw:2-68391-B-41": {
+  "orig": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.47639484978540775,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.30472103004291845,
+    "detected": false,
+    "max_hits": 36
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.015625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.09012875536480687,
+    "detected": false,
+    "max_hits": 21
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.3828125,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06437768240343347,
+    "detected": false,
+    "max_hits": 9
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.07296137339055794,
+    "detected": false,
+    "max_hits": 16
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4721030042918455,
+    "detected": true,
+    "max_hits": 73
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.12017167381974249,
+    "detected": false,
+    "max_hits": 24
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5278969957081545,
+    "detected": false,
+    "max_hits": 66
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06437768240343347,
+    "detected": false,
+    "max_hits": 15
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.3828125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.21888412017167383,
+    "detected": false,
+    "max_hits": 33
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.09871244635193133,
+    "detected": false,
+    "max_hits": 22
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.21030042918454936,
+    "detected": false,
+    "max_hits": 28
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.034334763948497854,
+    "detected": false,
+    "max_hits": 7
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3648068669527897,
+    "detected": false,
+    "max_hits": 52
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.08203125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.055793991416309016,
+    "detected": false,
+    "max_hits": 12
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.27734375,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5321888412017167,
+    "detected": false,
+    "max_hits": 69
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.02575107296137339,
+    "detected": false,
+    "max_hits": 6
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5150214592274678,
+    "detected": false,
+    "max_hits": 65
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1459227467811159,
+    "detected": false,
+    "max_hits": 33
+   }
+  }
+ },
+ "confuser:chainsaw:2-77945-B-41": {
+  "orig": {
+   "cls": {
+    "median_p": 0.55859375,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6008583690987125,
+    "detected": true,
+    "max_hits": 88
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.23046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.21888412017167383,
+    "detected": false,
+    "max_hits": 29
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.05150214592274678,
+    "detected": false,
+    "max_hits": 9
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.07725321888412018,
+    "detected": false,
+    "max_hits": 16
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06866952789699571,
+    "detected": false,
+    "max_hits": 11
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4034334763948498,
+    "detected": false,
+    "max_hits": 68
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1459227467811159,
+    "detected": false,
+    "max_hits": 32
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4291845493562232,
+    "detected": false,
+    "max_hits": 59
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.12017167381974249,
+    "detected": false,
+    "max_hits": 27
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.24892703862660945,
+    "detected": false,
+    "max_hits": 36
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.53125,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.060085836909871244,
+    "detected": false,
+    "max_hits": 9
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.2017167381974249,
+    "detected": false,
+    "max_hits": 28
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.046875,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.02145922746781116,
+    "detected": false,
+    "max_hits": 4
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.23046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4291845493562232,
+    "detected": false,
+    "max_hits": 51
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.07296137339055794,
+    "detected": false,
+    "max_hits": 15
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.64453125,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.45493562231759654,
+    "detected": false,
+    "max_hits": 59
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.19140625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.017167381974248927,
+    "detected": false,
+    "max_hits": 2
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3648068669527897,
+    "detected": false,
+    "max_hits": 55
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.21888412017167383,
+    "detected": false,
+    "max_hits": 41
+   }
+  }
+ },
+ "confuser:chainsaw:3-118656-A-41": {
+  "orig": {
+   "cls": {
+    "median_p": 0.23046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6351931330472103,
+    "detected": true,
+    "max_hits": 92
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.30472103004291845,
+    "detected": false,
+    "max_hits": 34
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.15625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.463519313304721,
+    "detected": false,
+    "max_hits": 65
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.13304721030042918,
+    "detected": false,
+    "max_hits": 24
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4978540772532189,
+    "detected": true,
+    "max_hits": 71
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.48497854077253216,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.10546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4334763948497854,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.575107296137339,
+    "detected": false,
+    "max_hits": 68
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.27734375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3948497854077253,
+    "detected": true,
+    "max_hits": 70
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.19140625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.43776824034334766,
+    "detected": false,
+    "max_hits": 60
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.44635193133047213,
+    "detected": true,
+    "max_hits": 71
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.33905579399141633,
+    "detected": false,
+    "max_hits": 45
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.53125,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3776824034334764,
+    "detected": false,
+    "max_hits": 57
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4721030042918455,
+    "detected": false,
+    "max_hits": 56
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.41201716738197425,
+    "detected": false,
+    "max_hits": 68
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5708154506437768,
+    "detected": true,
+    "max_hits": 83
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.27734375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.36909871244635195,
+    "detected": false,
+    "max_hits": 52
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5064377682403434,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6523605150214592,
+    "detected": true,
+    "max_hits": 83
+   }
+  }
+ },
+ "confuser:vacuum_cleaner:1-19840-A-36": {
+  "orig": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8454935622317596,
+    "detected": true,
+    "max_hits": 90
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.9765625,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.34334763948497854,
+    "detected": false,
+    "max_hits": 41
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.64453125,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7253218884120172,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.984375,
+    "frac_gt_07": 0.8888888888888888,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.060085836909871244,
+    "detected": false,
+    "max_hits": 7
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8369098712446352,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5278969957081545,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.41015625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8154506437768241,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.592274678111588,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.76953125,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6866952789699571,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.9921875,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.37339055793991416,
+    "detected": false,
+    "max_hits": 51
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.41015625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8497854077253219,
+    "detected": true,
+    "max_hits": 91
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.98046875,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3218884120171674,
+    "detected": false,
+    "max_hits": 45
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.53125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6738197424892703,
+    "detected": true,
+    "max_hits": 76
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.96875,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6180257510729614,
+    "detected": false,
+    "max_hits": 69
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8626609442060086,
+    "detected": true,
+    "max_hits": 93
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.99609375,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6223175965665236,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7124463519313304,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6094420600858369,
+    "detected": true,
+    "max_hits": 85
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8283261802575107,
+    "detected": true,
+    "max_hits": 88
+   }
+  }
+ },
+ "confuser:vacuum_cleaner:1-60460-A-36": {
+  "orig": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.871244635193133,
+    "detected": true,
+    "max_hits": 93
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.23046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.296137339055794,
+    "detected": false,
+    "max_hits": 40
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.91796875,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.034334763948497854,
+    "detected": false,
+    "max_hits": 5
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.0546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06437768240343347,
+    "detected": false,
+    "max_hits": 10
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.05150214592274678,
+    "detected": false,
+    "max_hits": 9
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.10546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.45064377682403434,
+    "detected": true,
+    "max_hits": 78
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.671875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.04721030042918455,
+    "detected": false,
+    "max_hits": 8
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.44140625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3261802575107296,
+    "detected": false,
+    "max_hits": 52
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.80859375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.008583690987124463,
+    "detected": false,
+    "max_hits": 2
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.2145922746781116,
+    "detected": false,
+    "max_hits": 41
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.98828125,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.04721030042918455,
+    "detected": false,
+    "max_hits": 10
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.06640625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.034334763948497854,
+    "detected": false,
+    "max_hits": 8
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.9765625,
+    "frac_gt_07": 0.8888888888888888,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.012875536480686695,
+    "detected": false,
+    "max_hits": 3
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3261802575107296,
+    "detected": false,
+    "max_hits": 41
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.80859375,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.09871244635193133,
+    "detected": false,
+    "max_hits": 16
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4291845493562232,
+    "detected": false,
+    "max_hits": 62
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.58984375,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.02575107296137339,
+    "detected": false,
+    "max_hits": 5
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.12890625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.51931330472103,
+    "detected": false,
+    "max_hits": 69
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.27734375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.15021459227467812,
+    "detected": false,
+    "max_hits": 21
+   }
+  }
+ },
+ "confuser:vacuum_cleaner:1-79236-A-36": {
+  "orig": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7896995708154506,
+    "detected": true,
+    "max_hits": 94
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.25390625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3648068669527897,
+    "detected": false,
+    "max_hits": 43
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06437768240343347,
+    "detected": false,
+    "max_hits": 14
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1459227467811159,
+    "detected": false,
+    "max_hits": 26
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.859375,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0944206008583691,
+    "detected": false,
+    "max_hits": 19
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6824034334763949,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.671875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.18454935622317598,
+    "detected": false,
+    "max_hits": 43
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.8828125,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6566523605150214,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.87109375,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.15450643776824036,
+    "detected": false,
+    "max_hits": 33
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.11158798283261803,
+    "detected": false,
+    "max_hits": 25
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.72265625,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.09012875536480687,
+    "detected": false,
+    "max_hits": 18
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.35546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.0,
+    "detected": false,
+    "max_hits": 0
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.80859375,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.03862660944206009,
+    "detected": false,
+    "max_hits": 7
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.09375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.40772532188841204,
+    "detected": false,
+    "max_hits": 61
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.09012875536480687,
+    "detected": false,
+    "max_hits": 21
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.06640625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7339055793991416,
+    "detected": true,
+    "max_hits": 89
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.017167381974248927,
+    "detected": false,
+    "max_hits": 4
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.10546875,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7811158798283262,
+    "detected": true,
+    "max_hits": 90
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3090128755364807,
+    "detected": false,
+    "max_hits": 58
+   }
+  }
+ },
+ "confuser:toilet_flush:1-28005-A-18": {
+  "orig": {
+   "cls": {
+    "median_p": 0.04296875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.592274678111588,
+    "detected": true,
+    "max_hits": 73
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.15625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3562231759656652,
+    "detected": false,
+    "max_hits": 45
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4592274678111588,
+    "detected": false,
+    "max_hits": 57
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.19140625,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1759656652360515,
+    "detected": false,
+    "max_hits": 28
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.23046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6394849785407726,
+    "detected": true,
+    "max_hits": 70
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5708154506437768,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.648068669527897,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.02734375,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.630901287553648,
+    "detected": true,
+    "max_hits": 76
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.46875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4978540772532189,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.55859375,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.38626609442060084,
+    "detected": false,
+    "max_hits": 63
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.5,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6351931330472103,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.76953125,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.38626609442060084,
+    "detected": false,
+    "max_hits": 57
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.53125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.41201716738197425,
+    "detected": false,
+    "max_hits": 50
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.2109375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.47639484978540775,
+    "detected": false,
+    "max_hits": 55
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6652360515021459,
+    "detected": true,
+    "max_hits": 71
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.592274678111588,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.41015625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4291845493562232,
+    "detected": false,
+    "max_hits": 53
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.15625,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5321888412017167,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.07421875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6094420600858369,
+    "detected": true,
+    "max_hits": 78
+   }
+  }
+ },
+ "confuser:toilet_flush:1-30214-A-18": {
+  "orig": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5536480686695279,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.23605150214592274,
+    "detected": false,
+    "max_hits": 30
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.04296875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.34763948497854075,
+    "detected": false,
+    "max_hits": 54
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.0546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.02145922746781116,
+    "detected": false,
+    "max_hits": 5
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3905579399141631,
+    "detected": false,
+    "max_hits": 62
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.51931330472103,
+    "detected": true,
+    "max_hits": 84
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4592274678111588,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5021459227467812,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3905579399141631,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.351931330472103,
+    "detected": false,
+    "max_hits": 45
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.39914163090128757,
+    "detected": false,
+    "max_hits": 64
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3090128755364807,
+    "detected": false,
+    "max_hits": 39
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.26180257510729615,
+    "detected": false,
+    "max_hits": 47
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.06640625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4206008583690987,
+    "detected": false,
+    "max_hits": 53
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3562231759656652,
+    "detected": false,
+    "max_hits": 61
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.17578125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5278969957081545,
+    "detected": true,
+    "max_hits": 78
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.03515625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.30472103004291845,
+    "detected": false,
+    "max_hits": 51
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.44635193133047213,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.04296875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4892703862660944,
+    "detected": true,
+    "max_hits": 74
+   }
+  }
+ },
+ "confuser:toilet_flush:1-46274-A-18": {
+  "orig": {
+   "cls": {
+    "median_p": 0.06640625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5321888412017167,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1888412017167382,
+    "detected": false,
+    "max_hits": 26
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.20600858369098712,
+    "detected": false,
+    "max_hits": 30
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.02575107296137339,
+    "detected": false,
+    "max_hits": 6
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.44140625,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.2875536480686695,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3648068669527897,
+    "detected": false,
+    "max_hits": 65
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3562231759656652,
+    "detected": false,
+    "max_hits": 62
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5021459227467812,
+    "detected": true,
+    "max_hits": 73
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.2703862660944206,
+    "detected": false,
+    "max_hits": 52
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.03515625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.2145922746781116,
+    "detected": false,
+    "max_hits": 29
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.9765625,
+    "frac_gt_07": 1.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.26180257510729615,
+    "detected": false,
+    "max_hits": 44
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.1630901287553648,
+    "detected": false,
+    "max_hits": 22
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.72265625,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.15021459227467812,
+    "detected": false,
+    "max_hits": 26
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.33476394849785407,
+    "detected": false,
+    "max_hits": 39
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.82421875,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3218884120171674,
+    "detected": false,
+    "max_hits": 51
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.0390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.30472103004291845,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.19313304721030042,
+    "detected": false,
+    "max_hits": 36
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.1111111111111111,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3605150214592275,
+    "detected": false,
+    "max_hits": 68
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.671875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.43776824034334766,
+    "detected": false,
+    "max_hits": 66
+   }
+  }
+ },
+ "confuser:engine:1-18527-A-44": {
+  "orig": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3605150214592275,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3090128755364807,
+    "detected": false,
+    "max_hits": 42
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4291845493562232,
+    "detected": true,
+    "max_hits": 84
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.2109375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.06437768240343347,
+    "detected": false,
+    "max_hits": 15
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.44635193133047213,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.08203125,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.44206008583690987,
+    "detected": true,
+    "max_hits": 70
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.34763948497854075,
+    "detected": false,
+    "max_hits": 53
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.26180257510729615,
+    "detected": false,
+    "max_hits": 34
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.49356223175965663,
+    "detected": true,
+    "max_hits": 71
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.72265625,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4592274678111588,
+    "detected": false,
+    "max_hits": 56
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3905579399141631,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.74609375,
+    "frac_gt_07": 0.5555555555555556,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.36909871244635195,
+    "detected": false,
+    "max_hits": 53
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4978540772532189,
+    "detected": true,
+    "max_hits": 81
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4721030042918455,
+    "detected": false,
+    "max_hits": 60
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.45064377682403434,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.9765625,
+    "frac_gt_07": 0.6666666666666666,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5836909871244635,
+    "detected": true,
+    "max_hits": 75
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.01171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.575107296137339,
+    "detected": true,
+    "max_hits": 85
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.41201716738197425,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3562231759656652,
+    "detected": false,
+    "max_hits": 58
+   }
+  }
+ },
+ "confuser:engine:2-106014-A-44": {
+  "orig": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.630901287553648,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.34763948497854075,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5836909871244635,
+    "detected": true,
+    "max_hits": 70
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.04291845493562232,
+    "detected": false,
+    "max_hits": 10
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.0078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6738197424892703,
+    "detected": true,
+    "max_hits": 85
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.41015625,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5622317596566524,
+    "detected": true,
+    "max_hits": 78
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6652360515021459,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.02734375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.4206008583690987,
+    "detected": false,
+    "max_hits": 53
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6738197424892703,
+    "detected": true,
+    "max_hits": 88
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.69921875,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6781115879828327,
+    "detected": true,
+    "max_hits": 79
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.01953125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6695278969957081,
+    "detected": true,
+    "max_hits": 86
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.6171875,
+    "frac_gt_07": 0.4444444444444444,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5965665236051502,
+    "detected": true,
+    "max_hits": 72
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5622317596566524,
+    "detected": true,
+    "max_hits": 74
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.046875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6609442060085837,
+    "detected": true,
+    "max_hits": 77
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.0234375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6523605150214592,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.90625,
+    "frac_gt_07": 0.7777777777777778,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6566523605150214,
+    "detected": true,
+    "max_hits": 82
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6351931330472103,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.09375,
+    "frac_gt_07": 0.3333333333333333,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5493562231759657,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5836909871244635,
+    "detected": true,
+    "max_hits": 74
+   }
+  }
+ },
+ "confuser:engine:2-106487-A-44": {
+  "orig": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7081545064377682,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "drone_fine_on_this_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3090128755364807,
+    "detected": false,
+    "max_hits": 35
+   }
+  },
+  "this_fine_on_drone_shape:Assorted motion": {
+   "cls": {
+    "median_p": 0.2109375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7939914163090128,
+    "detected": true,
+    "max_hits": 85
+   }
+  },
+  "drone_fine_on_this_shape:Descending": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.04721030042918455,
+    "detected": false,
+    "max_hits": 6
+   }
+  },
+  "this_fine_on_drone_shape:Descending": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7982832618025751,
+    "detected": true,
+    "max_hits": 87
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.41201716738197425,
+    "detected": false,
+    "max_hits": 68
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 1": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7167381974248928,
+    "detected": true,
+    "max_hits": 83
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.18454935622317598,
+    "detected": false,
+    "max_hits": 27
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 2": {
+   "cls": {
+    "median_p": 0.140625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7339055793991416,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.02734375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.39914163090128757,
+    "detected": false,
+    "max_hits": 49
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 1": {
+   "cls": {
+    "median_p": 0.1171875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.776824034334764,
+    "detected": true,
+    "max_hits": 88
+   }
+  },
+  "drone_fine_on_this_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.00390625,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.3218884120171674,
+    "detected": false,
+    "max_hits": 44
+   }
+  },
+  "this_fine_on_drone_shape:Fly by 50m height 2": {
+   "cls": {
+    "median_p": 0.09375,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8025751072961373,
+    "detected": true,
+    "max_hits": 85
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.41630901287553645,
+    "detected": false,
+    "max_hits": 48
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 10m away": {
+   "cls": {
+    "median_p": 0.10546875,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.8326180257510729,
+    "detected": true,
+    "max_hits": 90
+   }
+  },
+  "drone_fine_on_this_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.05859375,
+    "frac_gt_07": 0.2222222222222222,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6008583690987125,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "this_fine_on_drone_shape:Hovering 5m ahead": {
+   "cls": {
+    "median_p": 0.30078125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.7682403433476395,
+    "detected": true,
+    "max_hits": 83
+   }
+  },
+  "drone_fine_on_this_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.0,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.5450643776824035,
+    "detected": true,
+    "max_hits": 80
+   }
+  },
+  "this_fine_on_drone_shape:Immediate vicinity": {
+   "cls": {
+    "median_p": 0.08203125,
+    "frac_gt_07": 0.0,
+    "n": 9
+   },
+   "rules": {
+    "frame_ok_frac": 0.6394849785407726,
+    "detected": true,
+    "max_hits": 71
+   }
+  }
+ }
+}
