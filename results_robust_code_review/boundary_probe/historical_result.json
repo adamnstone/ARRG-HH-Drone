@@ -1,0 +1,88 @@
+{
+  "scenarios": 420,
+  "source_seed": 144,
+  "source_samples": 2048,
+  "fs": 48000,
+  "snr_db": 10,
+  "missing_channels": [
+    1,
+    2,
+    3
+  ],
+  "azimuths": [
+    -170,
+    -120,
+    -70,
+    -20,
+    30,
+    80,
+    130
+  ],
+  "elevations": [
+    0,
+    0.1,
+    1,
+    3
+  ],
+  "noise_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "hemisphere": [
+    0,
+    0,
+    1
+  ],
+  "gate": 0.2,
+  "comparison_note": "Previous point-hemisphere selection reconstructed from current unconstrained candidates/support; underlying measurement pipeline is current final code. Earlier direct old-code run also found48accepted_over15.",
+  "totals": {
+    "previous_point_rule": {
+      "withheld": 214,
+      "accepted_within15": 158,
+      "accepted_over15": 48
+    },
+    "current_interval_guard": {
+      "withheld": 420
+    }
+  },
+  "per_mic": {
+    "1": {
+      "previous_point_rule": {
+        "withheld": 70,
+        "accepted_within15": 51,
+        "accepted_over15": 19
+      },
+      "current_interval_guard": {
+        "withheld": 140
+      }
+    },
+    "2": {
+      "previous_point_rule": {
+        "withheld": 68,
+        "accepted_within15": 45,
+        "accepted_over15": 27
+      },
+      "current_interval_guard": {
+        "withheld": 140
+      }
+    },
+    "3": {
+      "previous_point_rule": {
+        "accepted_within15": 62,
+        "accepted_over15": 2,
+        "withheld": 76
+      },
+      "current_interval_guard": {
+        "withheld": 140
+      }
+    }
+  },
+  "current_statuses": {
+    "ambiguous": 328,
+    "unreliable": 92
+  },
+  "solver_sha256": "b2aacc21f763a3003e4d6139c608f29167c90afc40ae604b750ba75c8f8733e5"
+}

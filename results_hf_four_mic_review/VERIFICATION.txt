@@ -1,0 +1,83 @@
+Four-microphone review verification (2026-10-17)
+
+The reviewed system is four microphones tracking one dominant drone. The
+standalone sig_proc_tri.py solver returns a 3D unit direction, not distance or
+position in metres. The live pipeline retains its firmware-matched bearing.py.
+
+Review fixes
+1. Short-window pure tones could produce confidently reversed directions.
+   An additional spectral-support correlation check now rejects ambiguous
+   period aliases. Independently generated behind/overhead 2 kHz sources at
+   48 kHz with 1,024/2,048 samples now return no direction and zero confidence.
+2. Averaging pair coherence could hide one noisy microphone behind three clean
+   microphones. Confidence now uses the weakest usable pair, penalizes missing
+   pairs, and retains the existing fit-residual and magnitude penalties.
+
+Automated checks
+python3 -m pytest -q: 52 passed, 10 skipped, 14 warnings.
+The skipped classifier-assisted tests require TensorFlow or LiteRT, neither
+available in this test environment. All 23 triangulation regression tests pass.
+Coverage includes independently generated arrivals and sign checks, signed
+elevation and vertical directions, rotated/translated unequal microphone
+coordinates, consistent channel permutations, coplanar geometry rejection,
+silence/missing microphones, periodic ambiguity and multiharmonic signals.
+The full suite also checks the live pipeline and Python/C++ DSP agreement.
+
+A four-channel PCM16 save/decode smoke check preserved B/L/R/T order at 48 kHz,
+with at most one PCM16 quantization step and 0.014584-degree direction error.
+Legacy simulation smoke checks produced CSV/JSON, plots and GIFs and handled
+undefined directions without treating them as correct estimates.
+
+Post-fix benchmark
+All 100 original cached Hugging Face waveform hashes were verified. The main
+16 kHz sweep has 13,200 scenarios. Raw directions are within 15 degrees in
+12,744 scenarios; three are undefined. The confidence >= 0.2 demo gate accepts
+9,069 scenarios, all within 15 degrees (worst accepted error 5.916644 degrees).
+At 30/20 dB all 3,300 cases per SNR are accepted; at 10 dB 2,469 are accepted;
+at 0 dB none are accepted. Raw 0 dB accuracy is 2,844/3,300 (86.18%).
+An independent audit verified every trial's unit norm, 3D error, gate decision,
+coverage, source/code hashes and reported aggregate metrics. Raw outputs match
+the previous benchmark; the stricter gate withholds 148 additional 10 dB cases.
+
+The supplemental 48 kHz run has 2,000 scenarios using the same 100 source clips.
+Raw accuracy is 1,999/2,000 within 15 degrees; all 1,523 accepted cases are within
+15 degrees. See ../results_hf_four_mic_48k_review/INTERPRETATION.txt for the
+upsampling and differing white-noise bandwidth limitations.
+
+Known limitation: microphone health
+The confidence threshold is heuristic and uncalibrated. In a separate deliberate
+fault stress test replacing one channel with independent noise, 5/400 estimates
+clear 0.2 and two have errors above 15 degrees. Specifically, B/repeat97 gives
+71.440233 degrees at confidence 0.223117; L/repeat14 gives 45.738609 degrees at
+confidence 0.200161. The fixes reduce false confidence but do not guarantee
+rejection of faulty microphones.
+
+Exact fault-stress reproduction (repo cwd, NumPy installed):
+python3 - <<'PY'
+import numpy as np
+from sig_proc_tri import estimate_direction_details, simulate_array, unit_vector
+rng = np.random.default_rng(933)
+source = rng.normal(size=2048)
+frames = simulate_array(source, 35, np.inf, rng, fs=48000, elevation_deg=50)
+truth = unit_vector(35, 50)
+accepted = []
+for mic in range(4):
+    for repeat in range(100):
+        broken = frames.copy()
+        broken[mic] = rng.normal(size=2048)
+        result = estimate_direction_details(broken, fs=48000)
+        if result.vector is not None and result.confidence >= 0.2:
+            error = float(np.degrees(np.arccos(np.clip(truth @ result.vector, -1, 1))))
+            accepted.append((mic, repeat, result.confidence, error))
+print('Accepted:', len(accepted), '/ 400')
+print('Accepted with >15 deg error:', sum(row[3] > 15 for row in accepted))
+for row in accepted:
+    print('mic, repeat, confidence, error_deg:', row)
+PY
+
+These are simulation and software checks, not native four-channel hardware
+validation. Source recordings are mono with synchronized simulated delays and
+independent added white noise; recorded background noise is copied coherently
+with the source. Actual microphone coordinates remain placeholders and must be
+measured. Channel order, synchronization, echoes, wind and confidence calibration
+still need checking on recordings from the assembled hardware.

@@ -1,0 +1,30 @@
+ROBUST VS ORIGINAL: PAIRED 2048-SAMPLE FOUR-MIC COMPARISON
+
+Evaluated 100/100 hash-verified source clips; 18,000 trials.
+Development subset: False
+48 kHz, central 2048-sample source crop; no hemisphere prior.
+Fixed confidence gate: 0.2 (uncalibrated).
+
+Mode         Cases  Original accepted/bad>15  Robust accepted/bad>15  Robust status counts
+intact        2000     1461/0                1261/0      {'full_3d': 1852, 'unreliable': 131, 'ambiguous': 17}
+silent        8000        0/0                   0/0      {'ambiguous': 6891, 'unreliable': 1109}
+noise_only    8000       20/10                  0/0      {'ambiguous': 6891, 'unreliable': 1109}
+
+Interpretation:
+Candidate sets describe ambiguity. Their truth-nearness is diagnostic only and is
+never counted as a uniquely accepted direction. Withheld results are not successes.
+Three source-bearing microphones generally leave mirror ambiguity across their plane.
+Silent faults set one channel to exactly zero. Noise-only faults subtract its identical
+clean source from the noisy baseline, retaining the original independent added noise.
+Healthy channels, source crops, angles, noise seeds and the 0.2 gate match the saved
+original comparison; original numeric results are reused without rerunning or changing it.
+SNR labels describe the intact baseline; the failed noise-only channel has no drone.
+Real mono source recordings were upsampled from 16 to 48 kHz; no native source
+bandwidth is added. Whole-band white-noise SNR does not equal in-band SNR and
+must not be used to infer a sample-rate advantage over the 16 kHz sweep.
+These are simulated synchronized delays and independent white noise. Original
+recording noise propagates coherently and is removed with the failed-channel source.
+No helmet, hardware, diffuse-noise, reverberation or live/firmware validation is claimed.
+Repeated scenarios reuse source recordings. No benchmark parameter tuning occurred.
+
+Reproduce: python3 scripts/benchmark_robust_mics.py --out results_hf_robust_mics_2048

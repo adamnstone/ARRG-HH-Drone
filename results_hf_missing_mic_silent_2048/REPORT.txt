@@ -1,0 +1,30 @@
+100 HF CLIPS: ONE MICROPHONE WITHOUT THE DRONE
+
+Mode: silent; 48000 Hz; 2048 samples (0.0426667 seconds).
+Trials: 8,000; each of B/L/R/T absent in every paired source/direction/SNR condition.
+Defined: 0; undefined: 8000.
+Accepted at confidence >= 0.2: 0 (0.000%).
+Accepted with 3D error >15 degrees: 0.
+
+Missing    Trials  Undefined  Accepted  Accepted>15deg
+      B      2000       2000         0               0
+      L      2000       2000         0               0
+      R      2000       2000         0               0
+      T      2000       2000         0               0
+
+Interpretation:
+Three source-bearing microphones provide only two independent delay constraints.
+An unrestricted 3D direction is generally ambiguous across their microphone plane.
+Undefined is safe withholding, not successful localization. Even an accepted estimate
+within 15 degrees does not establish unique 3D observability from three microphones.
+The noise-only failed channel has no drone signal; reported SNR is the intact-array
+baseline SNR. Its independent added noise is retained, not replaced by a new draw.
+Recorded mono background noise is propagated with the source and removed from the
+failed channel with that source. This does not model partial acoustic attenuation,
+real head shadow, reverberation or diffuse noise. No hardware recordings are tested.
+The 48 kHz sources are upsampled from 16 kHz and add no native source information.
+Confidence 0.2 is an unchanged, uncalibrated demo threshold. No parameter tuning.
+These results concern sig_proc_tri.py, not the separate live/firmware bearing path.
+Trials reuse 100 source recordings; repeated conditions are not independent recordings.
+
+Reproduce: python3 scripts/benchmark_missing_mic.py --mode silent --samples 2048 --out results_hf_missing_mic_silent_2048

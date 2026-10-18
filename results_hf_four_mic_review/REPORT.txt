@@ -1,0 +1,30 @@
+100 HUGGING FACE CLIPS: FOUR-MIC DIRECTION BENCHMARK
+
+Source: geronimobasso/drone-audio-detection-samples; 100 distinct hash-verified original waveforms.
+Window: 0.5 s; analysis rate: 16000 Hz.
+Geometry: B/L/R/T [[0.0, -0.1, 0.0], [-0.09, 0.0, 0.0], [0.09, 0.0, 0.0], [0.0, 0.0, 0.09]] metres, x right / y forward / z up.
+Azimuths per clip per non-overhead elevation: 8.
+Elevations: 0, 30, 60, 80, 90 degrees; SNR: 30, 20, 10, 0 dB.
+Total estimator calls: 13,200; confidence threshold: 0.2 (uncalibrated).
+
+ALL ELEVATIONS COMBINED (3D angular error in degrees)
+SNR   Trials   Median     P90   Raw<=15%  Accepted%  Accepted<=15%  AcceptedBad>15
+ 30     3300    0.118   0.255     100.00     100.00         100.00              0
+ 20     3300    0.316   0.669     100.00     100.00         100.00              0
+ 10     3300    0.999   2.151     100.00      74.82         100.00              0
+  0     3300    5.719  18.808      86.18       0.00      undefined              0
+
+Scope and interpretation:
+Real MONO drone recordings, with simulated synchronized four-mic arrival delays
+and independent added white noise. Existing recording noise propagates coherently
+with the drone source. This is not hardware or diffuse-noise validation.
+All input clips are used; no historical-failure selection or parameter tuning.
+Raw<=15 uses ALL trials: an undefined vector is a failure. Median/P90 use defined vectors.
+Accepted means defined vector and confidence >= threshold; withheld results are not successes.
+Accepted<=15 uses accepted trials only; consult accepted% to see coverage.
+Azimuth is not scored at zenith; the 3D direction and elevation are scored there.
+Above60 counters are instantaneous elevation checks, not the live stateful overhead decision.
+Per-clip repetitions share source audio and are not independent recordings.
+
+Detailed results: trials.csv, by_condition.csv, by_snr.csv, by_clip.csv, summary.json, provenance.json.
+Reproduce: python3 scripts/benchmark_four_mic.py --out results_hf_four_mic_review

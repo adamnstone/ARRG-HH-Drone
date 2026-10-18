@@ -1,0 +1,88 @@
+{
+  "dataset": "geronimobasso/drone-audio-detection-samples",
+  "source_commit": "312bcbee5fc84ced6652aac4df36ec7ce2c6eb0d",
+  "verified_source_clips": 100,
+  "evaluated_source_clips": 100,
+  "development_subset": false,
+  "all_source_hashes_verified": true,
+  "source_fs": 16000,
+  "fs": 48000,
+  "samples": 2048,
+  "window_seconds": 0.042666666666666665,
+  "resampling": "scipy.signal.resample_poly, 3:1; central source crop before propagation",
+  "seed": 20261016,
+  "azimuths_per_clip": 1,
+  "elevations": [
+    0,
+    30,
+    60,
+    80,
+    90
+  ],
+  "nominal_baseline_snrs": [
+    30,
+    20,
+    10,
+    0
+  ],
+  "mics": [
+    [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    [
+      -0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.09
+    ]
+  ],
+  "mic_names": [
+    "B",
+    "L",
+    "R",
+    "T"
+  ],
+  "min_confidence": 0.2,
+  "confidence_threshold_calibrated": false,
+  "original_estimator_sha256": "0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac",
+  "robust_estimator_sha256": "7eb560f244eba68e1cb8e10f482598b9e111bd00b312c01daecfe0903cd0a6fe",
+  "script_sha256": "b2bbffb3bb283b741c5872ec80726486ed300d997aa11c825c2656e4c9fdab0c",
+  "reference_files": {
+    "silent": {
+      "directory": "/Users/rachelchen/Desktop/hackharvard/HH-SignalProcessing/results_hf_missing_mic_silent_2048",
+      "provenance_sha256": "0e91e3ee0c61ff7757f055dcd0966581651b50a27139b6319f52c4f72beb1db8",
+      "trials_sha256": "d3edcca59546b64c42e059945e11a468d6c18bf2e3c452f7bd971a4685817ebc",
+      "manifest_sha256": "2a8ae87855e91619aa1b9359b5399358d4b72676def089a48ce24607c04667f9"
+    },
+    "noise_only": {
+      "directory": "/Users/rachelchen/Desktop/hackharvard/HH-SignalProcessing/results_hf_missing_mic_noise_2048",
+      "provenance_sha256": "364b5d865cb495a8266e03195ac89ba22662bdb6606466585f03b859abd27202",
+      "trials_sha256": "16ce14b2a9fcbbd622e5803785a3fc8ca068c8100cdca5b14d4b776f517a4bba",
+      "manifest_sha256": "2a8ae87855e91619aa1b9359b5399358d4b72676def089a48ce24607c04667f9"
+    }
+  },
+  "original_results": "Saved matching original fault rows and their fresh 2048-sample intact baselines",
+  "original_estimator_unchanged": true,
+  "parameter_tuning": false,
+  "hemisphere_prior_applied": false,
+  "truth_used_for_estimation": false,
+  "candidate_error_role": "Diagnostic set coverage only; never credited as unique output accuracy",
+  "numpy_version": "2.0.2",
+  "started_utc": "2026-10-18T01:58:41.686903+00:00",
+  "command": "python3 scripts/benchmark_robust_mics.py --out results_hf_robust_mics_2048",
+  "finished_utc": "2026-10-18T01:59:42.521208+00:00",
+  "trials": 18000,
+  "intact_trials": 2000,
+  "fault_trials": 16000
+}

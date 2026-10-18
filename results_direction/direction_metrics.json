@@ -1,0 +1,55 @@
+{
+  "count_source_windows": 92,
+  "microphones_xyz_m": [
+    [
+      -0.1,
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -0.1,
+      0.0
+    ]
+  ],
+  "assumptions": [
+    "far_field_plane_wave",
+    "source_above_plane",
+    "synchronized_sample_clocks"
+  ],
+  "metrics_by_snr": {
+    "30.0": {
+      "n": 276,
+      "mean_error_deg": 1.48298078340416,
+      "median_error_deg": 1.1118505153764286,
+      "p90_error_deg": 2.7197130074364044,
+      "fraction_within_10_deg": 0.9927536231884058
+    },
+    "20.0": {
+      "n": 276,
+      "mean_error_deg": 1.3953398871746177,
+      "median_error_deg": 0.9468424886395379,
+      "p90_error_deg": 2.910665461276329,
+      "fraction_within_10_deg": 0.9963768115942029
+    },
+    "10.0": {
+      "n": 276,
+      "mean_error_deg": 3.115216075166784,
+      "median_error_deg": 1.724404170142625,
+      "p90_error_deg": 6.9171879316252545,
+      "fraction_within_10_deg": 0.9384057971014492
+    },
+    "0.0": {
+      "n": 276,
+      "mean_error_deg": 12.113165938083647,
+      "median_error_deg": 8.772905513796204,
+      "p90_error_deg": 23.21267524046568,
+      "fraction_within_10_deg": 0.5797101449275363
+    }
+  }
+}

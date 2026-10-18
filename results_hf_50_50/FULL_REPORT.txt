@@ -1,0 +1,399 @@
+
+Four-microphone direction estimation
+====================================
+Full comparison of the original and robust solvers: 50 intact + 50 degraded Hugging Face source recordings, with paired sensitivity checks.
+
+The primary comparison contains 100 inputs at a nominal intact-channel SNR of 20 dB. The complete sweep contains 1,200 paired scenarios and 2,400 estimator calls using 100 distinct cached recordings. The primary 100 are a subset of this sweep, not an additional 100 recordings.
+
+Across the primary 100 cases, Original accepts 52 and withholds 48; Robust accepts 50 and withholds 50. Accepted errors above 15°: Original 0, Robust 0. These are measured outcomes on this selected simulation protocol, not a calibrated failure probability.
+
+Both solvers have zero incorrectly accepted directions in the primary comparison. This primary sample therefore does not demonstrate a safety advantage for either solver. The robust version withholds more degraded inputs; the paired sensitivity section quantifies that coverage cost.
+
+
+What was tested and what the numbers mean
+-----------------------------------------
+The source groups are disjoint within this run: 50 recordings supply the intact group and 50 different recordings supply the degraded group. All 100 clips were already used in earlier algorithm development; this is stress validation on previously seen recordings, not a held-out evaluation.
+
+Real mono drone recordings were resampled from 16 kHz to 48 kHz using 3:1 polyphase resampling, then cropped to the central 2,048 samples (42.67 ms) before simulated propagation. This is not native 48 kHz multi-microphone audio. Four synchronized free-field plane-wave channels were synthesized for the B/L/R/T geometry, with independent added white noise.
+
+Each group has 10 recordings at each elevation 0°, 30°, 60°, 80°, 90°. Azimuths cover the full circle using the frozen seeded assignment; azimuth is undefined at exactly overhead, but full 3D angular error remains valid. Each degraded input affects one selected microphone: B 13 cases, L 13, R 12, T 12.
+
+Primary condition | Inputs | Selected channel                                       | Other 3 channels 
+------------------+--------+--------------------------------------------------------+------------------
+Intact            | 50     | Nominal 20 dB SNR                                      | Nominal 20 dB SNR
+Noise-only        | 25     | Source component removed; original noise retained      | Unchanged        
+Weak source       | 25     | Source gain −30 dB; noise retained; nominal SNR −10 dB | Unchanged        
+
+Realized selected-channel SNR in the 25 weak-source cases: median -10.00 dB, range -10.32 to -9.84 dB. Noise-only channels have zero source power (SNR −∞, represented as null in CSV), rather than a finite SNR.
+
+Term                       | Definition                                                                                          
+---------------------------+-----------------------------------------------------------------------------------------------------
+Raw defined                | Solver returned a finite unit vector; includes low-confidence output.                               
+Accepted                   | Vector defined and confidence ≥ 0.2; unchanged demo gate, not hardware-calibrated.                  
+Withheld                   | Vector undefined OR confidence below the gate.                                                      
+Accepted within 15°        | Accepted full 3D angular error ≤ 15°; denominator is all inputs when shown as acceptance coverage.  
+Bad>15° / bad>30°          | Accepted errors strictly above the threshold; >30° is a subset of >15°.                             
+Accepted precision         | Accepted outputs within 15° divided by accepted outputs only.                                       
+Raw error / accepted error | Statistics over defined vectors / accepted vectors, respectively; undefined vectors excluded.       
+Ambiguous                  | Mirror candidates were returned without a unique direction; never credited as accepted localization.
+
+Neither solver receives ground-truth direction, and no hemisphere assumption is supplied. A raw upward-pointing vector or a candidate set does not override the confidence gate. The vector describes direction [right, forward, up], not position or distance in meters.
+
+Both versions use the same numerical 0.2 gate for this comparison. Their confidence formulas differ, so that shared number does not establish equivalent calibrated confidence, coverage or error rates.
+
+
+Primary 100: side-by-side outcomes
+----------------------------------
+The two degradation rows partition the 50 degraded inputs; intact + degraded partition the 100 primary inputs.
+Selection          | Solver   | N   | Accepted /N    | Accepted≤15° /N | Accepted>15° | Accepted>30° | Withheld /N   
+-------------------+----------+-----+----------------+-----------------+--------------+--------------+---------------
+All primary inputs | Original | 100 | 52/100 (52.0%) | 52/100 (52.0%)  | 0            | 0            | 48/100 (48.0%)
+All primary inputs | Robust   | 100 | 50/100 (50.0%) | 50/100 (50.0%)  | 0            | 0            | 50/100 (50.0%)
+Intact group       | Original | 50  | 50/50 (100.0%) | 50/50 (100.0%)  | 0            | 0            | 0/50 (0.0%)   
+Intact group       | Robust   | 50  | 50/50 (100.0%) | 50/50 (100.0%)  | 0            | 0            | 0/50 (0.0%)   
+Degraded group     | Original | 50  | 2/50 (4.0%)    | 2/50 (4.0%)     | 0            | 0            | 48/50 (96.0%) 
+Degraded group     | Robust   | 50  | 0/50 (0.0%)    | 0/50 (0.0%)     | 0            | 0            | 50/50 (100.0%)
+Noise-only mic     | Original | 25  | 0/25 (0.0%)    | 0/25 (0.0%)     | 0            | 0            | 25/25 (100.0%)
+Noise-only mic     | Robust   | 25  | 0/25 (0.0%)    | 0/25 (0.0%)     | 0            | 0            | 25/25 (100.0%)
+−30 dB source gain | Original | 25  | 2/25 (8.0%)    | 2/25 (8.0%)     | 0            | 0            | 23/25 (92.0%) 
+−30 dB source gain | Robust   | 25  | 0/25 (0.0%)    | 0/25 (0.0%)     | 0            | 0            | 25/25 (100.0%)
+
+Figure: primary_outcomes.png
+Counts and percentages use all 50 inputs in each source group. Withheld combines undefined vectors and defined vectors below confidence 0.2.
+
+Undefined + defined-but-low-confidence equals withheld. Robust status counts describe raw output, independently of acceptance.
+Selection          | Solver   | Raw defined /N   | Undefined | Defined but low confidence | Ambiguous | Unreliable
+-------------------+----------+------------------+-----------+----------------------------+-----------+-----------
+All primary inputs | Original | 100/100 (100.0%) | 0         | 48                         | —         | —         
+All primary inputs | Robust   | 68/100 (68.0%)   | 32        | 18                         | 25        | 7         
+Intact group       | Original | 50/50 (100.0%)   | 0         | 0                          | —         | —         
+Intact group       | Robust   | 50/50 (100.0%)   | 0         | 0                          | —         | —         
+Degraded group     | Original | 50/50 (100.0%)   | 0         | 48                         | —         | —         
+Degraded group     | Robust   | 18/50 (36.0%)    | 32        | 18                         | 25        | 7         
+Noise-only mic     | Original | 25/25 (100.0%)   | 0         | 25                         | —         | —         
+Noise-only mic     | Robust   | 0/25 (0.0%)      | 25        | 0                          | 23        | 2         
+−30 dB source gain | Original | 25/25 (100.0%)   | 0         | 23                         | —         | —         
+−30 dB source gain | Robust   | 18/25 (72.0%)    | 7         | 18                         | 2         | 5         
+
+On the 50 primary degraded inputs, Robust still returns 18 raw vectors, all below the confidence gate. It returns no unique vector for the other 32 inputs: 25 ambiguous and 7 unreliable. Thus 'withheld 50' is a gate result, not a claim that the estimator function returned None in all 50 cases.
+
+Candidate-set coverage is diagnostic only. Ground truth is used for scoring, never for choosing a candidate.
+Selection          | N  | Ambiguous candidate sets | Set contains truth within15° | Credited unique acceptances
+-------------------+----+--------------------------+------------------------------+----------------------------
+Degraded group     | 50 | 25                       | 25/25 (100.0%)               | 0                          
+Noise-only mic     | 25 | 23                       | 23/23 (100.0%)               | 0                          
+−30 dB source gain | 25 | 2                        | 2/2 (100.0%)                 | 0                          
+
+
+Angular error: accepted outputs and raw vectors
+-----------------------------------------------
+Accepted precision uses accepted n as its denominator. An n of 0 produces n/a statistics.
+Selection          | Solver   | Accepted n | ≤15° /accepted | Median | P90    | Maximum
+-------------------+----------+------------+----------------+--------+--------+--------
+All primary inputs | Original | 52         | 52/52 (100.0%) | 0.52°  | 1.15°  | 10.67° 
+All primary inputs | Robust   | 50         | 50/50 (100.0%) | 0.52°  | 1.08°  | 1.70°  
+Intact group       | Original | 50         | 50/50 (100.0%) | 0.52°  | 1.08°  | 1.70°  
+Intact group       | Robust   | 50         | 50/50 (100.0%) | 0.52°  | 1.08°  | 1.70°  
+Degraded group     | Original | 2          | 2/2 (100.0%)   | 7.40°  | 10.01° | 10.67° 
+Degraded group     | Robust   | 0          | 0/0 (n/a)      | n/a    | n/a    | n/a    
+Noise-only mic     | Original | 0          | 0/0 (n/a)      | n/a    | n/a    | n/a    
+Noise-only mic     | Robust   | 0          | 0/0 (n/a)      | n/a    | n/a    | n/a    
+−30 dB source gain | Original | 2          | 2/2 (100.0%)   | 7.40°  | 10.01° | 10.67° 
+−30 dB source gain | Robust   | 0          | 0/0 (n/a)      | n/a    | n/a    | n/a    
+
+Raw errors include low-confidence estimates. Better rejection can improve accepted accuracy without improving these raw errors.
+Selection          | Solver   | Raw defined n | Raw>15° | Raw>30° | Median | P90     | Maximum
+-------------------+----------+---------------+---------+---------+--------+---------+--------
+All primary inputs | Original | 100           | 23      | 15      | 1.15°  | 47.70°  | 163.13°
+All primary inputs | Robust   | 68            | 2       | 1       | 0.59°  | 3.44°   | 54.82° 
+Intact group       | Original | 50            | 0       | 0       | 0.52°  | 1.08°   | 1.70°  
+Intact group       | Robust   | 50            | 0       | 0       | 0.52°  | 1.08°   | 1.70°  
+Degraded group     | Original | 50            | 23      | 15      | 12.65° | 66.38°  | 163.13°
+Degraded group     | Robust   | 18            | 2       | 1       | 2.37°  | 14.09°  | 54.82° 
+Noise-only mic     | Original | 25            | 16      | 10      | 24.06° | 112.05° | 163.13°
+Noise-only mic     | Robust   | 0             | 0       | 0       | n/a    | n/a     | n/a    
+−30 dB source gain | Original | 25            | 7       | 5       | 10.67° | 40.44°  | 64.18° 
+−30 dB source gain | Robust   | 18            | 2       | 1       | 2.37°  | 14.09°  | 54.82° 
+
+
+Primary degraded inputs: microphone and elevation breakdown
+-----------------------------------------------------------
+Selected degraded microphone | N  | Original accepted /N | Orig>15° | Orig>30° | Robust accepted /N | Robust>15° | Robust>30°
+-----------------------------+----+----------------------+----------+----------+--------------------+------------+-----------
+B                            | 13 | 1/13 (7.7%)          | 0        | 0        | 0/13 (0.0%)        | 0          | 0         
+L                            | 13 | 0/13 (0.0%)          | 0        | 0        | 0/13 (0.0%)        | 0          | 0         
+R                            | 12 | 1/12 (8.3%)          | 0        | 0        | 0/12 (0.0%)        | 0          | 0         
+T                            | 12 | 0/12 (0.0%)          | 0        | 0        | 0/12 (0.0%)        | 0          | 0         
+
+True elevation (degrees) | N  | Original accepted /N | Orig>15° | Orig>30° | Robust accepted /N | Robust>15° | Robust>30°
+-------------------------+----+----------------------+----------+----------+--------------------+------------+-----------
+0                        | 10 | 0/10 (0.0%)          | 0        | 0        | 0/10 (0.0%)        | 0          | 0         
+30                       | 10 | 0/10 (0.0%)          | 0        | 0        | 0/10 (0.0%)        | 0          | 0         
+60                       | 10 | 2/10 (20.0%)         | 0        | 0        | 0/10 (0.0%)        | 0          | 0         
+80                       | 10 | 0/10 (0.0%)          | 0        | 0        | 0/10 (0.0%)        | 0          | 0         
+90                       | 10 | 0/10 (0.0%)          | 0        | 0        | 0/10 (0.0%)        | 0          | 0         
+
+
+Paired intact controls for the same 50 degraded-group recordings
+----------------------------------------------------------------
+Comparing different 50-recording groups can mix hardware degradation with source difficulty. These controls use the exact same 50 degraded-group recordings, directions, and noise draws. Only the selected-channel source component changes; the other three channel arrays are bit-identical.
+
+Condition                    | Solver   | N  | Accepted /N    | Accepted≤15° /N | Accepted>15° | Accepted>30° | Withheld /N   
+-----------------------------+----------+----+----------------+-----------------+--------------+--------------+---------------
+Matched intact controls      | Original | 50 | 50/50 (100.0%) | 50/50 (100.0%)  | 0            | 0            | 0/50 (0.0%)   
+Matched intact controls      | Robust   | 50 | 50/50 (100.0%) | 50/50 (100.0%)  | 0            | 0            | 0/50 (0.0%)   
+Assigned primary degradation | Original | 50 | 2/50 (4.0%)    | 2/50 (4.0%)     | 0            | 0            | 48/50 (96.0%) 
+Assigned primary degradation | Robust   | 50 | 0/50 (0.0%)    | 0/50 (0.0%)     | 0            | 0            | 50/50 (100.0%)
+
+Transitions are conditioned on a correct accepted intact control; their row totals equal that control count.
+Solver   | Control accepted≤15° | Degraded remains accepted≤15° | Degraded accepted>15° | Degraded withheld
+---------+----------------------+-------------------------------+-----------------------+------------------
+Original | 50                   | 2                             | 0                     | 48               
+Robust   | 50                   | 0                             | 0                     | 50               
+
+
+Paired weak-channel sensitivity at baseline 20 dB
+-------------------------------------------------
+Each row below uses the same 50 degraded-group recordings, same selected microphones, directions and original noise. Source gain −10/−20/−30 dB leaves nominal selected-channel SNR 10/0/−10 dB. Noise-only removes the source entirely. These cases overlap the primary degraded examples and are not additional independent recordings.
+
+Channel condition                     | N  | Orig accepted /N | Orig>15° | Orig>30° | Robust accepted /N | Robust>15° | Robust>30° | Robust raw>15° /defined
+--------------------------------------+----+------------------+----------+----------+--------------------+------------+------------+------------------------
+Intact control                        | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0          | 0/50                   
+-10 dB source gain (mic SNR ≈ 10 dB)  | 50 | 50/50 (100.0%)   | 0        | 0        | 47/50 (94.0%)      | 0          | 0          | 0/50                   
+-20 dB source gain (mic SNR ≈ 0 dB)   | 50 | 46/50 (92.0%)    | 0        | 0        | 28/50 (56.0%)      | 0          | 0          | 0/49                   
+-30 dB source gain (mic SNR ≈ -10 dB) | 50 | 4/50 (8.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0          | 3/37                   
+Noise-only selected mic               | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0          | 0/0                    
+
+Figure: weak_mic_sensitivity.png
+Paired 50-clip sensitivity at baseline 20 dB. Left: acceptance coverage. Right: incorrect acceptance among all 50 inputs. The right-hand vertical scale is labeled separately.
+
+No hemisphere assumption is supplied, so constrained 3D should remain zero.
+Condition                             | N  | Full 3D | Constrained 3D | Ambiguous | Unreliable
+--------------------------------------+----+---------+----------------+-----------+-----------
+Intact control                        | 50 | 50      | 0              | 0         | 0         
+-10 dB source gain (mic SNR ≈ 10 dB)  | 50 | 50      | 0              | 0         | 0         
+-20 dB source gain (mic SNR ≈ 0 dB)   | 50 | 49      | 0              | 0         | 1         
+-30 dB source gain (mic SNR ≈ -10 dB) | 50 | 37      | 0              | 4         | 9         
+Noise-only selected mic               | 50 | 0       | 0              | 48        | 2         
+
+
+Selected worst primary cases
+----------------------------
+Selection rule: take each solver’s three largest defined raw errors and two largest accepted errors, then remove duplicate cases. Raw examples can be withheld; a large raw error is not automatically an incorrectly accepted result. All vectors use [right, forward, up].
+
+clip_074_snr_20_noise_only: original clip 74, dataset row 93325; group degraded, mode noise_only, selected mic B, elevation 0°. Known truth [+0.0866, +0.9962, +0.0000].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.2051, -0.9784, -0.0262] | 0.0232     | 163.13°  | WITHHELD    | defined   
+Robust   | undefined                   | 0.0000     | n/a      | WITHHELD    | ambiguous 
+
+Robust reason: Reliable geometry has a missing or poorly constrained third dimension. Input SHA256: 6114a33246fd8fc73c78821a9bb220fe35b6ec838e739d6f387241cd8cbb7d0b.
+
+clip_001_snr_20_noise_only: original clip 1, dataset row 153567; group degraded, mode noise_only, selected mic T, elevation 80°. Known truth [+0.0316, +0.1707, +0.9848].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.0270, +0.2612, -0.9649] | 0.0322     | 154.79°  | WITHHELD    | defined   
+Robust   | undefined                   | 0.0000     | n/a      | WITHHELD    | ambiguous 
+
+Robust reason: Reliable geometry has a missing or poorly constrained third dimension. Input SHA256: cb7a85ed049de8a9b47763a4583986015d8641b744dd623e020bb9ff47f8a882.
+
+clip_025_snr_20_noise_only: original clip 25, dataset row 165198; group degraded, mode noise_only, selected mic R, elevation 60°. Known truth [-0.4732, +0.1614, +0.8660].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.6257, +0.7375, -0.2540] | 0.0000     | 113.40°  | WITHHELD    | defined   
+Robust   | undefined                   | 0.0000     | n/a      | WITHHELD    | ambiguous 
+
+Robust reason: Reliable geometry has a missing or poorly constrained third dimension. Input SHA256: 1d59b379adf8e3135e9a6d5f20ad49ec16c3f499ec34206eee595ab3d49d2ef6.
+
+clip_038_snr_20_weak_-30: original clip 38, dataset row 149627; group degraded, mode weak_-30, selected mic B, elevation 60°. Known truth [+0.3342, +0.3719, +0.8660].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.3123, +0.5371, +0.7836] | 0.2032     | 10.67°   | ACCEPTED    | defined   
+Robust   | [+0.3081, +0.5334, +0.7877] | 0.0197     | 10.41°   | WITHHELD    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: 1ec6144bede8a2fcb53b052807596d32144e6cb1d4de073ab2ea28a0cde873b9.
+
+clip_030_snr_20_weak_-30: original clip 30, dataset row 100747; group degraded, mode weak_-30, selected mic R, elevation 60°. Known truth [-0.0722, +0.4948, +0.8660].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [-0.0244, +0.5419, +0.8401] | 0.2648     | 4.12°    | ACCEPTED    | defined   
+Robust   | [-0.0270, +0.5484, +0.8358] | 0.1586     | 4.38°    | WITHHELD    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: b2f0b7abd42b2e5fd7626ece30d91a1e74f0beff5de3991cfad5c9920de02394.
+
+clip_022_snr_20_weak_-30: original clip 22, dataset row 27412; group degraded, mode weak_-30, selected mic R, elevation 30°. Known truth [+0.3971, -0.7696, +0.5000].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [-0.0794, -0.9744, -0.2102] | 0.0000     | 52.17°   | WITHHELD    | defined   
+Robust   | [+0.9599, -0.2777, -0.0376] | 0.0217     | 54.82°   | WITHHELD    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: c3751b12206ab6ecbda9ac05d5ebb4bff8d1ae66a02bc95e1323c1471604771f.
+
+clip_058_snr_20_weak_-30: original clip 58, dataset row 26340; group degraded, mode weak_-30, selected mic R, elevation 30°. Known truth [+0.6568, -0.5644, +0.5000].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.8204, -0.4237, +0.3839] | 0.0709     | 14.08°   | WITHHELD    | defined   
+Robust   | [+0.8587, -0.4037, +0.3157] | 0.0871     | 18.25°   | WITHHELD    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: 174d2c79d9303343b79dca0bd57e7c0a8bd0b2541919ec26c42ffc6fde98930b.
+
+clip_029_snr_20_weak_-30: original clip 29, dataset row 88893; group degraded, mode weak_-30, selected mic B, elevation 80°. Known truth [-0.0932, +0.1465, +0.9848].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [-0.0951, -0.0634, +0.9935] | 0.1148     | 12.06°   | WITHHELD    | defined   
+Robust   | [-0.0880, -0.0676, +0.9938] | 0.0658     | 12.30°   | WITHHELD    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: e89c973739b5decf405ab02b50ad86a0f5c5b017af8ced54fe232971679e828f.
+
+clip_017_snr_20_intact: original clip 17, dataset row 91835; group intact, mode intact, selected mic none, elevation 80°. Known truth [+0.1132, -0.1316, +0.9848].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.1040, -0.1038, +0.9891] | 0.7993     | 1.70°    | ACCEPTED    | defined   
+Robust   | [+0.1040, -0.1038, +0.9891] | 0.6550     | 1.70°    | ACCEPTED    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: e6e580bf0aeb4afb78470c866a599ef5b4b582c70dcb5f497901750cbabeedf6.
+
+clip_069_snr_20_intact: original clip 69, dataset row 109657; group intact, mode intact, selected mic none, elevation 0°. Known truth [+0.5688, -0.8225, +0.0000].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result | Raw status
+---------+-----------------------------+------------+----------+-------------+-----------
+Original | [+0.5890, -0.8081, -0.0096] | 0.8064     | 1.52°    | ACCEPTED    | defined   
+Robust   | [+0.5890, -0.8081, -0.0096] | 0.6674     | 1.52°    | ACCEPTED    | full_3d   
+
+Robust reason: Reliable weighted geometry spans three dimensions. Input SHA256: e39d05434018b3f3377f077c6cb74f29d5ed3a7807a1214e50c0ec0260c4288f.
+
+
+SNR appendix: all 1,200 paired scenarios
+----------------------------------------
+The complete sweep is 50 intact-group sources × 4 baseline SNRs = 200 scenarios, plus 50 degraded-group sources × 5 channel conditions × 4 baseline SNRs = 1,000 scenarios. The primary 100 are marked is_primary in trial_level.csv. Across SNRs and failure models, repeated rows reuse recordings and are not statistically independent samples.
+
+Selection                  | Solver   | N    | Accepted /N      | Accepted≤15° /N  | Accepted>15° | Accepted>30° | Withheld /N     
+---------------------------+----------+------+------------------+------------------+--------------+--------------+-----------------
+Complete overlapping sweep | Original | 1200 | 567/1200 (47.2%) | 566/1200 (47.2%) | 1            | 0            | 633/1200 (52.8%)
+Complete overlapping sweep | Robust   | 1200 | 466/1200 (38.8%) | 466/1200 (38.8%) | 0            | 0            | 734/1200 (61.2%)
+
+Complete-sweep accepted error statistics use accepted n; undefined and low-confidence counts sum to withheld.
+Solver   | Raw defined n | Undefined | Defined low confidence | Accepted n | Accepted median | Accepted P90 | Accepted maximum
+---------+---------------+-----------+------------------------+------------+-----------------+--------------+-----------------
+Original | 1199          | 1         | 632                    | 567        | 0.66°           | 3.11°        | 16.07°          
+Robust   | 760           | 440       | 294                    | 466        | 0.56°           | 1.94°        | 9.61°           
+
+Every row compares both solvers on identical input. The Neither column counts cases where neither solver produced an accepted estimate within 15°; this includes withheld estimates and incorrectly accepted directions.
+Selection      | N    | Both accepted≤15° | Original only accepted≤15° | Robust only accepted≤15° | Neither accepted≤15°
+---------------+------+-------------------+----------------------------+--------------------------+---------------------
+Primary 100    | 100  | 50                | 2                          | 0                        | 48                  
+Complete sweep | 1200 | 466               | 100                        | 0                        | 634                 
+
+Across the full sweep, all 466 accurate Robust acceptances are also accurate Original acceptances. Original additionally accepts 100 accurate directions and 1 accepted estimate more than 15° wrong; Robust has 0 uniquely accurate acceptances and 0 incorrectly accepted directions. This is a conservative coverage/error tradeoff, not a uniform accuracy improvement.
+
+The following inputs have an accepted error above 15° somewhere in the full sweep. They are separate from the primary headline comparison and reuse its source pool.
+
+clip_084_snr_30_weak_-30: dataset row 144508; baseline SNR 30 dB; selected mic B; true elevation 80°; known truth [-0.1550, +0.0784, +0.9848].
+
+Solver   | Returned vector             | Confidence | 3D error | Gate result
+---------+-----------------------------+------------+----------+------------
+Original | [-0.1436, +0.3513, +0.9252] | 0.2638     | 16.07°   | ACCEPTED   
+Robust   | [-0.1446, +0.3513, +0.9250] | 0.0650     | 16.07°   | WITHHELD   
+
+Intact-group baseline SNR (dB) | N  | Orig accepted /N | Orig>15° | Orig>30° | Robust accepted /N | Robust>15° | Robust>30°
+-------------------------------+----+------------------+----------+----------+--------------------+------------+-----------
+30                             | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0         
+20                             | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0         
+10                             | 50 | 45/50 (90.0%)    | 0        | 0        | 28/50 (56.0%)      | 0          | 0         
+0                              | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+
+Baseline SNR (dB) | Degraded-group channel condition      | N  | Orig accepted /N | Orig>15° | Orig>30° | Robust accepted /N | Robust>15° | Robust>30°
+------------------+---------------------------------------+----+------------------+----------+----------+--------------------+------------+-----------
+30                | Intact control                        | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0         
+30                | -10 dB source gain (mic SNR ≈ 20 dB)  | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0         
+30                | -20 dB source gain (mic SNR ≈ 10 dB)  | 50 | 50/50 (100.0%)   | 0        | 0        | 49/50 (98.0%)      | 0          | 0         
+30                | -30 dB source gain (mic SNR ≈ 0 dB)   | 50 | 48/50 (96.0%)    | 1        | 0        | 30/50 (60.0%)      | 0          | 0         
+30                | Noise-only selected mic               | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+20                | Intact control                        | 50 | 50/50 (100.0%)   | 0        | 0        | 50/50 (100.0%)     | 0          | 0         
+20                | -10 dB source gain (mic SNR ≈ 10 dB)  | 50 | 50/50 (100.0%)   | 0        | 0        | 47/50 (94.0%)      | 0          | 0         
+20                | -20 dB source gain (mic SNR ≈ 0 dB)   | 50 | 46/50 (92.0%)    | 0        | 0        | 28/50 (56.0%)      | 0          | 0         
+20                | -30 dB source gain (mic SNR ≈ -10 dB) | 50 | 4/50 (8.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+20                | Noise-only selected mic               | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+10                | Intact control                        | 50 | 47/50 (94.0%)    | 0        | 0        | 27/50 (54.0%)      | 0          | 0         
+10                | -10 dB source gain (mic SNR ≈ 0 dB)   | 50 | 23/50 (46.0%)    | 0        | 0        | 7/50 (14.0%)       | 0          | 0         
+10                | -20 dB source gain (mic SNR ≈ -10 dB) | 50 | 4/50 (8.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+10                | -30 dB source gain (mic SNR ≈ -20 dB) | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+10                | Noise-only selected mic               | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+0                 | Intact control                        | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+0                 | -10 dB source gain (mic SNR ≈ -10 dB) | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+0                 | -20 dB source gain (mic SNR ≈ -20 dB) | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+0                 | -30 dB source gain (mic SNR ≈ -30 dB) | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+0                 | Noise-only selected mic               | 50 | 0/50 (0.0%)      | 0        | 0        | 0/50 (0.0%)        | 0          | 0         
+
+
+Limits and interpretation
+-------------------------
+The degraded models change only the source amplitude of one channel while keeping its original added noise. They do not model a helmet transfer function, head shadow with frequency-dependent phase, microphone timing offsets, wind, reflections, motion or clipping. No synchronized recording from the physical four-microphone headset is evaluated here.
+
+The 0.2 confidence gate is a demo setting and is not a calibrated probability. These selected counts do not establish a future failure rate. Conservative withholding trades coverage for fewer actionable errors; it does not by itself improve raw angular accuracy. A three-microphone mirror pair is ambiguity, not a measured unique 3D location.
+
+B/L/R/T geometry (meters; x right, y forward, z up): [[0.0, -0.1, 0.0], [-0.09, 0.0, 0.0], [0.09, 0.0, 0.0], [0.0, 0.0, 0.09]]. Measure the hardware positions and verify channel order before deployment.
+
+
+Reproduction and provenance
+---------------------------
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 MKL_NUM_THREADS=1 \
+  python3 scripts/benchmark_50_50.py --out results_hf_50_50
+python3 scripts/report_50_50.py --data-dir results_hf_50_50
+
+Dataset: geronimobasso/drone-audio-detection-samples. Pinned historical source-manifest commit: 312bcbee5fc84ced6652aac4df36ec7ce2c6eb0d. Assignment seed: 20261018. All 100 normalized source waveform hashes were verified. Exact source membership, crop hashes, noise streams, per-channel realized powers/SNRs and input hashes are recorded in the accompanying CSVs.
+
+Frozen artifact      | SHA256                                                          
+---------------------+-----------------------------------------------------------------
+original_estimator   | 0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac
+robust_estimator     | 7eb560f244eba68e1cb8e10f482598b9e111bd00b312c01daecfe0903cd0a6fe
+benchmark_script     | 4e261e4dd262ca2041d3e2089b20643273999e71a37595df8550326c5addc049
+benchmark_helper     | b2bbffb3bb283b741c5872ec80726486ed300d997aa11c825c2656e4c9fdab0c
+trial_level.csv      | a710503e5cfdb9a60c7d46b7e2b4bdb033bb62aa2de8795b8614031fc6f36cb5
+primary_100.csv      | eaa1128cb64baa2cbd9f6492de2940adeb72f14d04763f7652fbc7b3a556ab77
+clip_assignments.csv | 514d3c234698087862ba7651376e067fdec583d2fb9323c3f0f4ec1d434c4bbc
+report generator     | 717532e0e81fc5173f7249b9fdc3b07d66f56cb680abfd7001cfa823ff96ca38
+
+trial_level.csv contains all 1,200 paired scenarios; primary_100.csv is its 100-case primary subset; clip_assignments.csv records the disjoint source assignment; clip_manifest.json records source-row identities and normalized waveform hashes; provenance.json records the complete protocol. FULL_REPORT.html embeds both PNGs and needs no network access.
+
+The independent consistency audit passed. It reconstructed all 1,200 inputs, replayed 24 estimator cases, and checked 60 aggregate cells. The complete audit is in AUDIT.json; these numerical checks are not additional hardware validation.
+
+Audit check                                    | Verified result
+-----------------------------------------------+----------------
+Overall status                                 | passed         
+Source waveform hashes                         | 100            
+Disjoint source groups                         | True           
+Independently reconstructed input hashes       | 1200           
+Independently replayed cases / estimator calls | 24 / 48        
+Aggregate cells checked                        | 60             
+
+
+Recorded protocol details
+-------------------------
+Parameter                      | Recorded value                                                  
+-------------------------------+-----------------------------------------------------------------
+Sample rates / analysis window | 16000 Hz source → 48000 Hz; 2048 samples                        
+Baseline SNRs (dB)             | [30, 20, 10, 0]                                                 
+Weak-source gains (dB)         | [-10, -20, -30]                                                 
+Solver options                 | Defaults; only fs=48000 supplied to both fresh estimator calls  
+Source cache SHA256            | 2bd428694fd8ee5a96d317b4a188bb48c6b8d16edd0c69d430da16218c5660cd
+Benchmark started UTC          | 2026-10-18T02:07:02.476128+00:00                                
+Benchmark finished UTC         | 2026-10-18T02:07:11.833941+00:00                                
+Input immutability verified    | True                                                            
+
+RNG streams:
+{
+  "membership": "SeedSequence([seed,0]) permutation(100)",
+  "angles": "SeedSequence([seed,1]) uniform(-180,180,100), indexed by original clip_index",
+  "added_noise": "SeedSequence([seed,2,clip_index,nominal_snr_db])"
+}
+

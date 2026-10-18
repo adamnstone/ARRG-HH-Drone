@@ -1,0 +1,24 @@
+SUPPLEMENTAL PARTIAL-ATTENUATION CHECK: 100 HASH-VERIFIED HF CLIPS
+
+48 kHz, central2048 samples (42.67 ms), nominal intact20 dB SNR.
+One full-circle azimuth per clip, elevations cycling0/30/60/80/90 degrees.
+Attenuate source component of one channel; preserve its original noise and other3 channels.
+Both current frozen solvers use unchanged defaults and confidence gate0.2; no hemisphere prior.
+
+atten_dB cases original_accepted original_accepted_over15 robust_accepted robust_accepted_over15 statuses
+       0   100               100                        0             100                      0 {'full_3d': 100}
+      -6   400               400                        0             400                      0 {'full_3d': 400}
+     -12   400               400                        0             368                      0 {'full_3d': 400}
+     -20   400               325                        0             170                      0 {'full_3d': 399, 'unreliable': 1}
+     -30   400                72                        2               6                      0 {'ambiguous': 21, 'full_3d': 311, 'unreliable': 68}
+
+Weak-pair diagnostics (medians across cases; each case takes median of3 incident pairs):
+ -6 dB: coherence weak/healthy 0.9902/0.9947; weights 0.8245/0.9039; reliable weak/healthy 3/3
+-12 dB: coherence weak/healthy 0.9740/0.9947; weights 0.6547/0.9039; reliable weak/healthy 3/3
+-20 dB: coherence weak/healthy 0.9048/0.9947; weights 0.3537/0.9039; reliable weak/healthy 3/3
+-30 dB: coherence weak/healthy 0.6391/0.9947; weights 0.0787/0.9039; reliable weak/healthy 3/3
+
+LIMITS: Flat signal attenuation is not a measured helmet/head transfer function.
+This does not test real hardware, wind, synchronization error, reflections or phase distortion.
+Withheld mirror candidates are not credited as unique output accuracy.
+No thresholds or solver code changed. Detailed per-case results and hashes accompany this report.

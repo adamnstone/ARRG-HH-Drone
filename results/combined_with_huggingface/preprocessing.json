@@ -1,0 +1,16 @@
+{
+  "sample_rate": 16000,
+  "window_seconds": 1,
+  "fft_size": 512,
+  "hop_length": 256,
+  "mel_bins": 32,
+  "fmin": 50,
+  "fmax": 8000,
+  "stft_center": false,
+  "mel_htk": false,
+  "mel_norm": "slaney",
+  "feature": "10 * log10(max(mel_power, 1e-10))",
+  "amplitude_normalization": "global training mean and std",
+  "train_mean": -56.880855560302734,
+  "train_std": 15.227720260620117
+}

@@ -1,0 +1,22 @@
+DEFAULT-MODE ROBUST SOLVER REGRESSION COMPARISON
+
+Historical robust: 7eb560f244eba68e1cb8e10f482598b9e111bd00b312c01daecfe0903cd0a6fe
+Current robust: 94c0838ffdce1d96b109dde4e6a037998956d94bcaf438e25fd8f1ff22c9cc28
+Original unchanged: 0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac
+Both runs have identical source assignments, source manifest, input/noise hashes and original outputs.
+Historical artifacts were read only. No hemisphere prior was supplied.
+
+primary_100
+  original: defined 100, raw <=15 77, raw >15 23, accepted 52, accepted >15 0, withheld 48, statuses None
+  historical_robust: defined 68, raw <=15 66, raw >15 2, accepted 50, accepted >15 0, withheld 50, statuses {'full_3d': 68, 'ambiguous': 25, 'unreliable': 7}
+  current_robust: defined 68, raw <=15 66, raw >15 2, accepted 50, accepted >15 0, withheld 50, statuses {'full_3d': 68, 'ambiguous': 25, 'unreliable': 7}
+full_1200
+  original: defined 1199, raw <=15 820, raw >15 379, accepted 567, accepted >15 1, withheld 633, statuses None
+  historical_robust: defined 760, raw <=15 739, raw >15 21, accepted 466, accepted >15 0, withheld 734, statuses {'full_3d': 760, 'unreliable': 117, 'ambiguous': 323}
+  current_robust: defined 757, raw <=15 736, raw >15 21, accepted 466, accepted >15 0, withheld 734, statuses {'full_3d': 757, 'unreliable': 116, 'ambiguous': 327}
+
+Non-timing changed cases: 16; primary changed: 0
+Acceptance changes: 0
+See comparison_to_historical.json for individual cases and mode totals.
+
+Final duration-floor regression: all 1200 non-timing rows and all 100 primary rows are identical to the previous b2a reviewed replay. Original solver, benchmark and helper hashes are unchanged.

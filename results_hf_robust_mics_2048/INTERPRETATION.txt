@@ -1,0 +1,64 @@
+Paired robust-solver regression comparison
+
+This run evaluates all 100 distinct hash-verified mono waveforms cached for
+Rachel's historical Hugging Face benchmark. They are originally 0.5-second,
+16 kHz sources. scipy.signal.resample_poly upsamples each by 3 to 48 kHz;
+the central 2048 source samples are then selected before simulated propagation.
+Upsampling adds no native 48 kHz source bandwidth. These 42.67 ms synthetic
+windows match the hardware FFT length, not an actual hardware recording or
+a replay of a continuous streamed recording.
+
+Each source has one seeded full-circle azimuth at elevations 0, 30, 60 and
+80 degrees, plus the 90-degree zenith case, at nominal SNR 30, 20, 10 and
+0 dB. There are 2,000 intact comparisons and 16,000 damaged-array comparisons:
+each of B/L/R/T is separately silent and separately noise-only for every
+intact condition. The noise-only channel is its original baseline noisy signal
+minus the identical clean propagated source, retaining the exact added noise
+draw. The three healthy channels remain bit-for-bit unchanged. SNR labels
+describe the intact baseline; there is no drone signal in a failed channel.
+
+The same sources and fault cases were used during development. They exposed
+an absolute GCC-peak confidence omission: weighting a fit by uniformly weak
+peaks did not, by itself, reduce confidence. The final algorithm explicitly
+includes absolute peak support in its confidence. This complete final rerun is
+a regression comparison, not held-out performance validation. No numerical
+threshold tuning occurred, but algorithm fixes were informed by test findings.
+Confidence >= 0.2 remains an uncalibrated demo gate, and the robust confidence
+score has a different formula from the original score.
+
+The new variant withholds a unique direction in all 16,000 failed-microphone
+cases: 13,782 ambiguous results and 2,218 unreliable results. The original
+accepted 20 noise-only failures, including 10 with more than 15 degrees of
+3D error; it already withheld all silent failures. The robust result therefore
+improves noise-only rejection in this sweep. Withholding does not recover a
+unique drone direction from the remaining microphones. Each fault mode has
+6,891 candidate sets; 6,418 contain a candidate within 15 degrees of the known
+direction. This is diagnostic set coverage, not unique localization accuracy.
+No hemisphere assumption or known direction was supplied to the estimator.
+
+This behavior has an intact-array coverage cost. At the fixed gate, the
+original accepts 1,461/2,000 intact cases (73.05%); the robust variant accepts
+1,261/2,000 (63.05%). Neither has an accepted error over 15 degrees in the
+final comparison. By nominal SNR 30/20/10/0 dB, robust acceptance is
+100%/99.6%/52.6%/0%, versus 100%/100%/92.2%/0% originally. Counting all
+intact cases, including withheld cases as failures, raw vectors within
+15 degrees decrease from 1,890/2,000 to 1,805/2,000; defined output decreases
+from 1,999 to 1,852. Lower conditional error statistics must be read alongside
+this reduced coverage.
+
+The confidence correction leaves every raw vector, candidate, status, fit
+diagnostic and original comparison value identical to the initial complete
+development run; confidence and its gate decisions change. AUDIT.json records
+the independent per-row and aggregate comparison. Current solver and benchmark
+hashes match provenance, and all reused original result-file hashes match.
+The original sig_proc_tri.py was not modified.
+
+These are simulated synchronized plane-wave arrivals with independent added
+white noise. Existing source recording noise propagates coherently and is
+removed with the failed-channel source. Whole-waveform white-noise SNR has a
+different in-band noise level at 16 and 48 kHz; comparisons must not imply a
+causal sample-rate advantage. Repeated cases are not independent recordings.
+No helmet model, real microphone response, head shadow, diffuse noise,
+reverberation, wind, or native 48 kHz source recordings are validated. These
+results concern the separate standalone robust solver, not the live/firmware
+bearing path, and do not establish failure-free performance on new recordings.

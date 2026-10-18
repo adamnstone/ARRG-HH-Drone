@@ -1,0 +1,106 @@
+{
+  "prefinal_backup": "/private/tmp/robust_attenuation_prefinal_ojwc82us/results_hf_robust_attenuation_2048",
+  "prefinal_solver_sha256": "ed8927790158354f132375014edb941189e34f014759c3f5f85b5123ed6fea43",
+  "final_solver_sha256": "7eb560f244eba68e1cb8e10f482598b9e111bd00b312c01daecfe0903cd0a6fe",
+  "prefinal_trials_sha256": "b3df484afd5fd0227ba14e1ec1ee3c3f9db363beaf2bd2816c62c9a1abc8c2fe",
+  "final_trials_sha256": "bfbf96d386a3a52420b9b6b91ff29eaf8ce4093fe1f2b81c159d23dc1dc755c8",
+  "compared_rows": 1700,
+  "raw_field_changed_counts": {
+    "robust_vector_defined": 0,
+    "robust_error_deg": 0,
+    "robust_vector_json": 0,
+    "robust_status": 0,
+    "robust_geometry_rank": 0,
+    "robust_pair_weights_json": 0,
+    "robust_pair_coherence_json": 0
+  },
+  "original_estimator_changed_rows": 0,
+  "by_attenuation": [
+    {
+      "attenuation_db": 0,
+      "before": {
+        "cases": 100,
+        "accepted": 100,
+        "accepted_over15": 0,
+        "raw_defined": 100,
+        "raw_over15": 0
+      },
+      "after": {
+        "cases": 100,
+        "accepted": 100,
+        "accepted_over15": 0,
+        "raw_defined": 100,
+        "raw_over15": 0
+      }
+    },
+    {
+      "attenuation_db": -6,
+      "before": {
+        "cases": 400,
+        "accepted": 400,
+        "accepted_over15": 0,
+        "raw_defined": 400,
+        "raw_over15": 0
+      },
+      "after": {
+        "cases": 400,
+        "accepted": 400,
+        "accepted_over15": 0,
+        "raw_defined": 400,
+        "raw_over15": 0
+      }
+    },
+    {
+      "attenuation_db": -12,
+      "before": {
+        "cases": 400,
+        "accepted": 396,
+        "accepted_over15": 0,
+        "raw_defined": 400,
+        "raw_over15": 0
+      },
+      "after": {
+        "cases": 400,
+        "accepted": 368,
+        "accepted_over15": 0,
+        "raw_defined": 400,
+        "raw_over15": 0
+      }
+    },
+    {
+      "attenuation_db": -20,
+      "before": {
+        "cases": 400,
+        "accepted": 348,
+        "accepted_over15": 0,
+        "raw_defined": 399,
+        "raw_over15": 2
+      },
+      "after": {
+        "cases": 400,
+        "accepted": 170,
+        "accepted_over15": 0,
+        "raw_defined": 399,
+        "raw_over15": 2
+      }
+    },
+    {
+      "attenuation_db": -30,
+      "before": {
+        "cases": 400,
+        "accepted": 171,
+        "accepted_over15": 10,
+        "raw_defined": 311,
+        "raw_over15": 27
+      },
+      "after": {
+        "cases": 400,
+        "accepted": 6,
+        "accepted_over15": 0,
+        "raw_defined": 311,
+        "raw_over15": 27
+      }
+    }
+  ],
+  "interpretation": "Only absolute quality information in support/confidence changed; raw fits/status/weights identical. More uncertain accurate results are withheld together with inaccurate ones; this is not increased raw localization accuracy."
+}

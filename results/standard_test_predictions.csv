@@ -1,0 +1,65 @@
+file,start_sec,end_sec,actual,drone_probability,predicted
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,0.0,1.0,1,0.9870539307594299,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,1.0,2.0,1,0.9624407887458801,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,2.0,3.0,1,0.9303672313690186,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,3.0,4.0,1,0.9619706273078918,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,4.0,5.0,1,0.8166938424110413,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,5.0,6.0,1,0.9649859070777893,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,6.0,7.0,1,0.8345474600791931,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Hovering 5m ahead.m4a,7.0,8.0,1,0.8409545421600342,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,191.7352,192.7352,0,0.006021872162818909,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,192.7352,193.7352,0,0.005749864969402552,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,193.7352,194.7352,0,0.006783320568501949,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,194.7352,195.7352,0,0.0028690213803201914,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,195.7352,196.7352,0,0.011879024095833302,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,196.7352,197.7352,0,0.008065004833042622,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,197.7352,198.7352,0,0.017814381048083305,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,198.7352,199.7352,0,0.006292307749390602,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,199.7352,200.7352,0,0.0026348899118602276,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,200.7352,201.7352,0,0.005745497066527605,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,201.7352,202.7352,0,0.007098975125700235,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,202.7352,203.7352,0,0.022801270708441734,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,203.7352,204.7352,0,0.003237997181713581,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,204.7352,205.7352,0,0.015043930150568485,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,205.7352,206.7352,0,0.06536538898944855,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,206.7352,207.7352,0,0.006631543859839439,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,207.7352,208.7352,0,0.016225744038820267,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,208.7352,209.7352,0,0.018070021644234657,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,209.7352,210.7352,0,0.3360884487628937,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,210.7352,211.7352,0,0.07054028660058975,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,211.7352,212.7352,0,0.010462152771651745,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,212.7352,213.7352,0,0.019040079787373543,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,213.7352,214.7352,0,0.03674754127860069,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,214.7352,215.7352,0,0.002004557754844427,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,215.7352,216.7352,0,0.001081647234968841,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,216.7352,217.7352,0,0.011409413069486618,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,217.7352,218.7352,0,0.002275730948895216,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,218.7352,219.7352,0,0.0037054289132356644,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,219.7352,220.7352,0,0.005484036635607481,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,220.7352,221.7352,0,0.006841292139142752,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,221.7352,222.7352,0,0.004259792156517506,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,222.7352,223.7352,0,0.00481728371232748,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,223.7352,224.7352,0,0.012737042270600796,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,224.7352,225.7352,0,0.006890955846756697,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,225.7352,226.7352,0,0.009737676940858364,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,226.7352,227.7352,0,0.015575399622321129,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,227.7352,228.7352,0,0.02540583349764347,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,228.7352,229.7352,0,0.021345876157283783,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,229.7352,230.7352,0,0.0068780225701630116,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,230.7352,231.7352,0,0.004403036553412676,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,231.7352,232.7352,0,0.01741219125688076,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,232.7352,233.7352,0,0.009685165248811245,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,233.7352,234.7352,0,0.02036190964281559,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,234.7352,235.7352,0,0.015251013450324535,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\non_drone\ambient_adam.m4a,235.7352,236.7352,0,0.0011573507217690349,0
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,0.0,1.0,1,0.9523961544036865,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,1.0,2.0,1,0.9833210706710815,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,2.0,3.0,1,0.9821906089782715,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,3.0,4.0,1,0.9612419009208679,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,4.0,5.0,1,0.9381073117256165,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,5.0,6.0,1,0.8567484021186829,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,6.0,7.0,1,0.9587112069129944,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,7.0,8.0,1,0.9769285321235657,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,8.0,9.0,1,0.9051629900932312,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,9.0,10.0,1,0.9832941293716431,1
+C:\Users\adams\OneDrive\Documents\0HarvardClubs\Hackathon\HackHarvard\data\drone\Descending.m4a,10.0,11.0,1,0.9921093583106995,1

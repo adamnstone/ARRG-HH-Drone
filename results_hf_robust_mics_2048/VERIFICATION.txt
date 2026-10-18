@@ -1,0 +1,51 @@
+Separate robust solver verification
+
+Implementation: sig_proc_tri_robust.py, copied from the original sig_proc_tri.py.
+The original solver remains byte-for-byte unchanged. No live/firmware bearing
+implementation was replaced by this experiment.
+
+Changes: bias-corrected multi-segment spectral coherence; quality-weighted Huber
+delay fitting; effective weighted rank/conditioning checks; unit-direction
+consistency checks; explicit rank-2 mirror candidates; optional caller-supplied
+hemisphere assumption; status/reason and per-pair/microphone diagnostics.
+Absolute GCC peak quality caps confidence so weak peaks cannot be concealed by
+the scale invariance of weighted fitting.
+
+Final automated suite:
+python3 -m pytest -q
+74 passed, 10 skipped, 14 warnings in 14.46 seconds.
+The 10 skipped classifier-assisted tests require TensorFlow or LiteRT, neither
+installed in this test environment. Warnings are existing plotting-library
+deprecations. All 22 new robust-solver regression tests passed.
+
+New tests cover independent analytic arrival signals at 16/48 kHz, signed and
+vertical directions, arbitrary rotated/translated geometry and channel order,
+all four dead-mic mirror cases, zero-projection overhead/front cases, explicit
+hemisphere selection and contradictions, coplanar/near-coplanar arrays, silence,
+two surviving mics, independent noise, weak noisy channels, gain/DC invariance,
+periodic aliases, tuple wrappers, absolute-quality rescaling, and a natural
+low-SNR signal that previously produced false confidence.
+
+The full 100-clip comparison has 18,000 cases. All 16,000 missing-source faults
+withhold a unique direction; 13,782 return ambiguous candidates and 2,218 are
+unreliable. Intact-array confidence-gated coverage is 1,261/2,000 (63.05%) versus
+1,461/2,000 (73.05%) in the original; all accepted vectors are within 15 degrees.
+This is improved fault withholding with reduced coverage, not a claim of better
+raw accuracy. Coverage, original source hashes, both solver hashes, matching
+saved original results, vectors/candidates/errors/gates, and all 83 aggregate
+groups passed an independent audit (AUDIT.json).
+
+The partial-source-attenuation supplement has 1,700 paired cases at nominal
+20 dB intact-array SNR (see ../results_hf_robust_attenuation_2048). At -30 dB
+attenuation of one source-bearing channel the robust version accepts 6/400
+cases with no error above 15 degrees, versus original 72/400 including 2 such
+errors. Other attenuations and intact controls are reported separately.
+
+These are development-informed regression tests with mono sources and simulated
+synchronized microphone signals, not held-out or mounted-helmet validation.
+No unique direction is credited for merely having a candidate near the truth.
+Neither solver receives true directions or automatic hemisphere assumptions.
+The confidence threshold is heuristic; zero observed fault acceptances is not
+a microphone-health guarantee. Coherent reflections can still appear reliable.
+Actual coordinates, mounting, head orientation and helmet acoustic responses
+need real recordings; the current free-field model does not correct scattering.

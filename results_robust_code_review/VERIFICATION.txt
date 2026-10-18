@@ -1,0 +1,106 @@
+ROBUST FOUR-MIC SOLVER CODE REVIEW
+
+Reviewed implementation: sig_proc_tri_robust.py
+Reviewed scope: four synchronized microphones, one far-field source; a signed
+3D unit direction in helmet coordinates, not source distance or position.
+
+Findings fixed
+
+1. A noisy rank-2 fit could select the wrong mirror using an explicit hemisphere
+   assumption. Reproduction: 2048-sample default_rng(144) Gaussian source,
+   simulate_array(az=-70, SNR=10, rng=default_rng(1), elevation=1), silence L,
+   hemisphere_normal=[0,0,1]. The old rule selected a vector 96.48 degrees wrong
+   at confidence 0.451. The near-correct candidate was just below z=0 due to
+   delay noise. Branch selection now requires separation over a conservative
+   sensitivity interval using the existing three-tolerance retained-delay bound.
+   This example now returns ambiguous, vector=None, confidence=0.
+
+2. PHAT's promotion of short-window spectral leakage could conceal tonal period
+   aliases. Independent continuous-arrival regressions at 48 kHz:
+   - 512 samples, 1750 Hz, az=-120, elevation=0, phase=0: previously 111.04 degrees
+     wrong at confidence 0.357.
+   - 1024 samples, 1788.376989596092 Hz, az=-94.89043578987696,
+     elevation=-28.04894205123877, phase=1.9947965927886955: previously 107.68
+     degrees wrong at confidence 0.250.
+   A second ambiguity-only correlation curve preserves spectral energy, using
+   the existing 0.9 competing-peak ratio. Accepted fitted delays remain PHAT
+   estimates. Both cases now withhold a vector.
+
+3. Extremely short windows remained under-resolved even with that extra check.
+   A 48-sample, 1500 Hz, az=-120, elevation=0 capture at 48 kHz previously
+   returned a direction 116.81 degrees wrong at confidence 0.208. Otherwise
+   valid windows shorter than 10 ms now return unreliable with confidence zero.
+   This is an explicit engineering support boundary, not a general guarantee
+   of alias rejection above 10 ms. The normal 2048-sample/48 kHz capture is
+   42.67 ms, and the 512/1024-sample regressions remain separately tested.
+
+4. Finite but very large hemisphere normals overflowed the ordinary norm and
+   silently became zero, disabling a supplied hemisphere. Very small normals
+   underflowed or lost precision. Stable scaling now preserves priors and angle
+   helper results at scales including 1e-200, 1e-160 and 1e200.
+
+5. NaN turn-confidence thresholds bypassed the gate and could issue a turn on
+   a low-confidence input. Invalid thresholds/deadbands now raise ValueError;
+   invalid measured confidence withholds an instruction. Unusable derived
+   delay-tolerance scales are also rejected.
+
+Validation
+
+Full suite: python3 -m pytest -q -rs
+80 passed, 10 skipped, 14 existing plotting-library deprecation warnings,
+14.74 seconds. All 28 robust-solver tests passed. The 10 classifier-dependent
+tests skipped because TensorFlow was unavailable. The C++ parity check passed;
+its incidental generated-header changes were restored to the pre-test bytes.
+git diff --check passed.
+
+Environment used the existing temporary test dependencies via
+PYTHONPATH=/private/tmp/hh-four-mic-review-deps, temporary ffmpeg tools in
+/private/tmp/hh-four-mic-review-bin, and single-threaded BLAS. No project
+dependency files were changed for this review.
+
+Paired audio regression: 100 cached Hugging Face source clips, 1200 paired
+scenarios, 2400 fresh calls; same sources, propagation/noise seeds and original
+solver as results_hf_50_50. No hemisphere prior or true direction supplied.
+See benchmark_50_50/provenance.json, trial_level.csv and comparison.json.
+
+At the existing, uncalibrated confidence >=0.2 gate, all 466 accepted robust
+vectors and confidences are unchanged; none exceeds 15 degrees error. The
+primary 100 cases are unchanged: all 50 intact cases accepted, all 50 severely
+degraded cases withheld. Across all 1200 cases, the extra alias check changes
+16 already-withheld cases: raw vectors 760 -> 757, raw vectors within 15 degrees
+739 -> 736, raw errors above 15 degrees 21 -> 21. These low-confidence raw
+vectors must not be treated as accepted localizations. The changes do not
+uniformly improve raw accuracy; one withheld estimate worsens past 15 degrees
+while another improves into that range. Acceptance coverage stays unchanged.
+
+A separate exploratory 420-case near-boundary hemisphere probe with one dead
+mic withholds all cases under the new guard. The previous point-candidate rule,
+reconstructed on the same unconstrained fits, accepted 158 correct and 48
+incorrect estimates (>15 degrees). The guard therefore sacrifices correct
+coverage as well as removing those wrong acceptances. It is not a raw accuracy
+gain or a calibrated probability statement.
+The preserved probe output predates only the 10 ms duration floor; its exact
+source hash, protocol, reconstruction limits and rerun script are recorded in
+boundary_probe/README.txt. It is not relabeled as a final-source execution.
+
+Source identity
+
+Final robust SHA256:
+94c0838ffdce1d96b109dde4e6a037998956d94bcaf438e25fd8f1ff22c9cc28
+Original sig_proc_tri.py remains byte-for-byte unchanged, SHA256:
+0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac
+Robust regression tests SHA256:
+6d0b1d2413499c773149f980ab0f8d51a3ddd672147fc79ebe52254cefe77b32
+Historical benchmark reports retain their original source hashes/results.
+
+Limits
+
+These cached mono recordings were already used in development and have
+simulated free-field propagation/noise; this is a regression check, not held-out
+performance or mounted-helmet validation. A coherent reflection may still look
+reliable. Actual microphone coordinates, channel synchronization, helmet
+scattering, head tilt, wind, distant sources and confidence calibration require
+real mounted recordings. The sensitivity bound assumes bounded retained-delay
+error; it does not establish that real errors meet that assumption. Default
+three-mic rank-2 evidence remains ambiguous unless a valid explicit prior
+separates the branches. No existing live/firmware bearing path was replaced.

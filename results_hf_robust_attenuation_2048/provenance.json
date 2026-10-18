@@ -1,0 +1,92 @@
+{
+  "dataset": "geronimobasso/drone-audio-detection-samples",
+  "source_commit": "312bcbee5fc84ced6652aac4df36ec7ce2c6eb0d",
+  "source_clips": 100,
+  "all_source_hashes_verified": true,
+  "clip_manifest_sha256": "2a8ae87855e91619aa1b9359b5399358d4b72676def089a48ce24607c04667f9",
+  "source_cache_sha256": "2bd428694fd8ee5a96d317b4a188bb48c6b8d16edd0c69d430da16218c5660cd",
+  "reference_provenance_sha256": "4f7c75d8edf817688e77db26152a36446c20ead81c4eb909208a213873da7071",
+  "estimator_sha256": {
+    "sig_proc_tri.py": "0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac",
+    "sig_proc_tri_robust.py": "7eb560f244eba68e1cb8e10f482598b9e111bd00b312c01daecfe0903cd0a6fe"
+  },
+  "script_sha256": "e6766e540f0ba5245deb0bdb4745e60631a03cfe33eb82ab73aa462eb61ad6ba",
+  "fs": 48000,
+  "samples": 2048,
+  "window_seconds": 0.042666666666666665,
+  "source_fs": 16000,
+  "source_samples": 8000,
+  "resampling": "scipy.signal.resample_poly 3:1; then central2048 crop before propagation",
+  "crop_start_resampled_samples": 10976,
+  "seed": 20261016,
+  "azimuth_protocol": "wrap_deg(-180+default_rng(SeedSequence([seed,0])).uniform(0,360,(100,1)))[:,0]",
+  "elevation_protocol": "[0,30,60,80,90][clip_index % 5]",
+  "baseline_snr_db": 20,
+  "baseline_noise_seed_protocol": "SeedSequence([seed,1,clip_index,0,elevation,20])",
+  "attenuation_signal_gains_db": [
+    -6,
+    -12,
+    -20,
+    -30
+  ],
+  "damaged_channel": "gain*clean[mic]+(baseline[mic]-clean[mic]); other3 unchanged",
+  "damaged_nominal_snr_db": [
+    14,
+    8,
+    0,
+    -10
+  ],
+  "microphone_positions": [
+    [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    [
+      -0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.09
+    ]
+  ],
+  "microphone_names": [
+    "B",
+    "L",
+    "R",
+    "T"
+  ],
+  "acceptance": "defined unit vector and unchanged confidence >=0.2",
+  "hemisphere_prior": false,
+  "parameter_tuning": false,
+  "limitations": [
+    "Uniform source-only amplitude attenuation; not a helmet/head acoustic model",
+    "Real mono clips with simulated free-field far-field propagation and independent white noise",
+    "Baseline SNR is relative to whole recording, including existing background",
+    "Small selected supplement: one direction/elevation/noise draw per clip"
+  ],
+  "numpy_version": "2.0.2",
+  "started_utc": "2026-10-18T01:59:06.721741+00:00",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 MKL_NUM_THREADS=1 /private/tmp/doa-benchmark-venv/bin/python results_hf_robust_attenuation_2048/benchmark.py",
+  "finished_utc": "2026-10-18T01:59:20.545046+00:00",
+  "paired_cases": 1700,
+  "intact_controls": 100,
+  "attenuated_cases": 1600,
+  "estimates_per_solver": 1700,
+  "unchanged_solver_hashes": true,
+  "elapsed_seconds": 13.858224084
+}

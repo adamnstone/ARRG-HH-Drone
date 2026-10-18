@@ -1,0 +1,51 @@
+RACHEL THREE-MIC FAILURES: CURRENT FOUR-MIC REPLAY
+
+Exact old results reproduced using all 100 hash-verified cached mono waveforms.
+Selection: old GCC non-overhead azimuth error >15 degrees or undefined.
+Evaluation: same clips, directions, 16 kHz rate, SNR and noise seed recipe;
+new B/L/R/T geometry and channel count require newly simulated arrays.
+
+SIX SAVED EXAMPLES (all 0 dB added noise)
+Case    Old az error    New az error    New 3D error    Confidence    Decision
+   1          179.15            3.18            2.82      0.016796    low_confidence
+   2          174.31            8.51            4.98      0.002152    low_confidence
+   3          169.49           87.03           10.95      0.001265    low_confidence
+   4          150.75          112.58           38.58      0.000290    low_confidence
+   5          152.99            9.28           37.77      0.000188    low_confidence
+   6          145.57       undefined           30.20      0.000004    low_confidence
+
+Saved cases withheld at demo threshold 0.2: 6/6.
+Saved raw 3D estimates within 15 degrees: 3/6.
+The clean-control maximum 3D error is 0.00005202 degrees.
+
+ALL 1,016 PREVIOUSLY FAILED TRIALS
+Raw azimuth within 15 degrees: 539/1016
+Raw 3D direction within 15 degrees: 789/1016
+Accepted at demo threshold: 15/1016
+Accepted with 3D error >15 degrees: 0
+Low confidence: 998; undefined 3D: 3
+Raw 3D error median: 7.167 degrees; p90: 26.029 degrees (defined vectors only)
+
+INTERPRETATION
+This is conditional replay of earlier failures, not overall accuracy.
+The old estimator would withhold 1016/1016 at confidence 0.2.
+Withholding a result is not a correct direction; the demo threshold is uncalibrated.
+Historical azimuth error and new 3D error measure different things; both new
+azimuth and 3D errors are included. Near-overhead azimuth is ill-conditioned.
+The arrays have different geometry, channel order/noise assignment and a slight
+common-delay alignment change; this does not isolate the effect of mic count.
+These are real mono recordings with simulated propagation, not hardware array recordings.
+
+Reproduce: python3 scripts/replay_rachel_failures.py
+Requires branch rachel and benchmark_results/clips.npz; core execution needs only NumPy.
+See provenance.json, saved_failure_comparison.csv, all_failed_trials.csv and summary.json.
+
+HISTORICAL PERIODIC STRESS CHARACTERIZATION
+2200/4400/6600 Hz source, N=4096, fs=16000, seed=20261016;
+12 azimuths x 2 elevations (0/60) x 2 SNRs (30/0).
+Old sequential noise stream preserved; each state copied for new four-channel audio.
+SNR 30: raw 3D within 15 degrees 0/24; accepted 0; median 3D error 106.46 degrees.
+SNR 0: raw 3D within 15 degrees 0/24; accepted 0; median 3D error 73.89 degrees.
+This historical section had no accuracy assertion; it characterizes a known limitation.
+Four mics still do not resolve this strongly periodic source; apply confidence gating.
+See periodic_stress.csv for all raw results.

@@ -1,0 +1,5 @@
+missing_mic,trials,clips,defined_count,undefined_count,median_3d_error_deg,p90_3d_error_deg,max_3d_error_deg,raw_within15_count,raw_within15_all_pct,raw_over30_count,raw_over90_count,median_azimuth_error_deg,median_elevation_error_deg,accepted_count,accepted_pct,accepted_within15_count,accepted_within15_pct,accepted_within15_all_pct,accepted_over15_count,accepted_over30_count,accepted_max_3d_error_deg,high_elevation_trials,high_elevation_pointed_above60_count,high_elevation_accepted_above60_count,low_elevation_trials,low_elevation_pointed_above60_count,low_elevation_accepted_above60_count,mean_estimator_ms
+B,2000,100,0,2000,,,,0,0.0,0,0,,,0,0.0,0,,0.0,0,0,,800,0,0,800,0,0,2.605624618
+L,2000,100,0,2000,,,,0,0.0,0,0,,,0,0.0,0,,0.0,0,0,,800,0,0,800,0,0,2.6031357515
+R,2000,100,0,2000,,,,0,0.0,0,0,,,0,0.0,0,,0.0,0,0,,800,0,0,800,0,0,2.5903231190000002
+T,2000,100,0,2000,,,,0,0.0,0,0,,,0,0.0,0,,0.0,0,0,,800,0,0,800,0,0,2.600367798

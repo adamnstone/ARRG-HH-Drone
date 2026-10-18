@@ -1,0 +1,1 @@
+TEMPORAL-SPLIT DATA USED. Some validation/test blocks come from recordings also used for training. Test scores are preliminary and may overestimate generalization. Collect independent recordings and rerun.

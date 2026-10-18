@@ -1,0 +1,1007 @@
+{
+  "clips": [
+    {
+      "clip_index": 0,
+      "dataset_row": 121042,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "04743d4d246649dbaac6fa3086f57d9f559ce1ef7121be00afd1278a6ac2ecf4"
+    },
+    {
+      "clip_index": 1,
+      "dataset_row": 153567,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2a0c1ac2557fc74ec1a03ac4c8b1682232b490753e3d69996f582c688edd0a69"
+    },
+    {
+      "clip_index": 2,
+      "dataset_row": 87842,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ba935c9d01873113bab6dbaa11866ce6f58331dd250cb5b5156f50d98600d96d"
+    },
+    {
+      "clip_index": 3,
+      "dataset_row": 115310,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "1ac8848b3dacd8af047b93f70fb000fccf88361a154caf29bc87bc80179977f7"
+    },
+    {
+      "clip_index": 4,
+      "dataset_row": 152865,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "5563db8318f2e1070b7bf697ca8ad411afd02a6461010d3e1ab15d8e07b18859"
+    },
+    {
+      "clip_index": 5,
+      "dataset_row": 61134,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "9b02db9d59cecd4ad4a9b6f8d40549d6d8b33727a9c674d343e0c43b6759727b"
+    },
+    {
+      "clip_index": 6,
+      "dataset_row": 139332,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "30a697d14d828f3ebcad3d360b89ab450067cdc063d2dd6cd517679134160483"
+    },
+    {
+      "clip_index": 7,
+      "dataset_row": 27806,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "e20d04fb08cb8ef287ed223f987b1b7a25bfb7e3dd8d01ac365f6786f3722472"
+    },
+    {
+      "clip_index": 8,
+      "dataset_row": 112490,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "857c81103afdf322f7a2113df8aa800dfe676c0908c340004591f32cf8e0ada8"
+    },
+    {
+      "clip_index": 9,
+      "dataset_row": 52151,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2676665a469fb928157e425c0fb10da8bf5475f6374f9700e03a666688f9d79f"
+    },
+    {
+      "clip_index": 10,
+      "dataset_row": 22430,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "e02fc7ee41136637bc65871ce88858e822fc18ea926fd8cd41c7a2beac190f5d"
+    },
+    {
+      "clip_index": 11,
+      "dataset_row": 103662,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "3897fc675b1b4506a561d9337f386540b414d1308cadfc4dd9dfd52a9a3566fc"
+    },
+    {
+      "clip_index": 12,
+      "dataset_row": 54325,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "f32ffc7d810428a12db0563c303243631ca2d73d50765fb431bf04ca3f89bc0d"
+    },
+    {
+      "clip_index": 13,
+      "dataset_row": 171467,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "947020b588f8b3c4d19b588303ad694b6810d3a9de83adcaf8c6fde19b7a4a7e"
+    },
+    {
+      "clip_index": 14,
+      "dataset_row": 71996,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "45d1abed7ae353e5cd9e2a72ad9fdd2ce7bb41ee61d7b76a1595e57d96142c42"
+    },
+    {
+      "clip_index": 15,
+      "dataset_row": 139698,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "1499242092e7d6edda68a9d02ea37ce02d3164947f9e4a44211460bcf90393ab"
+    },
+    {
+      "clip_index": 16,
+      "dataset_row": 175648,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "a7db2624b82ec12c0a92f744b975ed5e938e2dd23bb1fccf1e11870713e13fcb"
+    },
+    {
+      "clip_index": 17,
+      "dataset_row": 91835,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "c29f02eb4b41c851f7f371d62cba3c2fc233d3d0cb05c3b1a7ff3c60f3fa418c"
+    },
+    {
+      "clip_index": 18,
+      "dataset_row": 55814,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "d011fde80b02b5bc8b22b13454d90ea6eca8b98ff3eaf1925ab47d66ac6a3275"
+    },
+    {
+      "clip_index": 19,
+      "dataset_row": 167497,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "110da3615a446dedd1d7ae5caa6762834b3485d55d1d4454dd33547a09b3650e"
+    },
+    {
+      "clip_index": 20,
+      "dataset_row": 35225,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ed0eb0a6f3bf6fdcd3da6c432d60d25a72475eefa0144190072e57ea10ff3e87"
+    },
+    {
+      "clip_index": 21,
+      "dataset_row": 156357,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "746591a2bec9a4c4773939d04e06376e1d22f55705d8a990069a76ce1932bda3"
+    },
+    {
+      "clip_index": 22,
+      "dataset_row": 27412,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "12b4f6401f39024b2375761b97d405aa36561a8e6cabb5f08d295c9222accb06"
+    },
+    {
+      "clip_index": 23,
+      "dataset_row": 56784,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "697cf1b8d9e330f5819df7b251beee2c0fda6b0489a74ad3a8abdc8c4b25af66"
+    },
+    {
+      "clip_index": 24,
+      "dataset_row": 158894,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ed29e664e9c968d86c28174c8b4b7e47a89f5563dd64220dc7a9811276dd60d9"
+    },
+    {
+      "clip_index": 25,
+      "dataset_row": 165198,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b279d88d41730a572d06813822d16991935229c634b46675316af007fb673aca"
+    },
+    {
+      "clip_index": 26,
+      "dataset_row": 19418,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "c5c2241d677c61355b3b256093c1dfa8ab803dc1903cbf30f3d4fb7b800a88b6"
+    },
+    {
+      "clip_index": 27,
+      "dataset_row": 143332,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "746b9aafac03a358f842d0af0c5900177ec6d9ea51264e932d851038227b7e74"
+    },
+    {
+      "clip_index": 28,
+      "dataset_row": 167635,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "8d85819ed888082b1110dee6be842db658337280c1cd87118d0c4c27dd7fdb1f"
+    },
+    {
+      "clip_index": 29,
+      "dataset_row": 88893,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "6fc4b92afa65065be57e41a7faabd4e67d42099c1c426c19cdab4b24f6eefe3e"
+    },
+    {
+      "clip_index": 30,
+      "dataset_row": 100747,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ed2c2acd8febd533e7e3b11e3beccbf918e7c5b7f8e98a8df614d7046c0f3438"
+    },
+    {
+      "clip_index": 31,
+      "dataset_row": 151695,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "4cd0e4126e52186b010cd333e7b7ea0ea2d44d0f9cf843e34ed505299ac1bcdf"
+    },
+    {
+      "clip_index": 32,
+      "dataset_row": 86540,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "9cc0af6ca0eb52a9a7f6b8855d41a6b49cc63e8f301595c1f162e431dcb55057"
+    },
+    {
+      "clip_index": 33,
+      "dataset_row": 176657,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "26190514219b27526bc4a4f2a852ea12cf09fc263b792b931f27229608ab8d1e"
+    },
+    {
+      "clip_index": 34,
+      "dataset_row": 60786,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "be00b8260fda73ec39c435c1593040a92e30b0051a5654e67e2c4e2b611588a6"
+    },
+    {
+      "clip_index": 35,
+      "dataset_row": 34714,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "541b62ffcf8301d4765cc2066bae042f03e33e3fa56ffbb3628e39a45d441970"
+    },
+    {
+      "clip_index": 36,
+      "dataset_row": 176803,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "21421eb9eb16c961ffdfaa4d7b911e9ab358998b44fca4430fff18f74638b3ed"
+    },
+    {
+      "clip_index": 37,
+      "dataset_row": 25859,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b69dd9bea23ba510a1e0a098f2b421497fd78f58a6810704dd693f92d4211934"
+    },
+    {
+      "clip_index": 38,
+      "dataset_row": 149627,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b4ac74bd2f0e4152382606bb75c33a946d34e189cbea767879f31d9b748ed910"
+    },
+    {
+      "clip_index": 39,
+      "dataset_row": 90511,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "e2aa1f6898d91a7e4cce9da35edcd11dc188e35b5b5cfe99b36d16eb5157ba41"
+    },
+    {
+      "clip_index": 40,
+      "dataset_row": 145180,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "a8ba7d0726ce5623eee17f8543496974aecc04b4eafa8c9e0b9f4bf4340cc82f"
+    },
+    {
+      "clip_index": 41,
+      "dataset_row": 165227,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "aa835bb1188c172e405a05a91cabf850165f636fac4b01748afcd4ddae21fac5"
+    },
+    {
+      "clip_index": 42,
+      "dataset_row": 112313,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "268e9d74a5ed24ca4fbdf2cd041a79921c8a7d112bc9c10ff0350838d873d6f8"
+    },
+    {
+      "clip_index": 43,
+      "dataset_row": 47368,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b4f04dd5a0ab4db571e44493f07b1e1fb66851375fb6b054cf6663a3ad2a973b"
+    },
+    {
+      "clip_index": 44,
+      "dataset_row": 25534,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "d87793a7bd8859ed5232dd7cc70d6724de703829627f881d832514ff03765b53"
+    },
+    {
+      "clip_index": 45,
+      "dataset_row": 90509,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "a63323fe747fc60f4e089d22a59e295919adc6068b03782b5cbf5aba85ce3931"
+    },
+    {
+      "clip_index": 46,
+      "dataset_row": 116513,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "37034811c472a8423a5eee99d1486dd5f3dc53420c41f51f781b506a8596de2f"
+    },
+    {
+      "clip_index": 47,
+      "dataset_row": 77348,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "8b1ae3604592b214485e10c46e4e0fe775b491be50b793bc5db2276c75b1823a"
+    },
+    {
+      "clip_index": 48,
+      "dataset_row": 67595,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "173d04e9a6032e710f87a3c3c7581850920456bc7e1e70b9c08824810f9b0d7c"
+    },
+    {
+      "clip_index": 49,
+      "dataset_row": 160670,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b064f63b6a46fd0df0cf52c3f347651b339bdb5345f5a56c635cb0a2560d0ef5"
+    },
+    {
+      "clip_index": 50,
+      "dataset_row": 144596,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2eef6722cbb967a00a961685739f69a98855687ae543a11b38a740b7b88c2671"
+    },
+    {
+      "clip_index": 51,
+      "dataset_row": 93720,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "4af080bcdf382fdb0ed024b1489c83133743128c0e10b07d778c02eb82a338d8"
+    },
+    {
+      "clip_index": 52,
+      "dataset_row": 22247,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "10f7e617ccd51e2715b5a532b25ec8e6f10b6f970665be2157cef6e1c28a7674"
+    },
+    {
+      "clip_index": 53,
+      "dataset_row": 155282,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "373be5d8e14f747add3203d1b74ba9273381769362d93c27b0ad99c6b0949106"
+    },
+    {
+      "clip_index": 54,
+      "dataset_row": 19415,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "9f99b74a01a75060b33d1b9bfda04faa3d5b55f777e9ebeeb812f21f242079fe"
+    },
+    {
+      "clip_index": 55,
+      "dataset_row": 92760,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "15cf9621a55f2f7295142230f9a4685fbe92bf946b82b15b7296f7399b294718"
+    },
+    {
+      "clip_index": 56,
+      "dataset_row": 78009,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ced2a933a91cab28ad9a543c8e6256819a7e16571094f21ac144f740c5e57d2f"
+    },
+    {
+      "clip_index": 57,
+      "dataset_row": 163115,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "40831241448580db29ab8695104d02b79dcb3134d6bbcd00c934e4cd07990817"
+    },
+    {
+      "clip_index": 58,
+      "dataset_row": 26340,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "30af2f9e625facf408f28721a670f70c869697c52fe5860fd7edb55c0b8adeac"
+    },
+    {
+      "clip_index": 59,
+      "dataset_row": 110396,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "cf36cf1352581fd77c37d5b21246eb2bd7ef4aceccb0b03f922594af985b4711"
+    },
+    {
+      "clip_index": 60,
+      "dataset_row": 69011,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "c2fa9c6879d4c2495528070289ddb065ed28cd646742f54b71647d3c6c04a5fc"
+    },
+    {
+      "clip_index": 61,
+      "dataset_row": 61626,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "fd9e7e217d272c914a39aa959dde1491157ae40fa2234b7d74d357e70ddb7c2a"
+    },
+    {
+      "clip_index": 62,
+      "dataset_row": 175026,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "e6440c787796393efae38e38979a8cd6f669c6286aaf9ea1b2bcd7f0f27c74c5"
+    },
+    {
+      "clip_index": 63,
+      "dataset_row": 54522,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "1785d1fa66a16adf309da18c1e22c5830f45099602238a9220e4095f4554882a"
+    },
+    {
+      "clip_index": 64,
+      "dataset_row": 132809,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b6d8d6f12d3a46795ee92885b124ff3aa1493af59b19717be6dead960651de04"
+    },
+    {
+      "clip_index": 65,
+      "dataset_row": 135840,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "3db94494f365b38fe3c0aae1eaf3f2cefb80e48168d51ba4f59b27a01e053cb6"
+    },
+    {
+      "clip_index": 66,
+      "dataset_row": 90993,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "5e63b49e0e0284976c15f826111d1f5c3314023f94e20cd4cefa3e1dddf95d58"
+    },
+    {
+      "clip_index": 67,
+      "dataset_row": 23589,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "bdd55ff911420182257394bdcc2f2888647eeacee5a239df8c62445c5c35a9a8"
+    },
+    {
+      "clip_index": 68,
+      "dataset_row": 19771,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "7f80ef130950c0b35ab951187da24673aa307623e8b90cd3921a63107a0458bd"
+    },
+    {
+      "clip_index": 69,
+      "dataset_row": 109657,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "aeee4405a69a5674cc951f314d9325645ec6e2487317aa7e70c9f282e17cff7a"
+    },
+    {
+      "clip_index": 70,
+      "dataset_row": 38602,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2ae97ae69a659d8d919a05c10885061b483580131d20e32e52808aba5a68da57"
+    },
+    {
+      "clip_index": 71,
+      "dataset_row": 84577,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "de9256e99ff6721ae53c1427ad23a1eb6d72616cd303edc474eeb550875c2148"
+    },
+    {
+      "clip_index": 72,
+      "dataset_row": 54731,
+      "crop_start_source_samples": 5592,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "8627ff35607c7f98b32cca7325fc7fc5d2aa75ff9d2f4e65c68adb2c7d90c2c0"
+    },
+    {
+      "clip_index": 73,
+      "dataset_row": 41663,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "efc885556d853951ca8940285f4b1d6e8b29a1969d848a068d113f385cdcfcdb"
+    },
+    {
+      "clip_index": 74,
+      "dataset_row": 93325,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "074b8d1937ee881be8d6e64149336f6a0d2635ca558bd8bdf573e21e68e028a8"
+    },
+    {
+      "clip_index": 75,
+      "dataset_row": 83148,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "18d036d43851915554e6717f180f756f253da2746faad6540cb9f673bb1677b8"
+    },
+    {
+      "clip_index": 76,
+      "dataset_row": 65002,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "cbdec1508911240446db6290edc978da4cac3e4524f7e2debdca8dc7ca74af0e"
+    },
+    {
+      "clip_index": 77,
+      "dataset_row": 84596,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "19e9b41200284b6d5d75bd25f2356280a38c44bf36fc4c00821d2bc7b2e4c3b2"
+    },
+    {
+      "clip_index": 78,
+      "dataset_row": 106108,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "dbfb921cb3216e84acb7d9092bad84b5f49d97452e7724ada857b48bc8b40894"
+    },
+    {
+      "clip_index": 79,
+      "dataset_row": 131463,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "6496fee37fd288b34d8b8f116648c74735ef7269fb2366a00ce990086934fd5a"
+    },
+    {
+      "clip_index": 80,
+      "dataset_row": 148982,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "63a074d9754f46edfca7ae4717a0f07f2673336623f200213b99b8edaf27389f"
+    },
+    {
+      "clip_index": 81,
+      "dataset_row": 76153,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ccc22b9fd340aaf273219bbf8ca7c75b121d3cae26355d979cfa19bbdf4e2729"
+    },
+    {
+      "clip_index": 82,
+      "dataset_row": 54041,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "1662c0c28e544dc97e8ffa60799db62314845f7a8307af0bc09574e1c4b3617a"
+    },
+    {
+      "clip_index": 83,
+      "dataset_row": 130084,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "6311ce22d51424da0fc6807884d65167b8418f33a301ce46e2855867df062efb"
+    },
+    {
+      "clip_index": 84,
+      "dataset_row": 144508,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "487f66c9ed699b8ec3a78ab276bd02e2df9a9978cc88c0f244c46b56ebaa9f54"
+    },
+    {
+      "clip_index": 85,
+      "dataset_row": 154591,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "38e977b4f3b22e38221ad27db3373774b315666e9a5119c31ba4e151e4171224"
+    },
+    {
+      "clip_index": 86,
+      "dataset_row": 65513,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "c3b5f0fe914f999688333e91f9712058cc80bcab9bdab9e402e94f8a145ccea0"
+    },
+    {
+      "clip_index": 87,
+      "dataset_row": 22332,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "869f1fa9036fd1570492fe6f017b6dd451e1dc04e90ab1765f56f3b8a5d9c8c9"
+    },
+    {
+      "clip_index": 88,
+      "dataset_row": 24474,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "0e0a0663053299ef72cc9cdb3d7584d3b9ac11bb36549ab572aa729b6879ab76"
+    },
+    {
+      "clip_index": 89,
+      "dataset_row": 25508,
+      "crop_start_source_samples": 2950,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2ee4a12dfe3ced2df008a4bd26085eef985d04ea7f7299cc34589dd1977a3956"
+    },
+    {
+      "clip_index": 90,
+      "dataset_row": 121547,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "2f8cec7581e9039641af7e453931fd306a9636f3bb07f171fbc665b8a61cd687"
+    },
+    {
+      "clip_index": 91,
+      "dataset_row": 115986,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "8cee86b0997cea69a3d413c2be35f1e64ade2a07cb93876f2aeafcef99d0a898"
+    },
+    {
+      "clip_index": 92,
+      "dataset_row": 54913,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "baf1cdf062f55f6ac52a412412d5642db1027ca6772506debb82ccdac6507802"
+    },
+    {
+      "clip_index": 93,
+      "dataset_row": 65476,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "8ae6e5503149cfd9a97dff8c7b4d62188a2c08179a1bdec2968d552968f97ba5"
+    },
+    {
+      "clip_index": 94,
+      "dataset_row": 16773,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "53ddef6615464b8f1196eb87a63fb565b1f2735f524be95b231697bb6f59fdd3"
+    },
+    {
+      "clip_index": 95,
+      "dataset_row": 30658,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "077d9c8174fd487a6efef947882cf5dc26a459ed7e3c288490d04f4d80860c7f"
+    },
+    {
+      "clip_index": 96,
+      "dataset_row": 178710,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "b8eed468a28090da1f3d0bbca44d7b7407e8bf7fd7633462798e7dcc1f04884d"
+    },
+    {
+      "clip_index": 97,
+      "dataset_row": 158836,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "a73a141519343495cc9c9e5c5ea09465e10dc4383035627e672d35fb617e509e"
+    },
+    {
+      "clip_index": 98,
+      "dataset_row": 159904,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "ec78077c9e7e4a63cb8579fffc16d82835625eda11fd282e17af714b7d1167b1"
+    },
+    {
+      "clip_index": 99,
+      "dataset_row": 120367,
+      "crop_start_source_samples": 0,
+      "source_sample_rate": 16000,
+      "source_crop_samples": 8000,
+      "normalized_waveform_sha256": "59fa36c13f324d137a78c1e85edf3c4391e3ce3a18ad9b6b5304ba9088742354"
+    }
+  ],
+  "dataset_fingerprint": "3ea0e15765163072",
+  "dataset_cache_files": [
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00000-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00001-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00002-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00003-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00004-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00005-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00006-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00007-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00008-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00009-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00010-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00011-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00012-of-00014.arrow"
+    },
+    {
+      "filename": "/Users/rachelchen/.cache/huggingface/datasets/geronimobasso___drone-audio-detection-samples/default/0.0.0/981b832c35b45a57518c989f0f79101adb4ae91f/drone-audio-detection-samples-train-00013-of-00014.arrow"
+    }
+  ],
+  "dataset_download_checksums": {
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00000-of-00039.parquet": {
+      "num_bytes": 1271062055,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00001-of-00039.parquet": {
+      "num_bytes": 1330873222,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00002-of-00039.parquet": {
+      "num_bytes": 528768733,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00003-of-00039.parquet": {
+      "num_bytes": 577009923,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00004-of-00039.parquet": {
+      "num_bytes": 74960965,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00005-of-00039.parquet": {
+      "num_bytes": 75008126,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00006-of-00039.parquet": {
+      "num_bytes": 75024921,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00007-of-00039.parquet": {
+      "num_bytes": 75000588,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00008-of-00039.parquet": {
+      "num_bytes": 74997425,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00009-of-00039.parquet": {
+      "num_bytes": 75008199,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00010-of-00039.parquet": {
+      "num_bytes": 75017280,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00011-of-00039.parquet": {
+      "num_bytes": 89726068,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00012-of-00039.parquet": {
+      "num_bytes": 124470459,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00013-of-00039.parquet": {
+      "num_bytes": 100517460,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00014-of-00039.parquet": {
+      "num_bytes": 99640072,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00015-of-00039.parquet": {
+      "num_bytes": 105593913,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00016-of-00039.parquet": {
+      "num_bytes": 201784196,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00017-of-00039.parquet": {
+      "num_bytes": 281406117,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00018-of-00039.parquet": {
+      "num_bytes": 74410336,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00019-of-00039.parquet": {
+      "num_bytes": 75018631,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00020-of-00039.parquet": {
+      "num_bytes": 75018826,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00021-of-00039.parquet": {
+      "num_bytes": 74989389,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00022-of-00039.parquet": {
+      "num_bytes": 75014874,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00023-of-00039.parquet": {
+      "num_bytes": 74973297,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00024-of-00039.parquet": {
+      "num_bytes": 75002767,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00025-of-00039.parquet": {
+      "num_bytes": 74985938,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00026-of-00039.parquet": {
+      "num_bytes": 75006543,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00027-of-00039.parquet": {
+      "num_bytes": 74985732,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00028-of-00039.parquet": {
+      "num_bytes": 74977197,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00029-of-00039.parquet": {
+      "num_bytes": 74907708,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00030-of-00039.parquet": {
+      "num_bytes": 74948148,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00031-of-00039.parquet": {
+      "num_bytes": 74995981,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00032-of-00039.parquet": {
+      "num_bytes": 75004841,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00033-of-00039.parquet": {
+      "num_bytes": 74975366,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00034-of-00039.parquet": {
+      "num_bytes": 75004834,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00035-of-00039.parquet": {
+      "num_bytes": 74988060,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00036-of-00039.parquet": {
+      "num_bytes": 74991856,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00037-of-00039.parquet": {
+      "num_bytes": 74923040,
+      "checksum": null
+    },
+    "hf://datasets/geronimobasso/drone-audio-detection-samples@981b832c35b45a57518c989f0f79101adb4ae91f/data/train-00038-of-00039.parquet": {
+      "num_bytes": 74979149,
+      "checksum": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+SEEDED 50/50 FOUR-MIC COMPARISON
+
+100 distinct source clips, 1,200 paired scenarios, 2,400 fresh estimator calls.
+Primary: 20 dB baseline SNR; 50 intact and 50 degraded inputs from disjoint source groups.
+Selection      Cases  Original accepted/bad>15  Robust accepted/bad>15  Robust status counts
+all_100        100         52/0                 50/0      {'full_3d': 68, 'ambiguous': 25, 'unreliable': 7}
+intact          50         50/0                 50/0      {'full_3d': 50}
+degraded        50          2/0                  0/0      {'ambiguous': 25, 'unreliable': 7, 'full_3d': 18}
+
+No hemisphere prior or known direction supplied to either solver. Confidence 0.2 is uncalibrated.
+Candidate sets are ambiguity diagnostics, not uniquely accepted localization successes.
+These previously used mono sources have simulated delays/noise; no helmet or hardware validation.
+The disjoint within-run groups are not recordings held out from algorithm development.
+
+Reproduce: python3 scripts/benchmark_50_50.py --out results_hf_50_50

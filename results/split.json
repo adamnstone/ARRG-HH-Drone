@@ -1,0 +1,65 @@
+{
+  "train": [
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Fly by 50m height 1.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Fly by 2.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Immediate vicinity.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Fly by 1.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\non_drone\\ambient_adam.m4a",
+      "label": 0,
+      "start_sec": 0.0,
+      "end_sec": 139.4264,
+      "split_method": "temporal_block"
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Hovering 10m away.m4a",
+      "label": 1
+    }
+  ],
+  "val": [
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Fly by 50m height 2.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\non_drone\\ambient_adam.m4a",
+      "label": 0,
+      "start_sec": 144.4264,
+      "end_sec": 186.7352,
+      "split_method": "temporal_block"
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Assorted motion.m4a",
+      "label": 1
+    }
+  ],
+  "test": [
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Hovering 5m ahead.m4a",
+      "label": 1
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\non_drone\\ambient_adam.m4a",
+      "label": 0,
+      "start_sec": 191.7352,
+      "end_sec": 236.544,
+      "split_method": "temporal_block"
+    },
+    {
+      "path": "C:\\Users\\adams\\OneDrive\\Documents\\0HarvardClubs\\Hackathon\\HackHarvard\\data\\drone\\Descending.m4a",
+      "label": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+Supplemental hardware-rate compatibility check
+
+This run uses all 100 distinct hash-verified Hugging Face source clips cached for
+Rachel's historical benchmark. Each source is a 0.5-second waveform at 16 kHz.
+scipy.signal.resample_poly upsamples each clip by 3 to the 48 kHz analysis rate.
+Upsampling introduces no native 48 kHz source information: source audio remains
+limited to the original 16 kHz recording bandwidth.
+
+The protocol tests one seeded randomized azimuth per clip at elevations 0, 30,
+60, and 80 degrees, plus the 90-degree zenith case, at SNR 30, 20, 10, and 0 dB.
+This yields 2,000 calls, versus 13,200 calls in the primary 16 kHz protocol with
+eight azimuths per clip. It supplements the primary benchmark and verifies that
+the estimator runs at the hardware sample rate; it is not the same sweep.
+
+SNR is set using whole-waveform power while independent white noise is spread
+across the analysis-rate Nyquist bandwidth. At the same nominal SNR the 16 and
+48 kHz protocols therefore have different in-band noise power. Comparing their
+numeric accuracy cannot isolate a causal sample-rate advantage.
+
+These are mono recordings with simulated synchronized four-microphone delays
+and added independent white noise, not actual four-channel hardware recordings,
+reverberation, or diffuse-noise validation. Existing source recording noise is
+propagated coherently with the source. Repeated scenarios are not independent
+recordings. The confidence >= 0.2 gate is existing and not hardware calibrated;
+withheld directions must not be counted as accepted successes.
+
+No estimator parameters or numeric result files were changed for this run.
+Coverage audit passed: 100 clips, 20 scenarios per clip, 100 trials in each of
+20 elevation/SNR conditions, and 2,000 trials total. One raw error exceeded 15
+degrees, at 80-degree elevation and 0 dB SNR; it was withheld by confidence.

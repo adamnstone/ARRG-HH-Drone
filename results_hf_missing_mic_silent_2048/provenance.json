@@ -1,0 +1,71 @@
+{
+  "dataset": "geronimobasso/drone-audio-detection-samples",
+  "mode": "silent",
+  "clips": 100,
+  "all_source_hashes_verified": true,
+  "source_commit": "312bcbee5fc84ced6652aac4df36ec7ce2c6eb0d",
+  "source_fs": 16000,
+  "fs": 48000,
+  "samples": 2048,
+  "window_seconds": 0.042666666666666665,
+  "source_window": "central crop",
+  "azimuths_per_clip": 1,
+  "elevations": [
+    0,
+    30,
+    60,
+    80,
+    90
+  ],
+  "nominal_baseline_snrs": [
+    30,
+    20,
+    10,
+    0
+  ],
+  "mics": [
+    [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    [
+      -0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.09
+    ]
+  ],
+  "mic_names": [
+    "B",
+    "L",
+    "R",
+    "T"
+  ],
+  "min_confidence": 0.2,
+  "confidence_threshold_calibrated": false,
+  "seed": 20261016,
+  "parameter_tuning": false,
+  "estimator_sha256": "0e79e8661976912d04b20807f73985a4b58f2da4aefbb206f7f2d48d44e2a8ac",
+  "script_sha256": "f89539debb37a2e5116ba9baa2d37a88c307e4686c9ea3b51e4a35603dd54bdd",
+  "helper_sha256": "b8505327eac04500c9adbcf20e5ba7151675aca7f966058cd4fc5cded2872a5b",
+  "baseline_provenance": "/Users/rachelchen/Desktop/hackharvard/HH-SignalProcessing/results_hf_four_mic_48k_review/provenance.json",
+  "baseline_provenance_sha256": "78e1219d73ba4945470314474671f0be712356c72eeef0a6d56719b25b16d0cb",
+  "baseline_trials_sha256": "0431aef9fdbc927238bb3b17c5984253701b9a006428cbbe2c36ce045fe14e8a",
+  "baseline_method": "recomputed for cropped source",
+  "failure_model": "Selected channel set to exactly zero",
+  "numpy_version": "2.0.2",
+  "started_utc": "2026-10-18T01:37:07.530862+00:00",
+  "command": "python3 scripts/benchmark_missing_mic.py --mode silent --samples 2048 --out results_hf_missing_mic_silent_2048",
+  "finished_utc": "2026-10-18T01:37:40.073752+00:00",
+  "trials": 8000
+}

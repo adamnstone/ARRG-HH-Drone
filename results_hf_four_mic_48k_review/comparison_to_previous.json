@@ -1,0 +1,30 @@
+{
+  "trials": 2000,
+  "clips": 100,
+  "cases_per_clip": 20,
+  "matched_case_keys": true,
+  "changed_fields": {
+    "vector_defined": 0,
+    "estimated_ux": 0,
+    "estimated_uy": 0,
+    "estimated_uz": 0,
+    "error_3d_deg": 0,
+    "ambiguous_pair_count": 0
+  },
+  "confidence_decreased_count": 2000,
+  "confidence_increased_count": 0,
+  "accepted_old": 1542,
+  "accepted_new": 1523,
+  "dropped_accepted_count": 19,
+  "gained_accepted_count": 0,
+  "remaining_raw_failures": [
+    {
+      "clip_index": "69",
+      "true_elevation_deg": "80",
+      "snr_db": "0",
+      "error_3d_deg": "23.07427499435268",
+      "confidence": "6.0849474351314775e-06",
+      "accepted": "False"
+    }
+  ]
+}

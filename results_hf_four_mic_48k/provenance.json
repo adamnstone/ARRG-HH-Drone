@@ -1,0 +1,124 @@
+{
+  "dataset": "geronimobasso/drone-audio-detection-samples",
+  "source_ref": "rachel",
+  "source_commit": "312bcbee5fc84ced6652aac4df36ec7ce2c6eb0d",
+  "source_metadata": {
+    "dataset": "geronimobasso/drone-audio-detection-samples",
+    "description": "Real drone waveforms with simulated microphone propagation; NOT actual array recordings",
+    "seed": 20261016,
+    "clips": 100,
+    "window_seconds": 0.5,
+    "fs": 16000,
+    "azimuths_per_clip": 8,
+    "elevations": [
+      0,
+      30,
+      60,
+      80
+    ],
+    "snrs": [
+      30,
+      20,
+      10,
+      0
+    ],
+    "mics": [
+      [
+        -0.07,
+        0.0
+      ],
+      [
+        0.07,
+        0.0
+      ],
+      [
+        0.0,
+        0.08
+      ]
+    ],
+    "sound_speed": 343.0,
+    "azimuth_design": "Even spacing around full circle with independent seeded offset per clip in [0, spacing)",
+    "noise_design": "SeedSequence([seed, 1, clip_index, azimuth_index, elevation, snr]); same frames for both estimators",
+    "confidence_filter": "None; valid means finite returned angle; overhead angle-return rate is spurious",
+    "estimator_sha256": "60e046b9b1a7ad7cca75e915eae5bbb311f5f874b02ed4d17a292d6a51523674",
+    "benchmark_sha256": "f9f13f642f4fa29da8033bff96eb2248818334c9443a8cff4b25f0da8a8bc381",
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "processor": "arm",
+    "versions": {
+      "numpy": "2.0.2",
+      "scipy": "1.13.1",
+      "soundfile": "0.13.1",
+      "datasets": "3.6.0",
+      "matplotlib": "3.9.4",
+      "huggingface_hub": "1.8.0"
+    },
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "timing": "perf_counter_ns around unchanged estimator call, serial, alternating method order; 3 warmups each; full four-value output included",
+    "started_utc": "2026-10-16T05:34:51.690243+00:00",
+    "finished_utc": "2026-10-16T05:39:42.294182+00:00",
+    "paired_frames": 13200
+  },
+  "clip_cache": "/Users/rachelchen/Desktop/hackharvard/HH-SignalProcessing/benchmark_results/clips.npz",
+  "all_source_hashes_verified": true,
+  "source_fs": 16000,
+  "fs": 48000,
+  "resampled": true,
+  "resampling": "scipy.signal.resample_poly",
+  "clips": 100,
+  "window_seconds": 0.5,
+  "seed": 20261016,
+  "azimuths_per_clip": 1,
+  "elevations": [
+    0,
+    30,
+    60,
+    80,
+    90
+  ],
+  "snrs": [
+    30,
+    20,
+    10,
+    0
+  ],
+  "mics": [
+    [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    [
+      -0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.09,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.09
+    ]
+  ],
+  "sound_speed": 343.0,
+  "min_confidence": 0.2,
+  "confidence_threshold_calibrated": false,
+  "parameter_tuning": false,
+  "angle_design": "Even full-circle spacing with seeded independent per-clip offset; zenith azimuth0",
+  "noise_design": "SeedSequence([seed,1,clip_index,azimuth_index,elevation,snr]); independent white noise",
+  "estimator_sha256": "637c49e7223e7ec45ac9035419a4e6ce51d92a0a88e434d26836516d0e2f2698",
+  "script_sha256": "b8505327eac04500c9adbcf20e5ba7151675aca7f966058cd4fc5cded2872a5b",
+  "numpy_version": "2.0.2",
+  "started_utc": "2026-10-18T01:03:16.602509+00:00",
+  "command": "python3 scripts/benchmark_four_mic.py --fs 48000 --azimuths 1 --out results_hf_four_mic_48k",
+  "finished_utc": "2026-10-18T01:06:04.346286+00:00",
+  "trials": 2000
+}
