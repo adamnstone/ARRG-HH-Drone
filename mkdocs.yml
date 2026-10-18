@@ -1,0 +1,28 @@
+site_name: Counter-drone Acoustic Localization and Identification System
+site_description: A helmet-integrated acoustic drone detector with four-mic localization and 360° haptics.
+# final.md at the repo root is the page; mkdocs_src/ symlinks it and the image folders it references.
+docs_dir: mkdocs_src
+watch:
+  - final.md
+
+theme:
+  name: material
+  features:
+    - navigation.top
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+nav:
+  - Overview: index.md

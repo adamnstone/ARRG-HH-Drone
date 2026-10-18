@@ -16,3 +16,5 @@ data/finetune_replay_cache.npz
 artifacts/finetune/
 data/cache/
 data/calibration/captures/
+site/
+photos/drive-download-20261018T111541Z-1-001.zip
