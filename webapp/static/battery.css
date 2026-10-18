@@ -1,0 +1,63 @@
+/* Battery badge in the header (battery.js): icon + percent, hover / click popover, low-battery toast. */
+.batt { position: relative; display: inline-flex; --batt-c: var(--faint); }
+.batt.good { --batt-c: var(--ok); }
+.batt.low { --batt-c: var(--warn); }
+.batt.critical { --batt-c: var(--alarm); }
+.batt.charging { --batt-c: var(--cool); }
+.batt.stale .batt-btn { opacity: .55; }
+
+.batt-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font: 700 13px var(--mono); color: var(--text); font-variant-numeric: tabular-nums;
+  padding: 4px 10px 4px 8px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--panel-2);
+  cursor: pointer; transition: border-color .15s, opacity .3s;
+}
+.batt-btn:hover, .batt-btn:focus-visible, .batt-btn[aria-expanded="true"] { border-color: var(--batt-c); outline: none; }
+.batt.unknown .batt-txt { color: var(--faint); }
+.batt.critical .batt-txt { color: var(--alarm); }
+
+.batt-ico { width: 26px; height: 13px; flex: none; overflow: visible; }
+.batt-shell { fill: none; stroke: var(--muted); stroke-width: 1.5; }
+.batt-cap { fill: var(--muted); }
+.batt-fill { fill: var(--batt-c); transition: width .6s ease; }
+.batt-bolt { fill: var(--text); stroke: var(--panel-2); stroke-width: .8; display: none; }
+.batt.charging .batt-bolt { display: inline; }
+.batt.critical .batt-shell { stroke: var(--alarm); }
+.batt.critical .batt-ico { animation: batt-blink 1.2s ease-in-out infinite; }
+@keyframes batt-blink { 50% { opacity: .35; } }
+
+.batt-pop {
+  position: absolute; top: calc(100% + 8px); right: 0; z-index: 60; width: 250px;
+  padding: 12px 14px 10px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--panel);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .55); color: var(--text); font-size: 13px; text-align: left;
+}
+.batt-pop[hidden], .batt-toast[hidden] { display: none; }
+.batt-row { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; }
+.batt-row span { color: var(--muted); }
+.batt-row b { font: 600 13px var(--mono); white-space: nowrap; }
+.batt-s { color: var(--batt-c); }
+.batt-spark { display: block; width: 100%; height: 44px; margin: 8px 0 4px; border-radius: 6px; background: var(--panel-2); }
+.batt-spark-l { fill: none; stroke: var(--batt-c); stroke-width: 1.6; vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.batt-foot { color: var(--muted); font: 12px var(--mono); }
+.batt-note { color: var(--faint); font-size: 11.5px; line-height: 1.35; margin-top: 6px; }
+
+.batt-toast {
+  position: fixed; right: 18px; bottom: 18px; z-index: 1000; display: flex; align-items: flex-start; gap: 12px;
+  max-width: min(420px, calc(100vw - 32px)); padding: 12px 12px 12px 16px; border-radius: 10px;
+  border: 1px solid var(--line-2); border-left: 4px solid var(--warn); background: var(--panel);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .55); color: var(--text); font-size: 14px; line-height: 1.4;
+}
+.batt-toast.critical { border-left-color: var(--alarm); }
+.batt-toast-x {
+  flex: none; font: 700 18px/1 var(--font); color: var(--muted); background: none; border: 0; cursor: pointer; padding: 0 2px;
+}
+.batt-toast-x:hover, .batt-toast-x:focus-visible { color: var(--text); }
+
+@media (max-width: 560px) {
+  .batt-pop { right: auto; left: 50%; transform: translateX(-50%); width: min(250px, calc(100vw - 32px)); }
+  .batt-toast { left: 16px; right: 16px; bottom: 16px; max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .batt.critical .batt-ico { animation: none; }
+  .batt-fill, .batt-btn { transition: none; }
+}

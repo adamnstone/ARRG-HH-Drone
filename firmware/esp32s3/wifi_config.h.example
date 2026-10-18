@@ -1,0 +1,18 @@
+// Wi-Fi settings for headband.ino. Copy to wifi_config.h (gitignored, so credentials never get committed) and edit.
+// Without wifi_config.h the sketch uses the defaults below: soft access point "HEADBAND", password "dronedetect".
+
+// Soft access point (default mode; the board is at 192.168.4.1, TCP port 5000, mDNS headband.local).
+#define WIFI_AP_SSID "HEADBAND"
+#define WIFI_AP_PASS "dronedetect"      // WPA2: 8-63 characters. Change it if the demo is in a crowded place.
+
+// Station mode: uncomment both to join an existing 2.4 GHz network instead (15 s timeout, then back to the AP).
+// The IP is printed in the "# wifi mode=STA ... ip=..." line over USB; headband.local works if the network passes
+// mDNS (many campus / enterprise networks do not: use the printed IP with --tcp IP).
+// #define WIFI_STA_SSID "my-network"
+// #define WIFI_STA_PASS "my-password"
+
+// Optional overrides:
+// #define WIFI_HOSTNAME "headband"     // mDNS name -> headband.local
+// #define WIFI_TCP_PORT 5000
+// #define WIFI_STA_TIMEOUT_MS 15000
+// #define WIFI_STALL_MS 3000           // drop a TCP client that accepts no bytes for this long

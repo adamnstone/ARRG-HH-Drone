@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headband Drone Detector</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%237cc4ff' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23ff5a36'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/calibration.css">
+<link rel="stylesheet" href="/static/battery.css">
+</head>
+<body data-state="idle">
+<header class="top">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="17" class="mark-ring"/>
+      <circle cx="20" cy="20" r="10" class="mark-ring faint"/>
+      <path d="M20 20 L33 9 A17 17 0 0 1 37 20 Z" class="mark-wedge"/>
+      <circle cx="20" cy="20" r="3.5" class="mark-dot"/>
+    </svg>
+    <div>
+      <div class="name">HEADBAND</div>
+      <div class="tag">acoustic drone detection &middot; 360&deg; haptic bearing</div>
+    </div>
+  </div>
+  <div class="meta">
+    <span id="srcBadge" class="badge">&hellip;</span>
+    <span class="conn"><i id="connDot" class="dot off"></i><span id="connText">connecting</span></span>
+    <span class="kv"><b id="fps">0</b> frames/s</span>
+    <span class="kv">up <b id="uptime">0:00</b></span>
+    <button id="benchBtn" class="btn" title="tap test, motor test, board status">Bench</button>
+    <button id="calibBtn" class="btn" title="which mic and which motor is where on the headset">Calibrate</button>
+    <button id="ledBtn" class="btn stealth" disabled title="stealth mode: the headset's LED stays off">Stealth</button>
+    <span id="battBadge"></span>
+  </div>
+</header>
+
+<section class="hero card" id="hero">
+  <div class="state">
+    <div class="state-label" id="stateLabel">IDLE</div>
+    <div class="state-sub" id="stateSub">Listening on four microphones</div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-k">Bearing</div><div class="stat-v" id="hBearing">&mdash;</div><div class="stat-s" id="hBearingDir">&nbsp;</div></div>
+    <div class="stat"><div class="stat-k">Elevation</div><div class="stat-v" id="hElev">&mdash;</div><div class="stat-s" id="hElevS">&nbsp;</div></div>
+    <div class="stat"><div class="stat-k" id="hSinceK">Last drone</div><div class="stat-v" id="hSince">&mdash;</div><div class="stat-s" id="hSinceS">&nbsp;</div></div>
+    <div class="stat"><div class="stat-k">Alarm latency</div><div class="stat-v" id="hLatency">&mdash;</div><div class="stat-s">evidence &rarr; alarm</div></div>
+  </div>
+</section>
+
+<section class="card bench" id="bench" hidden>
+  <div class="card-h"><h2>Bench</h2><span class="hint" id="benchNote">tap test &middot; motor test &middot; board status &middot; needs the device (USB or Wi-Fi)</span></div>
+  <div class="bench-grid">
+    <div class="bench-col">
+      <div class="bench-t"><span>Mic levels <small>per PDM slot, peak since the last poll</small></span><button id="tapBtn" class="btn" disabled>Start tap test</button></div>
+      <div class="slots" id="slots"></div>
+      <div class="hint bench-hints" id="slotHints">Tap each mic with a fingernail: one slot's peak jumps per mic. The letter is the DSP channel that reads the slot.</div>
+    </div>
+    <div class="bench-col">
+      <div class="bench-t"><span>Motors</span><button id="motorBtn" class="btn" disabled>Buzz each in turn</button></div>
+      <div class="hint" id="motorNote">0.5 s each, 0.3 s apart; the pads under Haptics light up with the one that should be buzzing. Felt the wrong one? Swap the PIN_MOT_* in pins.h.</div>
+      <div class="mot-row" title="each motor on / off by hand; the detector takes over again when all are off">
+        <span id="motBtns" class="mot-btns"></span>
+        <button id="motOff" class="btn" disabled>All off</button>
+      </div>
+      <label class="mot-k">Strength <input type="range" id="motDuty" min="0" max="190" step="5" value="190" disabled><span id="motDutyV"></span></label>
+      <label class="mot-k">Pulse <select id="motHz" disabled><option value="0">steady</option><option value="1">1 Hz</option><option value="2">2 Hz</option><option value="3">3 Hz</option><option value="5">5 Hz</option></select><span class="hint">detector: 1&ndash;5 Hz</span></label>
+      <div class="hint" id="motManNote">Turn motors on by hand. Lower the strength to find where each one stops starting: a drone at 22.5&deg; drives F and FR at 50 %. At most 3 at once (1 A supply).</div>
+    </div>
+    <div class="bench-col">
+      <div class="bench-t"><span>Board</span><button id="statusBtn" class="btn" disabled>Status now</button></div>
+      <dl class="dev" id="benchDev"></dl>
+    </div>
+    <div class="bench-col">
+      <div class="bench-t"><span>Record <small>raw 4-ch audio into data/team for training</small></span><button id="recBtn" class="btn rec" disabled>Record</button></div>
+      <div class="rec-form">
+        <select id="recLabel" title="which folder the clip goes to"><option value="drone">drone</option><option value="background">background</option></select>
+        <select id="recSecs" title="length"><option>10</option><option selected>30</option><option>60</option><option>120</option><option>300</option></select><span>s</span>
+        <label title="file name gets _holdout: the whole clip goes to the test split"><input type="checkbox" id="recHoldout"> holdout</label>
+        <input id="recTag" placeholder="tag: mavic_20m_behind" maxlength="32" title="goes into the file name">
+      </div>
+      <div class="rec-prog"><i id="recBar"></i></div>
+      <div class="hint" id="recNote">Fly the drone (or make the background noise), press Record. The board streams raw audio while recording; the detector display pauses.</div>
+      <div class="hint rec-data" id="recData"></div>
+      <div class="rec-play">
+        <select id="recMix" title="what to listen to"><option value="stereo">L + R</option><option value="mono">mono mix</option><option value="B">B only</option><option value="L">L only</option><option value="R">R only</option><option value="T">T only</option></select>
+        <audio id="recAudio" controls preload="none"></audio>
+      </div>
+      <ul class="rec-list" id="recList"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="card calib" id="calib" hidden></section>
+
+<main class="grid">
+  <section class="card radar-card">
+    <div class="card-h"><h2>Bearing</h2><span class="hint">top view &middot; nose up &middot; 0&deg; ahead, +90&deg; right &middot; closer to centre = higher</span></div>
+    <div class="radar-wrap" id="radarWrap"><canvas id="radar"></canvas></div>
+    <div class="radar-read">
+      <div class="rr-main"><span class="big" id="rDeg">&mdash;</span><span class="unit" id="rDir"></span></div>
+      <div class="rr-side">
+        <div class="rr-bst"><span id="rBst"></span><span class="mics unknown" id="rMics"><i id="rMicB" title="back mic (channel 0)">B</i><i id="rMicL">L</i><i id="rMicR">R</i><i id="rMicT">T</i></span></div>
+        <div class="hint">elev <b id="rElev">&mdash;</b> &middot; conf <b id="rConf">&mdash;</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card evidence-card">
+    <div class="card-h"><h2>Evidence</h2><span class="hint">last 20 s &middot; shaded = DETECTED</span></div>
+    <div class="charts">
+      <div class="chart"><div class="chart-h"><span>Harmonic score</span><span class="thr" id="thrScore"></span><b id="vScore">&mdash;</b></div><canvas id="cScore"></canvas></div>
+      <div class="chart"><div class="chart-h"><span>Rule hits <small>(how sure the rules are)</small></span><span class="thr" id="thrHits"></span><b id="vHits">&mdash;</b></div><canvas id="cHits"></canvas></div>
+      <div class="chart"><div class="chart-h"><span>Classifier p(drone)</span><span class="thr" id="thrMl"></span><b id="vMl">&mdash;</b></div><canvas id="cMl"></canvas></div>
+      <div class="chart"><div class="chart-h"><span>Blade-pass f0</span><span class="thr"></span><b id="vF0">&mdash;</b></div><canvas id="cF0"></canvas></div>
+    </div>
+  </section>
+
+  <section class="side">
+    <div class="card hap-card">
+      <div class="card-h"><h2>Haptics</h2><span class="hint" id="hapNote">motors off</span></div>
+      <svg id="hapSvg" viewBox="0 0 240 228" aria-label="haptic motors, top view, nose up">
+        <ellipse cx="120" cy="114" rx="50" ry="60" class="head"/>
+        <path d="M110 57 L120 44 L130 57 Z" class="head nose"/>
+        <g id="hapPads"></g>
+        <text x="120" y="119" class="above" id="hapAbove">ABOVE</text>
+      </svg>
+      <div class="hap-vals"><span>motors on <b id="hOn">0</b> / <b id="hMax">3</b> max</span><span id="hTop">&nbsp;</span></div>
+    </div>
+    <div class="card dev-card">
+      <div class="card-h"><h2 id="devTitle">Device</h2><span class="hint" id="devMode"></span></div>
+      <dl class="dev" id="dev"></dl>
+    </div>
+    <div class="card log-card">
+      <div class="card-h"><h2>Events</h2><span class="hint" id="evCount"></span></div>
+      <ul class="log" id="log"><li class="empty">No events yet</li></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="legend">
+  <span><b>Score</b> comb prominence of 5 harmonics, dB; above the line = drone-like frame</span>
+  <span><b>Hits</b> drone-like frames in the last 2 s; the alarm needs the line</span>
+  <span><b>p(drone)</b> on-device CNN; must clear the gate to allow an alarm</span>
+  <span><b>Bearing</b> 4 mics (B or F, L, R, T): azimuth + elevation, from the best three when one drops out (lit letters); overhead = elev &gt; 60&deg;, 3 motors spin</span>
+</footer>
+<script src="/static/app.js"></script>
+<script src="/static/calibration.js"></script>
+<script src="/static/battery.js"></script>
+</body>
+</html>
