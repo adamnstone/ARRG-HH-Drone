@@ -1,0 +1,2 @@
+# Benchmark provenance records hashes of the original CSV bytes.
+results_*/**/*.csv -text whitespace=cr-at-eol

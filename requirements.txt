@@ -1,0 +1,20 @@
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+matplotlib>=3.8
+tensorflow>=2.16        # training + TFLite export (on Apple Silicon: pip install tensorflow works; tensorflow-metal optional)
+sounddevice>=0.4        # scripts/live_mac.py only
+pytest>=7
+pyserial>=3.5        # scripts/telemetry.py, scripts/record_device.py
+pyarrow>=15          # reads the DADS parquet shards (scripts/get_dads.py)
+# also needs ffmpeg on PATH (brew install ffmpeg) for loading m4a/mp3
+aiohttp>=3.9          # scripts/dashboard.py: serves the live web dashboard (static page + WebSocket)
+scikit-learn>=1.3     # interp/part_c.py (gate selection); Adam's train_compare.py
+# Optional experiment dependencies (train_compare.py, hf_public.py and the sig_proc_tri.py dataset CLI);
+# not needed by droneears/, the core triangulation solver, the firmware tools or the dashboard
+librosa
+torch
+onnx
+onnxscript
+huggingface_hub
+datasets

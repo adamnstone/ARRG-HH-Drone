@@ -1,0 +1,17 @@
+{
+  "drone_dir": "data/drone",
+  "background_dir": "data/non_drone",
+  "output_dir": "results",
+  "epochs": 35,
+  "patience": 6,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "export_onnx": false,
+  "temporal_gap_seconds": 5,
+  "huggingface": {
+    "enabled": true,
+    "local_dir": "data/huggingface_itu_aris",
+    "download_if_missing": true,
+    "max_files_per_class_per_split": null
+  }
+}

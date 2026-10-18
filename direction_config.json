@@ -1,0 +1,37 @@
+{
+  "drone_dir": "data/drone",
+  "output_dir": "results_direction",
+  "sample_rate": 16000,
+  "window_seconds": 1.0,
+  "speed_of_sound_m_s": 343.0,
+  "simulations_per_window": 3,
+  "max_source_windows": 100,
+  "noise_snr_db": [
+    30,
+    20,
+    10,
+    0
+  ],
+  "azimuth_range_degrees": [
+    -180,
+    180
+  ],
+  "elevation_range_degrees": [
+    5,
+    85
+  ],
+  "gcc_analysis_seconds": 0.5,
+  "gcc_interp": 8,
+  "random_seed": 42,
+  "make_gifs": true,
+  "gif_example_frames": 30,
+  "moving_demo_frames": 72,
+  "moving_demo_snr_db": 10,
+  "plot_sample_snr_db": 10,
+  "visual_demo_radius_m": 10.0,
+  "huggingface": {
+    "enabled": true,
+    "local_dir": "data/huggingface_itu_aris",
+    "download_if_missing": true
+  }
+}
