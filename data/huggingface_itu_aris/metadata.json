@@ -1,0 +1,32 @@
+{
+ "name": "itu-aris-lab-acoustic-drone-dataset",
+ "version": "1.0.0",
+ "doi": "10.5281/zenodo.22682339",
+ "url": "https://zenodo.org/records/22682339",
+ "classes": [
+  "drone",
+  "background"
+ ],
+ "counts": {
+  "drone": 4491,
+  "background": 1000
+ },
+ "segment_duration_s": 1.0,
+ "sample_rate_hz": 22050,
+ "channels": 1,
+ "format": "wav, 16-bit PCM",
+ "source_recording": {
+  "duration_h": 3.12,
+  "sample_rate_hz": 44100,
+  "channels": 1,
+  "environment": "outdoor",
+  "note": "A single continuous session. Drone segments were cut from 35 manually annotated intervals; background segments from unlabelled stretches of the same recording."
+ },
+ "annotation": {
+  "method": "manual interval annotation of the continuous recording",
+  "annotators": 2,
+  "inter_annotator_cohen_kappa": 0.5868742262175021
+ },
+ "license": "CC-BY-4.0",
+ "citation": "Muhaciroglu, I. M. and Akgul, T. (2026). ITU ARIS Lab. Acoustic Drone Dataset (v1.0.0). Zenodo. 10.5281/zenodo.22682339"
+}
